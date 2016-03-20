@@ -47,4 +47,6 @@ Corn takes 14 days to grow after the day it is planted. In Spring and Fall, it i
 ---
 
 ### March 19th, 2016 - Project Reuploading
-Due to an error on GitHub, I unfortunately had to delete this repository and recreate it. All previous watches, stars, and forks will have been lost. There aren't any more issues now, so feel free to watch/star/fork the project again. Thank you for your support.
+Due to an error on GitHub, I unfortunately had to delete this repository and recreate it. All previous watches, stars, and forks will have been lost. There aren't any more issues now, so feel free to watch/star/fork the project again. The github.io page itself was unaffected by this.
+
+Thank you for your support.
