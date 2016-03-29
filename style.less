@@ -212,12 +212,6 @@ header{
 				font-size: 14px;
 				color: #777;
 			}
-			
-			.responsive({
-				position: relative;
-				top: -3px;
-				right: auto;
-			});
 		}
 		
 		.responsive({
@@ -292,15 +286,8 @@ header{
 				});
 			}
 			
-			.items{
-				margin-bottom: 2px;
-				
-				.responsive({
-					margin-bottom: 0;
-				});
-			}
-			
 			.planting, .harvesting{
+				padding-bottom: 11px;
 				.clearfix;
 				
 				.plan{
@@ -320,6 +307,10 @@ header{
 						color: #000;
 						font-size: 12px;
 						line-height: 10px;
+						
+						.responsive({
+							font-size: 10px;
+						});
 					}
 					
 					.greenhouse{
@@ -348,7 +339,7 @@ header{
 			.more{
 				font-size: 13px;
 				color: #777;
-				margin-top: 4px;
+				margin-top: -6px;
 			}
 			
 			.profit{
