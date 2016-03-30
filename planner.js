@@ -732,6 +732,10 @@ function planner_controller($scope){
 			save_data();
 			update();
 			return;
+		} else if (self.editplan){
+			// Other edit already open
+			save_data();
+			update();
 		}
 		
 		self.editplan = plan;
