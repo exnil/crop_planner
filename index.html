@@ -123,12 +123,12 @@
 	</div>
 	
 	
-	<!-- [DAY_PLANNER_MODAL] -->
+	<!-- [CROP_PLANNER_MODAL] -->
 	<div class="modal fade" id="crop_planner">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<button class="close" ng-click="self.close_plans()"><i class="fa fa-times"></i></button>
+					<button class="close" data-dismiss="modal"><i class="fa fa-times"></i></button>
 					<h4 class="modal-title">{{self.get_date(self.cdate, '%F &ensp;&mdash;&ensp; %l the %j%S')}}</h4>
 				</div>
 				<div class="modal-body">
@@ -172,10 +172,11 @@
 								<tr>
 									<th colspan="2">Planting</th>
 									<th>Amount</th>
-									<th>Cost</th>
 									<th>Fertilizer</th>
+									<th>Cost</th>
 									<th><i class="fa fa-clock-o"></i> Days</th>
-									<th><i class="fa fa-refresh"></i> Regrows in</th>
+									<th><i class="fa fa-refresh"></i> Regrows</th>
+									<th width="1"></th>
 									<th width="1"></th>
 								</tr>
 							</thead>
@@ -185,17 +186,29 @@
 										<img ng-src="{{plan.crop.get_image(1)}}">
 										<i class="fa fa-home greenhouse" ng-show="plan.greenhouse" title="Greenhouse"></i>
 									</td>
-									<td>{{plan.crop.name}}</td>
-									<td>x{{plan.amount}}</td>
-									<td>-{{plan.get_cost(1)}}g</td>
 									<td>
-										<div ng-show="plan.fertilizer.id!='none'">
+										{{plan.crop.name}}
+									</td>
+									<td>
+										<span ng-show="self.editplan!=plan">x{{plan.amount}}</span>
+										<span ng-show="self.editplan==plan">x<input style="padding-left:2px;width:100px" class="form-control" type="number" min="1" ng-model="plan.amount"></span>
+									</td>
+									<td>
+										<div ng-show="plan.fertilizer.id!='none' && self.editplan!=plan">
 											<img ng-src="{{plan.fertilizer.get_image()}}">
 											{{plan.fertilizer.name}}
 										</div>
+										<div ng-show="self.editplan==plan">
+											<select class="form-control" ng-model="plan.fertilizer" ng-options="fert as fert.name for fert in self.config.fertilizer track by fert.id"></select>
+										</div>
 									</td>
+									<td>-{{plan.get_cost(1)}}g</td>
 									<td>{{plan.get_grow_time()}}</td>
 									<td>{{plan.crop.regrow}}</td>
+									<td>
+										<button ng-show="self.editplan!=plan" class="btn btn-default" ng-click="self.edit_plan(plan)"><i class="fa fa-pencil"></i></button>
+										<button ng-show="self.editplan==plan" class="btn btn-success" ng-click="self.edit_plan(plan, 1)"><i class="fa fa-save"></i></button>
+									</td>
 									<td><button class="btn btn-default" ng-click="self.remove_plan(self.cdate, $index)"><i class="fa fa-trash"></i></button></td>
 								</tr>
 							</tbody>
@@ -213,7 +226,7 @@
 									<th>Yield</th>
 									<th>Revenue</th>
 									<th>Profit</th>
-									<th><i class="fa fa-refresh"></i> Regrows in</th>
+									<th><i class="fa fa-refresh"></i> Regrows</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -227,7 +240,7 @@
 										<span ng-show="harvest.yield.min==harvest.yield.max">x{{harvest.yield.min}}</span>
 										<span ng-show="harvest.yield.min!=harvest.yield.max">
 											x{{harvest.yield.min}}
-											<i class="fa fa-fw fa-caret-right text-muted"></i>
+											<i class="fa fa-fw fa-sort-amount-asc fa-rotate-270 text-muted"></i>
 											x{{harvest.yield.max}}
 										</span>
 									</td>
@@ -235,7 +248,7 @@
 										<span ng-show="harvest.revenue.min==harvest.revenue.max">+{{harvest.get_revenue(1)}}g</span>
 										<span ng-show="harvest.revenue.min!=harvest.revenue.max">
 											{{harvest.get_revenue(1)}}g
-											<i class="fa fa-fw fa-caret-right text-muted"></i>
+											<i class="fa fa-fw fa-sort-amount-asc fa-rotate-270 text-muted"></i>
 											{{harvest.get_revenue(1, 1)}}g
 										</span>
 									</td>
@@ -243,7 +256,7 @@
 										<span ng-show="harvest.profit.min==harvest.profit.max">+{{harvest.get_profit(1)}}g</span>
 										<span ng-show="harvest.profit.min!=harvest.profit.max">
 											{{harvest.get_profit(1)}}g
-											<i class="fa fa-fw fa-caret-right text-muted"></i>
+											<i class="fa fa-fw fa-sort-amount-asc fa-rotate-270 text-muted"></i>
 											{{harvest.get_profit(1, 1)}}g
 										</span>
 									</td>
@@ -255,12 +268,12 @@
 					<div ng-show="!self.data.harvests[self.cdate].length" class="text-muted"><i class="fa fa-pagelines"></i> No harvests.</div>
 				</div>
 				<div class="modal-footer">
-					<button class="btn btn-default" ng-click="self.close_plans()"><i class="fa fa-check"></i> Done</button>
+					<button class="btn btn-default" data-dismiss="modal"><i class="fa fa-check"></i> Done</button>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- [/DAY_PLANNER_MODAL] -->
+	<!-- [/CROP_PLANNER_MODAL] -->
 	
 	
 	<!-- [CROP_INFO_MODAL] -->
@@ -283,7 +296,7 @@
 								<tr>
 									<th ng-click="self.cinfo_set_sort('name')" colspan="2">Crop</th>
 									<th ng-click="self.cinfo_set_sort('grow')"><i class="fa fa-clock-o"></i> Days</th>
-									<th ng-click="self.cinfo_set_sort('regrow')"><i class="fa fa-refresh"></i> Regrow</th>
+									<th ng-click="self.cinfo_set_sort('regrow')"><i class="fa fa-refresh"></i> Regrows</th>
 									<th ng-click="self.cinfo_set_sort('buy')">Buy</th>
 									<th ng-click="self.cinfo_set_sort('sell')">Sell</th>
 									<th ng-click="self.cinfo_set_sort('profit')">Profit/day</th>
@@ -375,7 +388,7 @@
 	
 	
 	<div class="license">
-		<a href="http://stardewvalley.net/" target="_blank">Stardew Valley</a> (v1.05) © <a href="https://twitter.com/ConcernedApe" target="_blank">ConcernedApe</a>. Unofficial <a href="https://github.com/exnil/crop_planner" target="_blank">crop planner source code</a> made available under the MIT License.
+		<a href="http://stardewvalley.net/" target="_blank">Stardew Valley</a> (v1.06) © <a href="https://twitter.com/ConcernedApe" target="_blank">ConcernedApe</a>. Unofficial <a href="https://github.com/exnil/crop_planner" target="_blank">crop planner source code</a> made available under the MIT License.
 		<br>
 		<a href="https://github.com/exnil/crop_planner" target="_blank" title="GitHub Page"><i class="fa fa-github fa-lg"></i></a>
 		&ensp;

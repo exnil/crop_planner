@@ -27,8 +27,10 @@ function planner_controller($scope){
 	// Planner
 	self.fertilizer = {}; 			// [fertilizer, fertilizer, ...]
 	self.newplan;
+	self.editplan;
 	self.add_plan = add_plan;
 	self.add_plan_key = add_plan_key;
+	self.edit_plan = edit_plan;
 	self.remove_plan = remove_plan;
 	self.clear_season = clear_season;
 	self.clear_all = clear_all;
@@ -36,7 +38,6 @@ function planner_controller($scope){
 	// Planner modal
 	self.planner_modal = $("#crop_planner");
 	self.open_plans = open_plans;
-	self.close_plans = close_plans;
 	self.get_date = get_date;
 	
 	// Crop info modal
@@ -61,6 +62,16 @@ function planner_controller($scope){
 		
 		// Enable bootstrap tooltips
 		$("body").tooltip({selector: "[rel=tooltip]"});
+		
+		// On modal close: save plans and update
+		self.planner_modal.on("hide.bs.modal", function(){
+			// Only if currently editing
+			if (self.editplan){
+				self.editplan = null;
+				self.update();
+				$scope.$apply();
+			}
+		});
 		
 		// Load planner config data
 		$.ajax({
@@ -714,8 +725,21 @@ function planner_controller($scope){
 		if (e.which == 13) add_plan(date);
 	}
 	
+	// Edit plan
+	function edit_plan(plan, save){
+		if (save){
+			self.editplan = null;
+			save_data();
+			update();
+			return;
+		}
+		
+		self.editplan = plan;
+	}
+	
 	// Remove plan from plans list
 	function remove_plan(date, index){
+		self.editplan = null;
 		self.data.plans[date].splice(index, 1);
 		save_data();
 		update();
@@ -813,11 +837,6 @@ function planner_controller($scope){
 	function open_plans(date){
 		self.planner_modal.modal();
 		self.cdate = date;
-	}
-	
-	// Close crop planner modal
-	function close_plans(){
-		self.planner_modal.modal("hide");
 	}
 	
 	// Get formatted date
