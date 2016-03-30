@@ -240,7 +240,7 @@
 										<span ng-show="harvest.yield.min==harvest.yield.max">x{{harvest.yield.min}}</span>
 										<span ng-show="harvest.yield.min!=harvest.yield.max">
 											x{{harvest.yield.min}}
-											<i class="fa fa-fw fa-sort-amount-asc fa-rotate-270 text-muted"></i>
+											<i class="fa fa-fw fa-sort-amount-asc fa-rotate-270 compare"></i>
 											x{{harvest.yield.max}}
 										</span>
 									</td>
@@ -248,7 +248,7 @@
 										<span ng-show="harvest.revenue.min==harvest.revenue.max">+{{harvest.get_revenue(1)}}g</span>
 										<span ng-show="harvest.revenue.min!=harvest.revenue.max">
 											{{harvest.get_revenue(1)}}g
-											<i class="fa fa-fw fa-sort-amount-asc fa-rotate-270 text-muted"></i>
+											<i class="fa fa-fw fa-sort-amount-asc fa-rotate-270 compare"></i>
 											{{harvest.get_revenue(1, 1)}}g
 										</span>
 									</td>
@@ -256,7 +256,7 @@
 										<span ng-show="harvest.profit.min==harvest.profit.max">+{{harvest.get_profit(1)}}g</span>
 										<span ng-show="harvest.profit.min!=harvest.profit.max">
 											{{harvest.get_profit(1)}}g
-											<i class="fa fa-fw fa-sort-amount-asc fa-rotate-270 text-muted"></i>
+											<i class="fa fa-fw fa-sort-amount-asc fa-rotate-270 compare"></i>
 											{{harvest.get_profit(1, 1)}}g
 										</span>
 									</td>
