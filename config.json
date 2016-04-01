@@ -721,5 +721,187 @@
 			"id": "delux_speed_gro",
 			"name": "Delux Speed-Gro"
 		}
-	]
+	],
+	"events": {
+		"spring": [
+			{
+				"day": 4,
+				"name": "Kent"
+			},
+			{
+				"day": 7,
+				"name": "Lewis"
+			},
+			{
+				"day": 10,
+				"name": "Vincent"
+			},
+			{
+				"day": 13,
+				"name": "Egg Festival",
+				"festival": true
+			},
+			{
+				"day": 14,
+				"name": "Haley"
+			},
+			{
+				"day": 18,
+				"name": "Pam"
+			},
+			{
+				"day": 20,
+				"name": "Shane"
+			},
+			{
+				"day": 24,
+				"name": "Flower Dance",
+				"festival": true
+			},
+			{
+				"day": 26,
+				"name": "Pierre"
+			},
+			{
+				"day": 27,
+				"name": "Emily"
+			}
+		],
+		"summer": [
+			{
+				"day": 4,
+				"name": "Jas"
+			},
+			{
+				"day": 8,
+				"name": "Gus"
+			},
+			{
+				"day": 10,
+				"name": "Maru"
+			},
+			{
+				"day": 11,
+				"name": "Luau",
+				"festival": true
+			},
+			{
+				"day": 13,
+				"name": "Alex"
+			},
+			{
+				"day": 17,
+				"name": "Sam"
+			},
+			{
+				"day": 19,
+				"name": "Demetrius"
+			},
+			{
+				"day": 22,
+				"name": "Dwarf"
+			},
+			{
+				"day": 24,
+				"name": "Willy"
+			},
+			{
+				"day": 28,
+				"name": "Dance of the Moonlight Jellies",
+				"festival": true
+			}
+		],
+		"fall": [
+			{
+				"day": 2,
+				"name": "Penny"
+			},
+			{
+				"day": 5,
+				"name": "Elliot"
+			},
+			{
+				"day": 11,
+				"name": "Jodi"
+			},
+			{
+				"day": 13,
+				"name": "Abigail"
+			},
+			{
+				"day": 15,
+				"name": "Sandy"
+			},
+			{
+				"day": 16,
+				"name": "Stardew Valley Fair",
+				"festival": true
+			},
+			{
+				"day": 18,
+				"name": "Marnie"
+			},
+			{
+				"day": 21,
+				"name": "Robin"
+			},
+			{
+				"day": 24,
+				"name": "George"
+			},
+			{
+				"day": 27,
+				"name": "Spirit's Eve",
+				"festival": true
+			}
+		],
+		"winter": [
+			{
+				"day": 1,
+				"name": "Krobus"
+			},
+			{
+				"day": 3,
+				"name": "Linus"
+			},
+			{
+				"day": 7,
+				"name": "Caroline"
+			},
+			{
+				"day": 8,
+				"name": "Festival of Ice",
+				"festival": true
+			},
+			{
+				"day": 10,
+				"name": "Sebastian"
+			},
+			{
+				"day": 14,
+				"name": "Harvey"
+			},
+			{
+				"day": 17,
+				"name": "Wizard"
+			},
+			{
+				"day": 20,
+				"name": "Evelyn"
+			},
+			{
+				"day": 23,
+				"name": "Leah"
+			},
+			{
+				"day": 25,
+				"name": "Feast of the Winter Star",
+				"festival": true
+			},
+			{
+				"day": 26,
+				"name": "Clint"
+			}
+		]
+	}
 }

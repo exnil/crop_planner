@@ -80,7 +80,13 @@
 				</div>
 				<div class="day_container">
 					<div class="day" ng-repeat="date in self.days | limitTo:28:self.cseason.start-1" ng-click="self.open_plans(date)">
-						<div class="date">{{date%28>0 && date%28 || 28}}</div>
+						<div class="date_top">
+							<div class="date">{{date%28>0 && date%28 || 28}}</div>
+							<div class="event" ng-show="self.events[date]" title="{{self.events[date].get_text()}}">
+								<img ng-src="{{self.events[date].get_image()}}">
+								<span>{{self.events[date].get_text()}}</span>
+							</div>
+						</div>
 						
 						<div ng-show="self.data.plans[date].length" class="items">
 							<div class="planting">

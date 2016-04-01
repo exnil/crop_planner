@@ -26,6 +26,7 @@ function planner_controller($scope){
 	
 	// Planner
 	self.fertilizer = {}; 			// [fertilizer, fertilizer, ...]
+	self.events = {};				// Birthdays & festivals
 	self.newplan;
 	self.editplan;
 	self.add_plan = add_plan;
@@ -93,6 +94,18 @@ function planner_controller($scope){
 					fertilizer = new Fertilizer(fertilizer);
 					self.config.fertilizer[i] = fertilizer;
 					self.fertilizer[fertilizer.id] = fertilizer;
+				});
+				
+				// Process events data
+				var s_index = 0;
+				$.each(self.config.events, function(season_name, season){
+					$.each(season, function(ii, c_event){
+						c_event.season = s_index;
+						c_event = new CalendarEvent(c_event);
+						self.events[c_event.date] = c_event;						
+					});
+					
+					s_index++;
 				});
 				
 				// Load saved plans from browser storage
@@ -830,6 +843,46 @@ function planner_controller($scope){
 			var value = max ? self.profit.max : self.profit.min;
 			if (locale) return value.toLocaleString();
 			return value;
+		}
+	}
+	
+	/****************
+		Calendar Event class - event on the calendar
+	****************/
+	function CalendarEvent(data){
+		var self = this;
+		self.day;
+		self.season;
+		
+		self.date;
+		self.name = "";
+		self.festival = false;
+		
+		self.get_image = get_image;
+		self.get_text = get_text;
+		
+		
+		init();
+		
+		
+		function init(){
+			if (!data) return;
+			self.day = data.day;
+			self.season = planner.seasons[data.season];
+			
+			self.date = (data.season * 28) + self.day;
+			self.name = data.name;
+			self.festival = data.festival;
+		}
+		
+		function get_image(){
+			if (self.festival) return "images/flag.gif";
+			return "images/people/" + self.name.toLowerCase() + ".png";
+		}
+		
+		function get_text(){
+			if (!self.festival) return self.name + "'s Birthday";
+			return self.name;
 		}
 	}
 	

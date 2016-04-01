@@ -274,16 +274,37 @@ header{
 				height: 135px;
 			});
 			
-			.date{
-				font-size: 18px;
-				margin-top: 4px;
-				margin-left: 4px;
+			.date_top{
+				height: 26px;
+				position: relative;
 				
-				.responsive({
-					margin-top: 0;
-					margin-left: 2px;
-					font-size: 16px;
-				});
+				.date{
+					position: absolute;
+					top: 0px; left: 4px;
+					font-size: 18px;
+					
+					.responsive({
+						left: 2px;
+						font-size: 16px;
+					});
+				}
+				
+				.event{
+					position: absolute;
+					top: 3px; left: 30px;
+					right: 0;
+					font-size: 13px;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+					overflow: hidden;
+					color: #555;
+					
+					img{
+						width: 16px;
+						height: auto;
+						image-rendering: pixelated;
+					}
+				}
 			}
 			
 			.planting, .harvesting{
