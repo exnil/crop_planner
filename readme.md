@@ -4,6 +4,8 @@ A tool for planning crop schedules in the Stardew Valley game.
 
 **<a href="http://exnil.github.io/crop_planner/">Live version on github.io</a>**
 
+<a href="https://www.reddit.com/r/StardewValley/comments/4ahfu4/crop_planner/" target="_blank">Reddit thread</a>
+
 ---
 
 ### Crop Info
