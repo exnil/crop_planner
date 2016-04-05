@@ -185,6 +185,7 @@ function planner_controller($scope){
 			$.each(plans, function(i, plan){
 				var crop = plan.crop;
 				var first_harvest = date + plan.get_grow_time();
+				var planting_cost = plan.get_cost();
 				var season = self.seasons[Math.floor((plan.date-1)/28)];
 				var crop_end = crop.end;
 				
@@ -192,6 +193,18 @@ function planner_controller($scope){
 					crop_end = self.days.length;
 				}
 				
+				// Update daily costs for planting
+				if (!self.data.totals.day[date]) self.data.totals.day[date] = new Finance;
+				var d_plant = self.data.totals.day[date];
+				d_plant.profit.min -= planting_cost;
+				d_plant.profit.max -= planting_cost;
+				
+				// Update seasonal costs for planting
+				var s_plant_total = self.data.totals.season[season.index];
+				s_plant_total.profit.min -= planting_cost;
+				s_plant_total.profit.max -= planting_cost;
+				
+				// First harvest of crop occurs after its growth season(s)
 				if (first_harvest > crop_end) return;
 				
 				// Initial harvest
@@ -207,6 +220,8 @@ function planner_controller($scope){
 						harvests.push(new Harvest(plan, regrow_date, true));
 					}
 				}
+				
+				// Append harvests to plan object
 				plan.harvests = harvests;
 				
 				// Add up all harvests
@@ -217,22 +232,15 @@ function planner_controller($scope){
 					if (!self.data.harvests[harvest.date]) self.data.harvests[harvest.date] = [];
 					self.data.harvests[harvest.date].push(harvest);
 					
-					// Update daily totals
-					if (!self.data.totals.day[date]) self.data.totals.day[date] = new Finance;
+					// Update daily revenues from harvests
 					if (!self.data.totals.day[harvest.date]) self.data.totals.day[harvest.date] = new Finance;
-					var d_plant = self.data.totals.day[date];
 					var d_harvest = self.data.totals.day[harvest.date];
-					d_plant.profit.min -= harvest.cost;
-					d_plant.profit.max -= harvest.cost;
 					d_harvest.profit.min += harvest.revenue.min;
 					d_harvest.profit.max += harvest.revenue.max;
 					
-					// Update seasonal totals
+					// Update seasonal revenues from harvests
 					var h_season = Math.floor((harvest.date-1)/28);
-					var s_plant_total = self.data.totals.season[season.index];
 					var s_harvest_total = self.data.totals.season[h_season];
-					s_plant_total.profit.min -= harvest.cost;
-					s_plant_total.profit.max -= harvest.cost;
 					s_harvest_total.profit.min += harvest.revenue.min;
 					s_harvest_total.profit.max += harvest.revenue.max;
 				}
@@ -698,10 +706,7 @@ function planner_controller($scope){
 		}
 		
 		function get_cost(locale){
-			var amount = 0;
-			for (var i=0; i<self.harvests.length; i++){
-				amount += self.harvests[i].cost;
-			}
+			var amount = self.crop.buy * self.amount;
 			if (locale) return amount.toLocaleString();
 			return amount;
 		}
