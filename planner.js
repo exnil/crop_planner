@@ -325,8 +325,9 @@ function planner_controller($scope){
 		// Get 0-1 chance of crop being 0=regular; 1=silver; 2=gold quality
 		// [SOURCE: StardewValley/Crop.cs : function harvest]
 		function quality_chance(quality, mult, locale){
-			if (!quality) quality = 0; // default = silver
-			if (!mult) mult = 0;
+			if (!quality) quality = 0;		// Default: check regular quality chance
+			if (!mult) mult = 0;			// Multiplier given by type of fertilizer used
+			
 			var gold_chance = (0.2 * (self.level / 10)) + (0.2 * mult * ((self.level + 2) / 12)) + 0.01;
 			var silver_chance = Math.min(0.75, gold_chance * 2);
 			
@@ -470,6 +471,7 @@ function planner_controller($scope){
 		}
 		
 		// Get crop quality-modified sell price
+		// [SOURCE: StardewValley/Object.cs : function sellToStorePrice]
 		function get_sell(quality){
 			if (!quality) quality = 0;
 			return Math.floor(self.sell * (1 + (quality * 0.25)));
@@ -556,14 +558,14 @@ function planner_controller($scope){
 			}
 			
 			// Calculate min/max revenue based on regular/silver/gold chance
-			// [SOURCE: StardewValley/Object.cs : function sellToStorePrice]
 			var regular_chance = planner.player.quality_chance(0, q_mult);
 			var silver_chance = planner.player.quality_chance(1, q_mult);
 			var gold_chance = planner.player.quality_chance(2, q_mult);
 			var min_revenue = crop.get_sell(0);
 			var max_revenue = (min_revenue*regular_chance) + (crop.get_sell(1)*silver_chance) + (crop.get_sell(2)*gold_chance);
 			
-			// Tiller perk
+			// Tiller profession (ID 1)
+			// [SOURCE: StardewValley/Object.cs : function sellToStorePrice]
 			if (planner.player.tiller){
 				min_revenue *= 1.1;
 				max_revenue *= 1.1;
@@ -647,23 +649,51 @@ function planner_controller($scope){
 		}
 		
 		function get_grow_time(){
-			var days = self.crop.grow;
+			var stages = $.extend([], self.crop.stages);
 			
 			if (self.fertilizer.id == "speed_gro" || self.fertilizer.id == "delux_speed_gro" || planner.player.agriculturist){
-				// The following may not make sense, but this is how the
-				// sped-up growth rate is calculated in game (as of v1.05)
 				// [SOURCE: StardewValley.TerrainFeatures/HoeDirt.cs : function plant]
-				var rate = 0.25;
-				if (self.fertilizer.id == "speed_gro") rate = 0.1;
+				var rate = 0;
+				switch (self.fertilizer.id){
+					case "speed_gro":
+						rate = 0.1;
+						break;
+					case "delux_speed_gro":
+						rate = 0.25;
+						break;
+				}
 				
-				// Agriculturist perk
+				// Agriculturist profession (ID 5)
 				if (planner.player.agriculturist) rate += 0.1;
 				
-				var remove_days = Math.ceil(days * rate);
-				var stages = self.crop.stages;
-				days = days - Math.min(stages.length - (stages[0] <= 1 ? 1 : 0), remove_days);
+				// Days to remove
+				var remove_days = Math.ceil(self.crop.grow * rate);
+				
+				// For removing more than one day from larger stages of growth
+				// when there are still days to remove
+				var multi_remove = 0;
+				
+				// Remove days from stages
+				while (remove_days > 0 && multi_remove < 3){
+					for (var i = 0; i < stages.length; i++){
+						if (i > 0 || stages[i] > 1){
+							stages[i] -= 1;
+							remove_days--;
+						}
+						
+						if (remove_days <= 0) break;
+					}
+					
+					multi_remove++;
+				}
 			}
-		
+			
+			// Add up days of growth
+			var days = 0;
+			for (var i = 0; i < stages.length; i++){
+				days += stages[i];
+			}
+			
 			return days;
 		}
 		
