@@ -333,10 +333,10 @@ function planner_controller($scope){
 		// Get 0-1 chance of crop being 0=regular; 1=silver; 2=gold quality
 		// [SOURCE: StardewValley/Crop.cs : function harvest]
 		function quality_chance(quality, mult, locale){
-			if (!quality) quality = 0;		// Default: check regular quality chance
-			if (!mult) mult = 0;			// Multiplier given by type of fertilizer used
+			quality = quality || 0;		// Default: check regular quality chance
+			mult = mult || 0;			// Multiplier given by type of fertilizer used (0, 1, or 2)
 			
-			var gold_chance = (0.2 * (self.level / 10)) + (0.2 * mult * ((self.level + 2) / 12)) + 0.01;
+			var gold_chance = 0.2 * (self.level / 10) + 0.2 * mult * ((self.level + 2) / 12) + 0.01;
 			var silver_chance = Math.min(0.75, gold_chance * 2);
 			
 			var chance = 0;
@@ -553,7 +553,6 @@ function planner_controller($scope){
 			
 			// Harvest revenue and costs
 			var q_mult = 0;
-			var f_type = 0;
 			if (plan.fertilizer && !plan.fertilizer.is_none()){
 				switch (plan.fertilizer.id){
 					case "basic_fertilizer":
