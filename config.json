@@ -19,7 +19,7 @@
 			]
 		},
 		{
-			"buy": 900,
+			"buy": 800,
 			"harvest": {},
 			"id": "ancient_fruit",
 			"index": 499,
@@ -580,7 +580,7 @@
 			]
 		},
 		{
-			"buy": 50,
+			"buy": 125,
 			"harvest": {},
 			"id": "sunflower",
 			"index": 431,
