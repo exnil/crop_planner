@@ -568,19 +568,23 @@ function planner_controller($scope){
 			var regular_chance = planner.player.quality_chance(0, q_mult);
 			var silver_chance = planner.player.quality_chance(1, q_mult);
 			var gold_chance = planner.player.quality_chance(2, q_mult);
+			
 			var min_revenue = crop.get_sell(0);
 			var max_revenue = (min_revenue*regular_chance) + (crop.get_sell(1)*silver_chance) + (crop.get_sell(2)*gold_chance);
+			max_revenue = Math.min(crop.get_sell(2), max_revenue);
+			
+			// Quality from fertilizer only applies to picked harvest
+			// and not to extra dropped yields
+			self.revenue.min = Math.floor(min_revenue) * self.yield.min;
+			self.revenue.max = Math.floor(max_revenue) + (Math.floor(min_revenue) * Math.max(0, self.yield.max - 1));
+			self.cost = crop.buy * plan.amount;
 			
 			// Tiller profession (ID 1)
 			// [SOURCE: StardewValley/Object.cs : function sellToStorePrice]
 			if (planner.player.tiller){
-				min_revenue *= 1.1;
-				max_revenue *= 1.1;
+				self.revenue.min = Math.floor(self.revenue.min * 1.1);
+				self.revenue.max = Math.floor(self.revenue.max * 1.1);
 			}
-			
-			self.revenue.min = Math.floor(min_revenue) * self.yield.min;
-			self.revenue.max = Math.floor(max_revenue) * self.yield.max;
-			self.cost = crop.buy * plan.amount;
 			
 			// Regrowth
 			if (is_regrowth){
