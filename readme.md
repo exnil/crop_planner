@@ -48,7 +48,4 @@ Corn takes 14 days to grow after the day it is planted. In Spring and Fall, it i
 
 ---
 
-### March 19th, 2016 - Project Reuploading
-Due to an error on GitHub, I unfortunately had to delete this repository and recreate it. All previous watches, stars, and forks will have been lost. There aren't any more issues now, so feel free to watch/star/fork the project again. The github.io page itself was unaffected by this.
-
-Thank you for your support.
+<i>All copyrighted content (images, textures, etc.) belong to their respective owners (ConcernedApe / Stardew Valley) and are not included under the MIT license of this project.</i>
