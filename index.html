@@ -146,10 +146,8 @@
 							</div>
 							<div class="col-md-3 col-xs-11">
 								<b>Plant Crop</b><br>
-								<select class="form-control" ng-model="self.newplan.crop_id">
-									<option ng-repeat="crop in self.crops_list | orderBy:'name'" ng-value="crop.id" ng-show="crop.can_grow(self.cseason, true) || self.newplan.greenhouse">
-										{{crop.name}}
-									</option>
+								<select class="form-control" ng-model="self.newplan.crop_id"
+									ng-options="crop.id as crop.name for crop in self.crops_list | filter:self.planner_valid_crops">
 								</select>
 							</div>
 							<div class="col-md-2 col-xs-4">
