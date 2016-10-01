@@ -983,6 +983,6 @@ function planner_controller($scope){
 	
 	// Filter crops that can be planted in the planner's drop down list
 	function planner_valid_crops(crop){
-		return crop.can_grow(self.cseason, true) || self.in_greenhouse();
+		return crop.can_grow(self.cseason, true) || self.newplan.greenhouse;
 	}
 }
