@@ -1,0 +1,623 @@
+/********************************
+	LESS MIXINS
+********************************/
+.transition(@arguments){
+	-webkit-transition: @arguments;
+	-moz-transition: @arguments;
+	-ms-transition: @arguments;
+	-o-transition: @arguments;
+	transition: @arguments;
+}
+
+.clearfix{
+	&:before, &:after{
+		content: " ";
+		display: table;
+	}
+	
+	&:after{
+		clear: both;
+	}
+}
+
+
+/********************************
+	BASIC STYLE
+********************************/
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@border_color: #5E360C;
+@mobile_width: 991px;
+
+.responsive(@rules){
+	@media only screen and (max-width: @mobile_width){
+		@rules();
+	}
+}
+
+html, body{
+	margin: 0; padding: 0;
+}
+
+body{
+	background-image: url("images/background.png");
+	background-color: #000;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 50% 100%;
+	overflow-y: scroll;
+	
+	color: #111;
+	font-size: 14px;
+	font-family: Source Sans Pro, Verdana;
+	
+	a:hover, a:focus{
+		text-decoration: none;
+	}
+	
+	a, button{
+		.transition(all .2s);
+	}
+	
+	hr{
+		border-color: #ddd;
+	}
+	
+	button, .btn{
+		&.active, &:active, &:focus, &:active:focus{
+			outline: 0;
+		}
+	}
+	
+	input.blend{
+		background-color: transparent;
+		border-color: transparent;
+		width: auto;
+		display: inline-block;
+		box-shadow: inset 0 1px 1px rgba(0,0,0,0);
+		padding-left: 2px;
+		.transition(.2s all);
+		
+		&:hover, &:focus{
+			border-color: #ccc;
+			background-color: #fff;
+			box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+		}
+	}
+}
+
+// Header with logo and page title
+header{
+	margin: 4px auto;
+	text-align: center;
+	
+	.logo{
+		height: 75px;
+		width: auto;
+	}
+	
+	.page_title{
+		font-size: 20px;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: #f9b200;
+		text-shadow: -1px 2px 0 rgba(0, 0, 0, .4);
+	}
+}
+
+// Content container
+#content{
+	background-color: #eee;
+	border: 1px solid #aaa;
+	padding: 15px;
+	margin-bottom: 15px;
+	max-width: 1200px;
+	width: auto;
+	
+	.loading{
+		font-size: 20px;
+		text-align: center;
+		color: #444;
+		
+		.fa{
+			display: block;
+			font-size: 32px;
+		}
+	}
+}
+
+// License/copyright notice at bottom of page
+.license{
+	text-align: center;
+	color: #fff;
+	font-size: 13px;
+	text-shadow: 0 1px 1px #000;
+	width: 100%;
+	margin: 10px 0;
+	
+	a{
+		color: lighten(#337ab7, 35%);
+		
+		&:hover, &:focus{
+			color: lighten(#337ab7, 50%);
+			text-decoration: underline;
+		}
+	}
+}
+
+
+/********************************
+	TOP MENU
+********************************/
+// Menu above calendar
+#top_menu{
+	margin-bottom: 10px;
+}
+
+
+/********************************
+	SEASON PICKER
+********************************/
+#season_picker{
+	overflow: hidden;
+	margin: 0;
+	
+	.season{
+		height: 40px;
+		padding: 2px 12px;
+		padding-bottom: 4px;
+		background-color: #DDD1B2;
+		border: 2px solid @border_color;
+		border-bottom: 0;
+		opacity: .4;
+		cursor: pointer;
+		position: relative;
+		bottom: -6px;
+		.transition(all .1s);
+		
+		&:hover{
+			opacity: .6;
+		}
+		
+		&.active{
+			opacity: 1;
+			bottom: -2px;
+		}
+		
+		.name{
+			font-size: 20px;
+			text-transform: capitalize;
+		}
+		
+		.profit{
+			position: absolute;
+			top: 5px; right: 26px;
+			font-size: 12px;
+			line-height: 11px;
+			
+			> div{
+				
+			}
+			
+			&.min{
+				top: 9px;
+				right: 12px;
+				font-size: 13px;
+			}
+			
+			.asc_icon{
+				position: absolute;
+				top: 5px;
+				right: -20px;
+				font-size: 14px;
+				color: #777;
+			}
+		}
+		
+		.responsive({
+			font-size: 18px;
+		});
+	}	
+}
+
+
+/********************************
+	CALENDAR
+********************************/
+@day_width: 100%/7;
+#calendar{
+	background-color: #FBEBC2;
+	border: 3px solid @border_color;
+	
+	// Day abbreviations at top of calendar
+	.day_names{
+		.clearfix;
+		
+		.day_name{
+			width: @day_width;
+			float: left;
+			box-sizing: border-box;
+			text-align: center;
+			font-size: 22px;
+			padding: 4px;
+		}
+	}
+	
+	.day_container{
+		.clearfix;
+		
+		.day{
+			width: @day_width;
+			height: 160px;
+			float: left;
+			box-sizing: border-box;
+			padding: 4px;
+			position: relative;
+			border-right: 2px solid @border_color;
+			border-top: 2px solid @border_color;
+			background-color: #DDD1B2;
+			cursor: pointer;
+			.transition(all .2s);
+			.clearfix;
+			
+			&:nth-child(7n){
+				border-right: 0;
+			}
+			
+			&:hover{
+				background-color: darken(#DDD1B2, 5%);
+				box-shadow: 0 0 10px rgba(0, 0, 0, .1) inset;
+			}
+			
+			.responsive({
+				height: 135px;
+				height: 135px;
+			});
+			
+			.date_top{
+				height: 26px;
+				position: relative;
+				
+				.date{
+					position: absolute;
+					top: 0px; left: 4px;
+					font-size: 18px;
+					
+					.responsive({
+						left: 2px;
+						font-size: 16px;
+					});
+				}
+				
+				.event{
+					position: absolute;
+					top: 3px; left: 30px;
+					right: 0;
+					font-size: 13px;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+					overflow: hidden;
+					color: #555;
+					
+					img{
+						width: 16px;
+						height: auto;
+						image-rendering: pixelated;
+					}
+				}
+			}
+			
+			.planting, .harvesting{
+				padding-bottom: 11px;
+				.clearfix;
+				
+				.plan{
+					float: left;
+					position: relative;
+					margin-right: 10px;
+					
+					img{
+						width: 24px;
+						height: auto;
+					}
+					
+					.amount{
+						position: absolute;
+						bottom: -9px;
+						right: -8px;
+						color: #000;
+						font-size: 12px;
+						line-height: 10px;
+						
+						.responsive({
+							font-size: 10px;
+						});
+					}
+					
+					.greenhouse{
+						position: absolute;
+						top: 0;
+						right: -10px;
+						font-size: 12px;
+						color: #777;
+					}
+					
+					.responsive({
+						margin-right: 4px;
+						
+						img{
+							width: 14px;
+						}
+						
+						.amount{
+							bottom: -7px;
+							right: -6px;
+						}
+					});
+				}
+			}
+			
+			.more{
+				font-size: 13px;
+				color: #777;
+				margin-top: -6px;
+			}
+			
+			.profit{
+				position: absolute;
+				left: 13px; bottom: -3px;
+				margin: 5px;
+				font-size: 12px;
+				line-height: 12px;
+				font-weight: bold;
+				
+				&.min{
+					left: 0; bottom: 3px;
+					font-size: 13px;
+				}
+				
+				> div{
+				
+				}
+				
+				.asc_icon{
+					position: absolute;
+					bottom: 4px; left: -16px;
+					font-size: 14px;
+					color: #777;
+				}
+			}
+		}
+	}
+}
+
+
+/********************************
+	CROP PLANNER & CROP INFO MODALS
+********************************/
+#crop_planner, #crop_info{
+	.crops{
+		margin-bottom: 0;
+		
+		.crop{
+			td{			
+				vertical-align: middle;
+				position: relative;
+			}
+			
+			img{
+				width: 32px;
+				height: auto;
+			}
+			
+			&.error td{
+				background-color: #ff8888;
+			}
+			
+			.greenhouse{
+				position: absolute;
+				top: 2px;
+				right: -3px;
+				font-size: 13px;
+				color: #777;
+				cursor: default;
+			}
+			
+			.compare{
+				color: #aaa;
+				font-size: 13px;
+				margin: 0 2px;
+			}
+			
+			.form-control{
+				display: inline-block;
+				width: auto;
+				padding: 6px;
+			}
+		}
+	}
+}
+
+// Crop planner modal
+#crop_planner{
+	.plant_crop{
+		// Greenhouse toggle button
+		.greenhouse{
+			cursor: pointer;
+			opacity: .5;
+			height: 34px;
+			.transition(all .2s);
+			
+			&:hover{
+				opacity: .5;
+			}
+			
+			&.btn-success{
+				opacity: 1;
+			}
+		}
+	}
+}
+
+// Crop info modal
+#crop_info{
+	th{
+		cursor: pointer;
+	}
+	
+	.seasons{
+		border-bottom: 2px solid #ccc;
+		
+		.season{
+			padding: 6px 0;
+			cursor: pointer;
+			text-align: center;
+			border-radius: 4px 4px 0 0;
+			border: 1px solid transparent;
+			border-bottom: 0;
+			.transition(all .2s);
+			
+			&:hover{
+				background-color: #ddd;
+			}
+			
+			&.active{
+				border-color: #ccc;
+				background-color: #fff;
+			}
+		}
+	}
+	
+	.crops_container{
+		//max-height: 700px;
+		//overflow-y: scroll;
+		//overflow-x: hidden;
+		
+		.name{
+			position: relative;
+			
+			.note{
+				position: absolute;
+				font-size: 10px;
+				color: #777;
+				bottom: 0; left: 15px;
+			}
+		}
+	}
+}
+
+// Player settings modal
+#player_settings{
+	.settings{
+		margin-bottom: 20px;
+		
+		.btn-success{
+			opacity: 1;
+		}
+			
+		.btn-default{
+			opacity: .5;
+		}
+	}
+	
+	.statistics{
+		overflow: hidden;
+		
+		.chance_scale{
+			height: 25px;
+			border: 1px solid #888;
+			border-radius: 2px;
+			margin-bottom: 38px;
+			.clearfix;
+			
+			> div{
+				height: 100%;
+				float: left;
+				position: relative;
+				box-sizing: border-box;
+				
+				&:not(:last-child){
+					border-right: 1px solid #aaa;
+				}
+				
+				&.regular{
+					background-color: #bf8550;
+				}
+				
+				&.silver{
+					background-color: silver;
+					background: linear-gradient(135deg, rgba(242,246,248,1) 0%,rgba(216,225,231,1) 50%,rgba(181,198,208,1) 51%,rgba(224,239,249,1) 100%);
+					box-shadow: 0 0 1px 1px rgba(255, 255, 255, .45) inset;
+					
+					.name{
+						left: -28px;
+					}
+				}
+				
+				&.gold{
+					background-color: gold;
+					background: linear-gradient(135deg, rgba(230,240,163,1) 0%,rgba(210,230,56,1) 50%,rgba(195,216,37,1) 51%,rgba(219,240,67,1) 100%);
+					box-shadow: 0 0 1px 1px rgba(255, 255, 255, .45) inset;
+				}
+				
+				.percent{
+					font-size: 12px;
+					padding: 2px 2px;
+					overflow: hidden;
+				}
+				
+				.name{
+					position: absolute;
+					bottom: -20px;
+					left: 0;
+					color: #777;
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}
+
+
+/********************************
+	BOOTSTRAP RESTYLE
+********************************/
+// Restyle Bootstrap modal
+.modal{
+	padding-right: 0 !important;
+	
+	.modal-dialog{
+		width: auto;
+		min-width: 400px;
+		max-width: 800px;
+		
+		.modal-content{
+			background-color: #f0f0f0;
+			border-radius: 0;
+			//overflow: hidden;
+			
+			.modal-header{
+				background-color: #ddd;
+				
+				.modal-title{
+					text-align: center;
+					font-weight: bold;
+				}
+			}
+			
+			.modal-body{
+				label{
+					width: 100%;
+				}
+			}
+			
+			.modal-footer{
+				background-color: #ddd;
+			}
+			
+			.modal-header, .modal-body, .modal-footer{
+				border-color: #ccc;
+			}
+		}
+	}
+}

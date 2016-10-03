@@ -1,4 +1,18 @@
 /********************************
+	Crop Planner Stylesheet
+	
+	Compile with Less CSS:
+		lessc style.less style.css
+		
+	Or run utils/watch.py to
+	auto-compile on changes
+	
+	Use #dev fragment in url to
+	auto-refresh stylesheet
+********************************/
+
+
+/********************************
 	LESS MIXINS
 ********************************/
 .transition(@arguments){
@@ -26,10 +40,19 @@
 ********************************/
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 @border_color: #5E360C;
-@mobile_width: 991px;
+@content_max_width: 1400px;
 
-.responsive(@rules){
-	@media only screen and (max-width: @mobile_width){
+@responsive_width_sm: 991px;
+@responsive_width_xs: 767px;
+
+.responsive-sm(@rules){
+	@media only screen and (max-width: @responsive_width_sm){
+		@rules();
+	}
+}
+
+.responsive-xs(@rules){
+	@media only screen and (max-width: @responsive_width_xs){
 		@rules();
 	}
 }
@@ -45,17 +68,21 @@ body{
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: 50% 100%;
-	overflow-y: scroll;
+	//overflow-y: scroll;
 	
 	color: #111;
 	font-size: 14px;
 	font-family: Source Sans Pro, Verdana;
 	
+	&.sidebar_open{
+		overflow: hidden;
+	}
+	
 	a:hover, a:focus{
 		text-decoration: none;
 	}
 	
-	a, button{
+	a, button, .btn{
 		.transition(all .2s);
 	}
 	
@@ -69,50 +96,422 @@ body{
 		}
 	}
 	
-	input.blend{
-		background-color: transparent;
-		border-color: transparent;
-		width: auto;
-		display: inline-block;
-		box-shadow: inset 0 1px 1px rgba(0,0,0,0);
-		padding-left: 2px;
-		.transition(.2s all);
+	label{
+		font-weight: normal;
+	}
+	
+	.panel.panel-default{
+		border-radius: 0;
+		border-color: #ccc;
+		background-color: #f5f5f5;
 		
-		&:hover, &:focus{
+		.panel-heading{
+			background-color: #ddd;
 			border-color: #ccc;
-			background-color: #fff;
-			box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+			border-radius: 0;
 		}
 	}
 }
 
+
+/********************************
+	GENERAL RESPONSIVE STYLES
+********************************/
+@media only screen and (max-width: 1530px){
+	html body{
+		#content{
+			padding-right: 70px;
+			
+			#top_menu{
+				margin-right: -70px;
+				padding-right: 70px;
+			}
+		}
+	}
+}
+
+
+/********************************
+	HEADER
+********************************/
 // Header with logo and page title
 header{
 	margin: 4px auto;
-	text-align: center;
+	max-width: @content_max_width;
+	cursor: default;
 	
 	.logo{
-		height: 75px;
+		height: 60px;
 		width: auto;
 	}
 	
 	.page_title{
-		font-size: 20px;
+		font-size: 28px;
 		font-weight: bold;
 		text-transform: uppercase;
 		color: #f9b200;
-		text-shadow: -1px 2px 0 rgba(0, 0, 0, .4);
+		text-shadow: -1px 2px 0 rgba(90, 0, 0, .6);
+		display: inline-block;
+		margin-left: 15px;
+		position: relative;
+		top: 7px;
+	}
+	
+	.responsive-sm({
+		padding-left: 10px;
+		.logo{
+			height: 50px;
+		}
+		
+		.page_title{
+			font-size: 20px;
+		}
+	});
+}
+
+
+/********************************
+	SIDEBAR
+********************************/
+@sidebar_width: 450px;
+
+#sidebar_backdrop{
+	position: fixed;
+	top: 0; left: 0;
+	width: 0%; height: 0%;
+	z-index: 9;
+	background-color: rgba(0, 0, 0, 0);
+	cursor: pointer;
+	.transition(background-color .4s);
+	
+	&.open{
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, .5);
 	}
 }
 
-// Content container
+#sidebar{
+	width: @sidebar_width;
+	height: 100%;
+	position: fixed;
+	top: 0; right: -@sidebar_width;
+	z-index: 10;
+	
+	background-color: #f0f0f0;
+	border-left: 1px solid #aaa;
+	
+	box-sizing: border-box;
+	.transition(right .2s);
+	
+	.responsive-sm({
+		width: 0%;
+		
+		&.open{
+			width: 90%;
+			
+			.sb_buttons{
+				right: 100%;
+			}
+		}
+	});
+	
+	&.open{
+		right: 0;
+		box-shadow: -2px 0 4px rgba(0, 0, 0, .2);
+		
+		.sb_buttons{
+			padding-right: 0;
+			
+			li{
+				margin-right: 0;
+				border-radius: 6px 0 0 6px;
+				position: relative;
+				right: -7px;
+				border-right: 0;
+				box-shadow: -2px 0 2px rgba(0, 0, 0, .05) inset;
+				
+				&.active{
+					right: 0;
+					border-left-width: 4px;
+					background-color: #f0f0f0;
+				}
+				
+				&:not(.active){
+					box-shadow: -10px 0 4px rgba(0, 0, 0, .15) inset;
+					//padding-left: 8px;
+				}
+			}
+		}
+		
+		.sb_content{
+			.sb_section.active{
+				display: block;
+			}
+		}
+	}
+	
+	.sb_buttons{
+		position: absolute;
+		right: @sidebar_width;
+		margin: 0; padding: 10px;
+		margin-top: 48px;
+		list-style: none;
+		overflow: hidden;
+		
+		li{
+			background-color: #ddd;
+			border: 1px solid #aaa;
+			box-shadow: 0px 2px 2px rgba(0, 0, 0, .55);
+			//color: #eee;
+			color: #333;
+			
+			margin: 0; padding: 0;
+			margin-top: 15px;
+			width: 50px;
+			height: 50px;
+			border-radius: 6px;
+			cursor: pointer;
+			font-size: 24px;
+			padding: 7px 13px;
+			box-sizing: border-box;
+			.transition(all .2s);
+			
+			&:hover{
+				background-color: #eee;
+			}
+		}
+	}
+	
+	.sb_content{
+		// hidden scrollbar
+		overflow-y: scroll;
+		overflow-x: hidden;
+		position: absolute;
+		top: 0px;
+		bottom: 0px;
+		left: 0px;
+		right: -17px;
+		
+		.sb_section{
+			display: none;
+			
+			&.panel{
+				border: 0;
+				border-radius: 0;
+				box-shadow: none;
+				background-color: transparent;
+				
+				.panel-body{
+					padding-right: 20px;
+				}
+				
+				.panel-heading{
+					border-color: #ccc;
+					background-color: #ddd;
+					padding: 15px;
+					padding-right: 20px;
+					position: relative;
+					border-radius: 0;
+					
+					.panel-title{
+						font-weight: bold;
+						margin-left: 48px;
+					}
+					
+					.back{
+						position: absolute;
+						top: 0; left: 0;
+						width: 48px; height: 48px;
+						background-color: transparent;
+						color: #aaa;
+						font-size: 22px;
+						padding: 9px 13px;
+						cursor: pointer;
+						.transition(all .2s);
+						
+						&:hover{
+							background-color: #ccc;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// Crop info sidebar
+#sb_cropinfo{
+	.filter{
+		label{
+			margin-right: 8px;
+		}
+		
+		.search{
+			margin-top: 5px;
+		}
+	}
+	
+	.crops_container{
+		position: absolute;
+		top: 180px; bottom: 0;
+		left: 0; right: -17px;
+		padding: 15px;
+		overflow-y: scroll;
+		overflow-x: hidden;
+		border-top: 1px solid #ddd;
+		min-height: 250px;
+		
+		.crops{
+			thead th{
+				cursor: pointer;
+			}
+			
+			tbody{
+				tr{
+					cursor: pointer;
+					
+					td{
+						.transition(all .2s);
+					}
+					
+					&:hover{
+						td{
+							background-color: #fff;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	.crop_info{
+		.ci_header{
+			margin-bottom: 20px;
+			.clearfix;
+			
+			img{
+				float: left;
+				margin-right: 15px;
+			}
+			
+			.ci_name{
+				font-size: 18px;
+				font-weight: bold;
+			}
+			
+			.ci_seasons{
+				color: #777;
+				text-transform: capitalize;
+			}
+		}
+		
+		table{
+			tr:first-child{
+				th, td{
+					border-top-width: 2px;
+				}
+			}
+			
+			.fa{
+				color: #888;
+				font-size: 13px;
+				margin-right: 5px;
+			}
+		}
+	}
+}
+
+// Settings sidebar
+#sb_settings{
+	.farm_professions{
+		button{
+			margin-top: 5px;
+			margin-right: 5px;
+		}
+		
+		.btn-success{
+			opacity: 1;
+		}
+			
+		.btn-default{
+			opacity: .6;
+		}
+	}
+	
+	.farm_level{
+		overflow: hidden;
+	
+		label{
+			width: 100%;
+		}
+		
+		.chance_scale{
+			height: 25px;
+			border: 1px solid #888;
+			border-radius: 0px;
+			.clearfix;
+			
+			> div{
+				height: 100%;
+				float: left;
+				position: relative;
+				box-sizing: border-box;
+				
+				&:not(:last-child){
+					border-right: 1px solid #aaa;
+				}
+				
+				&.regular{
+					background-color: #bf8550;
+				}
+				
+				&.silver{
+					background-color: silver;
+					background: linear-gradient(135deg, rgba(242,246,248,1) 0%,rgba(216,225,231,1) 50%,rgba(181,198,208,1) 51%,rgba(224,239,249,1) 100%);
+					box-shadow: 0 0 1px 1px rgba(255, 255, 255, .45) inset;
+					
+					.name{
+						left: -28px;
+					}
+				}
+				
+				&.gold{
+					background-color: gold;
+					background: linear-gradient(135deg, rgba(230,240,163,1) 0%,rgba(210,230,56,1) 50%,rgba(195,216,37,1) 51%,rgba(219,240,67,1) 100%);
+					box-shadow: 0 0 1px 1px rgba(255, 255, 255, .45) inset;
+				}
+				
+				.percent{
+					font-size: 12px;
+					padding: 2px 2px;
+					overflow: hidden;
+				}
+				
+				.name{
+					position: absolute;
+					bottom: -20px;
+					left: 0;
+					color: #777;
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}
+
+
+/********************************
+	CONTENT
+********************************/
 #content{
 	background-color: #eee;
 	border: 1px solid #aaa;
 	padding: 15px;
-	margin-bottom: 15px;
-	max-width: 1200px;
+	margin-bottom: 10px;
+	max-width: @content_max_width;
 	width: auto;
+	min-height: 845px;
 	
 	.loading{
 		font-size: 20px;
@@ -133,7 +532,7 @@ header{
 	font-size: 13px;
 	text-shadow: 0 1px 1px #000;
 	width: 100%;
-	margin: 10px 0;
+	margin: 5px 0;
 	
 	a{
 		color: lighten(#337ab7, 35%);
@@ -151,7 +550,94 @@ header{
 ********************************/
 // Menu above calendar
 #top_menu{
+	margin-top: -15px;
 	margin-bottom: 10px;
+	padding-top: 15px;
+	background-color: #e3e3e3;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+	
+	> div{
+		margin-bottom: 15px;
+		padding: 0 15px;
+		
+		/*
+		&:after{
+			content: " ";
+			width: 1px;
+			background-color: #ccc;
+			height: 100%;
+			position: absolute;
+			top: 0; bottom: 0;
+			left: 0; right: 0;
+		}
+		*/
+	}
+	
+	.year_navigation{
+		.clearfix;
+		
+		> div{
+			float: left;
+			margin-right: 8px;
+		}
+		
+		.sn_arrows{
+			.btn{
+				padding: 12px 10px;
+			}
+		}
+		
+		.farm_picker{
+			.btn{
+				padding: 6px;
+			}
+		}
+		
+		.year_info{
+			.yi_name{
+				font-size: 18px;
+				font-weight: bold;
+			}
+			
+			.yi_farmtype{
+				font-size: 16px;
+				color: #777;
+				text-transform: capitalize;
+			}
+		}
+	}
+	
+	.season_stats{
+		position: relative;
+		font-size: 12px;
+		background-color: #f0f0f0;
+		border: 1px solid #ccc;
+		border-right-width: 3px;
+		border-left-width: 3px;
+		
+		.table{
+			margin-bottom: 0;
+			border-top: 0;
+			
+			tr:first-child{
+				th, td{
+					border-top: 0;
+				}
+			}
+		}
+		
+		.asc_icon{
+			margin: 0 5px;
+			color: #777;
+		}
+	}
+	
+	.clear_buttons{
+		.btn-block + .btn-block{
+			margin-top: 2px;
+		}
+	}
 }
 
 
@@ -169,14 +655,14 @@ header{
 		background-color: #DDD1B2;
 		border: 2px solid @border_color;
 		border-bottom: 0;
-		opacity: .4;
+		opacity: .5;
 		cursor: pointer;
 		position: relative;
 		bottom: -6px;
 		.transition(all .1s);
 		
 		&:hover{
-			opacity: .6;
+			opacity: .65;
 		}
 		
 		&.active{
@@ -184,10 +670,32 @@ header{
 			bottom: -2px;
 		}
 		
+		.image{
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 16px;
+			width: auto;
+			margin: 10px 8px;
+			border: 1px solid #777;
+		}
+		
 		.name{
-			font-size: 20px;
+			font-size: 18px;
+			margin-left: 28px;
+			margin-top: 2px;
 			text-transform: capitalize;
 		}
+		
+		.responsive-xs({
+			.image{
+				display: none;
+			}
+			
+			.name{
+				margin-left: 0;
+			}
+		});
 		
 		.profit{
 			position: absolute;
@@ -214,7 +722,7 @@ header{
 			}
 		}
 		
-		.responsive({
+		.responsive-sm({
 			font-size: 18px;
 		});
 	}	
@@ -240,6 +748,10 @@ header{
 			text-align: center;
 			font-size: 22px;
 			padding: 4px;
+			
+			.responsive-xs({
+				display: none;
+			});
 		}
 	}
 	
@@ -260,18 +772,60 @@ header{
 			.transition(all .2s);
 			.clearfix;
 			
+			&.filled{
+				//background-color: lighten(#DDD1B2, 3%);
+			}
+			
 			&:nth-child(7n){
 				border-right: 0;
 			}
 			
 			&:hover{
-				background-color: darken(#DDD1B2, 5%);
-				box-shadow: 0 0 10px rgba(0, 0, 0, .1) inset;
+				background-color: darken(#DDD1B2, 7%);
+				//box-shadow: 0 0 10px rgba(0, 0, 0, .1) inset;
 			}
 			
-			.responsive({
+			.responsive-sm({
 				height: 135px;
-				height: 135px;
+			});
+			
+			.responsive-xs({
+				width: 50%;
+				border-right: 2px solid @border_color !important;
+				padding-top: 30px;
+				
+				&:nth-child(1), &:nth-child(2){
+					border-top: 0;
+				}
+				
+				&:nth-child(2n){
+					border-right: 0 !important;
+				}
+				
+				.date_top{
+					height: 31px !important;
+					padding: 4px 8px;
+					background-color: #FBEBC2;
+					border-bottom: 1px solid rgba(0, 0, 0, .4);
+					position: absolute !important;
+					top: 0; left: 0;
+					width: 100%;
+					overflow: hidden;
+					.clearfix;
+					
+					.date{
+						position: static !important;
+						float: left;
+					}
+					
+					.event{
+						text-align: right;
+						top: 6px !important;
+						width: 55% !important;
+						left: auto !important;
+						right: 10px !important;
+					}
+				}
 			});
 			
 			.date_top{
@@ -283,7 +837,7 @@ header{
 					top: 0px; left: 4px;
 					font-size: 18px;
 					
-					.responsive({
+					.responsive-sm({
 						left: 2px;
 						font-size: 16px;
 					});
@@ -329,20 +883,12 @@ header{
 						font-size: 12px;
 						line-height: 10px;
 						
-						.responsive({
+						.responsive-sm({
 							font-size: 10px;
 						});
 					}
 					
-					.greenhouse{
-						position: absolute;
-						top: 0;
-						right: -10px;
-						font-size: 12px;
-						color: #777;
-					}
-					
-					.responsive({
+					.responsive-sm({
 						margin-right: 4px;
 						
 						img{
@@ -395,7 +941,7 @@ header{
 /********************************
 	CROP PLANNER & CROP INFO MODALS
 ********************************/
-#crop_planner, #crop_info{
+#crop_planner, #crop_info, #sb_cropinfo{
 	.crops{
 		margin-bottom: 0;
 		
@@ -412,15 +958,6 @@ header{
 			
 			&.error td{
 				background-color: #ff8888;
-			}
-			
-			.greenhouse{
-				position: absolute;
-				top: 2px;
-				right: -3px;
-				font-size: 13px;
-				color: #777;
-				cursor: default;
 			}
 			
 			.compare{
@@ -441,21 +978,7 @@ header{
 // Crop planner modal
 #crop_planner{
 	.plant_crop{
-		// Greenhouse toggle button
-		.greenhouse{
-			cursor: pointer;
-			opacity: .5;
-			height: 34px;
-			.transition(all .2s);
-			
-			&:hover{
-				opacity: .5;
-			}
-			
-			&.btn-success{
-				opacity: 1;
-			}
-		}
+		
 	}
 }
 
@@ -589,7 +1112,7 @@ header{
 	.modal-dialog{
 		width: auto;
 		min-width: 400px;
-		max-width: 800px;
+		max-width: 1000px;
 		
 		.modal-content{
 			background-color: #f0f0f0;

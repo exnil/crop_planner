@@ -45,6 +45,7 @@ function planner_controller($scope){
 	self.cinfo_settings = {season: "spring", sort: "profit", order: false};
 	self.open_crop_info = open_crop_info;
 	self.cinfo_set_sort = cinfo_set_sort;
+	self.planner_valid_crops = planner_valid_crops;
 	
 	
 	init();
@@ -978,5 +979,10 @@ function planner_controller($scope){
 			self.cinfo_settings.sort = key;
 			self.cinfo_settings.order = false;
 		}
+	}
+	
+	// Filter crops that can be planted in the planner's drop down list
+	function planner_valid_crops(crop){
+		return crop.can_grow(self.cseason, true) || self.newplan.greenhouse;
 	}
 }

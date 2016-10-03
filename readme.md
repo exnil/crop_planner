@@ -8,8 +8,46 @@ A tool for planning crop schedules in the Stardew Valley game.
 
 ---
 
+### New in v2
+
+* Multiple year planning
+* Import/export plans
+* Import existing plans from the old v1 planner
+ * (only works if old plans are on the same browser)
+* Greenhouse plans separated from outdoor Farm plans
+* Improved planner design
+* Slightly improved responsive design for mobile devices
+* Crop info and Settings moved to pop-out sidebar
+* Improved Crop Info panel
+* More settings
+* More seasonal statistics
+* A few keyboard shortcuts:
+ * Left/Right arrows = navigate seasons
+ * ESC = open/close sidebar (opens to crop info)
+ * ~ (tilde) = toggle between outdoor farm/greenhouse
+
+I'll be leaving <a href="http://exnil.github.io/crop_planner/v1/" target="_blank">v1 of the planner</a> up for anyone who's interested in accessing it, though I won't be updating it any further so it will only ever be up to date with Stardew Valley v1.07.
+
+---
+
 ### Crop Info
 Crop info is stored in config.json. This data is retrieved from game files in *[install dir]/Content/Data/*, specifically Crops.xnb and ObjectInformation.xnb. I use <a href="https://github.com/Draivin/XNBNode" target="_blank">XNBNode by Draivin</a> to decompress these files and parse them with a Python script to save into the config.json file.
+
+---
+
+### Development Utilities
+If you are interested in contributing to the Crop Planner, I have included some Python utility scripts that I use in my development workflow. These are located in *./utils/*, and require Python 3 to run. Each script has its own dependencies:
+
+* <b>update-config.py</b> - Updates crop data in config.json using data from decompiled game files
+ * Dependencies:
+ * Stardew Valley
+ * <a href="https://github.com/Draivin/XNBNode" target="_blank">XNBNode</a>
+ * xcompress32.dll (proprietary dll required by XNBNode, place in XNBNode folder)
+* <b>watch-less.py</b> - Watches style.less for changes and recompiles CSS using Less CSS
+ * Dependencies:
+ * less (Less CSS)
+ * less-plugin-clean-css (for minifying the resulting CSS)
+ * <a href="http://lesscss.org/usage/#command-line-usage" target="_blank">Install with npm</a>
 
 ---
 
@@ -45,10 +83,3 @@ Corn takes 14 days to grow after the day it is planted. In Spring and Fall, it i
 400g / 54
 <b>= 7.4g/day</b>
 </pre>
-
----
-
-### March 19th, 2016 - Project Reuploading
-Due to an error on GitHub, I unfortunately had to delete this repository and recreate it. All previous watches, stars, and forks will have been lost. There aren't any more issues now, so feel free to watch/star/fork the project again. The github.io page itself was unaffected by this.
-
-Thank you for your support.

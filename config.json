@@ -19,7 +19,7 @@
 			]
 		},
 		{
-			"buy": 800,
+			"buy": 700,
 			"harvest": {},
 			"id": "ancient_fruit",
 			"index": 499,
@@ -148,6 +148,32 @@
 				4,
 				4,
 				1
+			]
+		},
+		{
+			"buy": 30,
+			"harvest": {
+				"extra_chance": 0.02,
+				"level_increase": 10,
+				"max": 6,
+				"min": 4
+			},
+			"id": "coffee_bean",
+			"index": 433,
+			"name": "Coffee Bean",
+			"note": "Sold by Travelling Cart for ~2500g",
+			"regrow": 2,
+			"seasons": [
+				"spring",
+				"summer"
+			],
+			"sell": 15,
+			"stages": [
+				1,
+				2,
+				2,
+				3,
+				2
 			]
 		},
 		{
@@ -710,7 +736,7 @@
 			"name": "Quality Fertilizer"
 		},
 		{
-			"buy": 150,
+			"buy": 100,
 			"growth_rate": 0.1,
 			"id": "speed_gro",
 			"name": "Speed-Gro"

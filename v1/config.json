@@ -1,0 +1,907 @@
+{
+	"crops": [
+		{
+			"buy": 70,
+			"harvest": {},
+			"id": "amaranth",
+			"index": 299,
+			"name": "Amaranth",
+			"scythe": true,
+			"seasons": [
+				"fall"
+			],
+			"sell": 150,
+			"stages": [
+				1,
+				2,
+				2,
+				2
+			]
+		},
+		{
+			"buy": 700,
+			"harvest": {},
+			"id": "ancient_fruit",
+			"index": 499,
+			"name": "Ancient Fruit",
+			"regrow": 7,
+			"seasons": [
+				"spring",
+				"summer",
+				"fall"
+			],
+			"sell": 750,
+			"stages": [
+				2,
+				7,
+				7,
+				7,
+				5
+			]
+		},
+		{
+			"buy": 30,
+			"harvest": {},
+			"id": "artichoke",
+			"index": 489,
+			"name": "Artichoke",
+			"seasons": [
+				"fall"
+			],
+			"sell": 160,
+			"stages": [
+				2,
+				2,
+				1,
+				2,
+				1
+			]
+		},
+		{
+			"buy": 20,
+			"harvest": {},
+			"id": "beet",
+			"index": 494,
+			"name": "Beet",
+			"seasons": [
+				"fall"
+			],
+			"sell": 100,
+			"stages": [
+				1,
+				1,
+				2,
+				2
+			]
+		},
+		{
+			"buy": 30,
+			"harvest": {},
+			"id": "blue_jazz",
+			"index": 429,
+			"name": "Blue Jazz",
+			"seasons": [
+				"spring"
+			],
+			"sell": 50,
+			"stages": [
+				1,
+				2,
+				2,
+				2
+			]
+		},
+		{
+			"buy": 80,
+			"harvest": {
+				"extra_chance": 0.02,
+				"level_increase": 5,
+				"max": 5,
+				"min": 3
+			},
+			"id": "blueberry",
+			"index": 481,
+			"name": "Blueberry",
+			"regrow": 4,
+			"seasons": [
+				"summer"
+			],
+			"sell": 80,
+			"stages": [
+				1,
+				3,
+				3,
+				4,
+				2
+			]
+		},
+		{
+			"buy": 50,
+			"harvest": {},
+			"id": "bok_choy",
+			"index": 491,
+			"name": "Bok Choy",
+			"seasons": [
+				"fall"
+			],
+			"sell": 80,
+			"stages": [
+				1,
+				1,
+				1,
+				1
+			]
+		},
+		{
+			"buy": 80,
+			"harvest": {},
+			"id": "cauliflower",
+			"index": 474,
+			"name": "Cauliflower",
+			"seasons": [
+				"spring"
+			],
+			"sell": 175,
+			"stages": [
+				1,
+				2,
+				4,
+				4,
+				1
+			]
+		},
+		{
+			"buy": 150,
+			"harvest": {
+				"extra_chance": 0.0,
+				"level_increase": 5,
+				"max": 2,
+				"min": 1
+			},
+			"id": "corn",
+			"index": 487,
+			"name": "Corn",
+			"regrow": 4,
+			"seasons": [
+				"summer",
+				"fall"
+			],
+			"sell": 50,
+			"stages": [
+				2,
+				3,
+				3,
+				3,
+				3
+			]
+		},
+		{
+			"buy": 240,
+			"harvest": {
+				"extra_chance": 0.1,
+				"level_increase": 5,
+				"max": 6,
+				"min": 2
+			},
+			"id": "cranberries",
+			"index": 493,
+			"name": "Cranberries",
+			"regrow": 5,
+			"seasons": [
+				"fall"
+			],
+			"sell": 130,
+			"stages": [
+				1,
+				2,
+				1,
+				1,
+				2
+			]
+		},
+		{
+			"buy": 20,
+			"harvest": {
+				"extra_chance": 0.002,
+				"level_increase": 10,
+				"max": 2,
+				"min": 1
+			},
+			"id": "eggplant",
+			"index": 488,
+			"name": "Eggplant",
+			"regrow": 5,
+			"seasons": [
+				"fall"
+			],
+			"sell": 60,
+			"stages": [
+				1,
+				1,
+				1,
+				1,
+				1
+			]
+		},
+		{
+			"buy": 200,
+			"harvest": {},
+			"id": "fairy_rose",
+			"index": 425,
+			"name": "Fairy Rose",
+			"seasons": [
+				"fall"
+			],
+			"sell": 290,
+			"stages": [
+				1,
+				4,
+				4,
+				3
+			]
+		},
+		{
+			"buy": 40,
+			"harvest": {},
+			"id": "garlic",
+			"index": 476,
+			"name": "Garlic",
+			"seasons": [
+				"spring"
+			],
+			"sell": 60,
+			"stages": [
+				1,
+				1,
+				1,
+				1
+			]
+		},
+		{
+			"buy": 60,
+			"harvest": {
+				"extra_chance": 0.0,
+				"level_increase": 6,
+				"max": 2,
+				"min": 1
+			},
+			"id": "grape",
+			"index": 301,
+			"name": "Grape",
+			"regrow": 3,
+			"seasons": [
+				"fall"
+			],
+			"sell": 80,
+			"stages": [
+				1,
+				1,
+				2,
+				3,
+				3
+			],
+			"trellis": true
+		},
+		{
+			"buy": 60,
+			"harvest": {
+				"extra_chance": 0.0,
+				"level_increase": 6,
+				"max": 2,
+				"min": 1
+			},
+			"id": "green_bean",
+			"index": 473,
+			"name": "Green Bean",
+			"regrow": 3,
+			"seasons": [
+				"spring"
+			],
+			"sell": 40,
+			"stages": [
+				1,
+				1,
+				1,
+				3,
+				4
+			],
+			"trellis": true
+		},
+		{
+			"buy": 60,
+			"harvest": {
+				"extra_chance": 0.0,
+				"level_increase": 6,
+				"max": 2,
+				"min": 1
+			},
+			"id": "hops",
+			"index": 302,
+			"name": "Hops",
+			"regrow": 1,
+			"seasons": [
+				"summer"
+			],
+			"sell": 25,
+			"stages": [
+				1,
+				1,
+				2,
+				3,
+				4
+			],
+			"trellis": true
+		},
+		{
+			"buy": 40,
+			"harvest": {
+				"extra_chance": 0.03,
+				"level_increase": 5,
+				"max": 1,
+				"min": 1
+			},
+			"id": "hot_pepper",
+			"index": 482,
+			"name": "Hot Pepper",
+			"regrow": 3,
+			"seasons": [
+				"summer"
+			],
+			"sell": 40,
+			"stages": [
+				1,
+				1,
+				1,
+				1,
+				1
+			]
+		},
+		{
+			"buy": 70,
+			"harvest": {},
+			"id": "kale",
+			"index": 477,
+			"name": "Kale",
+			"scythe": true,
+			"seasons": [
+				"spring"
+			],
+			"sell": 110,
+			"stages": [
+				1,
+				2,
+				2,
+				1
+			]
+		},
+		{
+			"buy": 80,
+			"harvest": {},
+			"id": "melon",
+			"index": 479,
+			"name": "Melon",
+			"seasons": [
+				"summer"
+			],
+			"sell": 250,
+			"stages": [
+				1,
+				2,
+				3,
+				3,
+				3
+			]
+		},
+		{
+			"buy": 20,
+			"harvest": {},
+			"id": "parsnip",
+			"index": 472,
+			"name": "Parsnip",
+			"seasons": [
+				"spring"
+			],
+			"sell": 35,
+			"stages": [
+				1,
+				1,
+				1,
+				1
+			]
+		},
+		{
+			"buy": 100,
+			"harvest": {},
+			"id": "poppy",
+			"index": 453,
+			"name": "Poppy",
+			"seasons": [
+				"summer"
+			],
+			"sell": 140,
+			"stages": [
+				1,
+				2,
+				2,
+				2
+			]
+		},
+		{
+			"buy": 50,
+			"harvest": {
+				"extra_chance": 0.2,
+				"level_increase": 8,
+				"max": 2,
+				"min": 1
+			},
+			"id": "potato",
+			"index": 475,
+			"name": "Potato",
+			"seasons": [
+				"spring"
+			],
+			"sell": 80,
+			"stages": [
+				1,
+				1,
+				1,
+				2,
+				1
+			]
+		},
+		{
+			"buy": 100,
+			"harvest": {},
+			"id": "pumpkin",
+			"index": 490,
+			"name": "Pumpkin",
+			"seasons": [
+				"fall"
+			],
+			"sell": 320,
+			"stages": [
+				1,
+				2,
+				3,
+				4,
+				3
+			]
+		},
+		{
+			"buy": 40,
+			"harvest": {},
+			"id": "radish",
+			"index": 484,
+			"name": "Radish",
+			"seasons": [
+				"summer"
+			],
+			"sell": 90,
+			"stages": [
+				2,
+				1,
+				2,
+				1
+			]
+		},
+		{
+			"buy": 100,
+			"harvest": {},
+			"id": "red_cabbage",
+			"index": 485,
+			"name": "Red Cabbage",
+			"seasons": [
+				"summer"
+			],
+			"sell": 260,
+			"stages": [
+				2,
+				1,
+				2,
+				2,
+				2
+			]
+		},
+		{
+			"buy": 100,
+			"harvest": {},
+			"id": "rhubarb",
+			"index": 478,
+			"name": "Rhubarb",
+			"seasons": [
+				"spring"
+			],
+			"sell": 220,
+			"stages": [
+				2,
+				2,
+				2,
+				3,
+				4
+			]
+		},
+		{
+			"buy": 400,
+			"harvest": {},
+			"id": "starfruit",
+			"index": 486,
+			"name": "Starfruit",
+			"seasons": [
+				"summer"
+			],
+			"sell": 800,
+			"stages": [
+				2,
+				3,
+				2,
+				3,
+				3
+			]
+		},
+		{
+			"buy": 100,
+			"harvest": {
+				"extra_chance": 0.02,
+				"level_increase": 5,
+				"max": 1,
+				"min": 1
+			},
+			"id": "strawberry",
+			"index": 745,
+			"name": "Strawberry",
+			"regrow": 4,
+			"seasons": [
+				"spring"
+			],
+			"sell": 120,
+			"stages": [
+				1,
+				1,
+				2,
+				2,
+				2
+			]
+		},
+		{
+			"buy": 50,
+			"harvest": {},
+			"id": "summer_spangle",
+			"index": 455,
+			"name": "Summer Spangle",
+			"seasons": [
+				"summer"
+			],
+			"sell": 90,
+			"stages": [
+				1,
+				2,
+				3,
+				2
+			]
+		},
+		{
+			"buy": 125,
+			"harvest": {},
+			"id": "sunflower",
+			"index": 431,
+			"name": "Sunflower",
+			"note": "Cheapest at JojaMart",
+			"seasons": [
+				"fall"
+			],
+			"sell": 80,
+			"stages": [
+				1,
+				2,
+				3,
+				2
+			]
+		},
+		{
+			"buy": 1000,
+			"harvest": {},
+			"id": "sweet_gem_berry",
+			"index": 347,
+			"name": "Sweet Gem Berry",
+			"seasons": [
+				"fall"
+			],
+			"sell": 3000,
+			"stages": [
+				2,
+				4,
+				6,
+				6,
+				6
+			]
+		},
+		{
+			"buy": 50,
+			"harvest": {
+				"extra_chance": 0.05,
+				"level_increase": 6,
+				"max": 1,
+				"min": 1
+			},
+			"id": "tomato",
+			"index": 480,
+			"name": "Tomato",
+			"regrow": 4,
+			"seasons": [
+				"summer"
+			],
+			"sell": 60,
+			"stages": [
+				2,
+				2,
+				2,
+				2,
+				3
+			]
+		},
+		{
+			"buy": 20,
+			"harvest": {},
+			"id": "tulip",
+			"index": 427,
+			"name": "Tulip",
+			"seasons": [
+				"spring"
+			],
+			"sell": 30,
+			"stages": [
+				1,
+				1,
+				2,
+				2
+			]
+		},
+		{
+			"buy": 10,
+			"harvest": {},
+			"id": "wheat",
+			"index": 483,
+			"name": "Wheat",
+			"scythe": true,
+			"seasons": [
+				"summer",
+				"fall"
+			],
+			"sell": 25,
+			"stages": [
+				1,
+				1,
+				1,
+				1
+			]
+		},
+		{
+			"buy": 60,
+			"harvest": {},
+			"id": "yam",
+			"index": 492,
+			"name": "Yam",
+			"seasons": [
+				"fall"
+			],
+			"sell": 160,
+			"stages": [
+				1,
+				3,
+				3,
+				3
+			]
+		}
+	],
+	"fertilizer": [
+		{
+			"buy": 0,
+			"id": "none",
+			"name": "None"
+		},
+		{
+			"buy": 100,
+			"id": "basic_fertilizer",
+			"name": "Basic Fertilizer"
+		},
+		{
+			"buy": 150,
+			"id": "quality_fertilizer",
+			"name": "Quality Fertilizer"
+		},
+		{
+			"buy": 150,
+			"growth_rate": 0.1,
+			"id": "speed_gro",
+			"name": "Speed-Gro"
+		},
+		{
+			"buy": 150,
+			"growth_rate": 0.25,
+			"id": "delux_speed_gro",
+			"name": "Delux Speed-Gro"
+		}
+	],
+	"events": {
+		"spring": [
+			{
+				"day": 4,
+				"name": "Kent"
+			},
+			{
+				"day": 7,
+				"name": "Lewis"
+			},
+			{
+				"day": 10,
+				"name": "Vincent"
+			},
+			{
+				"day": 13,
+				"name": "Egg Festival",
+				"festival": true
+			},
+			{
+				"day": 14,
+				"name": "Haley"
+			},
+			{
+				"day": 18,
+				"name": "Pam"
+			},
+			{
+				"day": 20,
+				"name": "Shane"
+			},
+			{
+				"day": 24,
+				"name": "Flower Dance",
+				"festival": true
+			},
+			{
+				"day": 26,
+				"name": "Pierre"
+			},
+			{
+				"day": 27,
+				"name": "Emily"
+			}
+		],
+		"summer": [
+			{
+				"day": 4,
+				"name": "Jas"
+			},
+			{
+				"day": 8,
+				"name": "Gus"
+			},
+			{
+				"day": 10,
+				"name": "Maru"
+			},
+			{
+				"day": 11,
+				"name": "Luau",
+				"festival": true
+			},
+			{
+				"day": 13,
+				"name": "Alex"
+			},
+			{
+				"day": 17,
+				"name": "Sam"
+			},
+			{
+				"day": 19,
+				"name": "Demetrius"
+			},
+			{
+				"day": 22,
+				"name": "Dwarf"
+			},
+			{
+				"day": 24,
+				"name": "Willy"
+			},
+			{
+				"day": 28,
+				"name": "Dance of the Moonlight Jellies",
+				"festival": true
+			}
+		],
+		"fall": [
+			{
+				"day": 2,
+				"name": "Penny"
+			},
+			{
+				"day": 5,
+				"name": "Elliot"
+			},
+			{
+				"day": 11,
+				"name": "Jodi"
+			},
+			{
+				"day": 13,
+				"name": "Abigail"
+			},
+			{
+				"day": 15,
+				"name": "Sandy"
+			},
+			{
+				"day": 16,
+				"name": "Stardew Valley Fair",
+				"festival": true
+			},
+			{
+				"day": 18,
+				"name": "Marnie"
+			},
+			{
+				"day": 21,
+				"name": "Robin"
+			},
+			{
+				"day": 24,
+				"name": "George"
+			},
+			{
+				"day": 27,
+				"name": "Spirit's Eve",
+				"festival": true
+			}
+		],
+		"winter": [
+			{
+				"day": 1,
+				"name": "Krobus"
+			},
+			{
+				"day": 3,
+				"name": "Linus"
+			},
+			{
+				"day": 7,
+				"name": "Caroline"
+			},
+			{
+				"day": 8,
+				"name": "Festival of Ice",
+				"festival": true
+			},
+			{
+				"day": 10,
+				"name": "Sebastian"
+			},
+			{
+				"day": 14,
+				"name": "Harvey"
+			},
+			{
+				"day": 17,
+				"name": "Wizard"
+			},
+			{
+				"day": 20,
+				"name": "Evelyn"
+			},
+			{
+				"day": 23,
+				"name": "Leah"
+			},
+			{
+				"day": 25,
+				"name": "Feast of the Winter Star",
+				"festival": true
+			},
+			{
+				"day": 26,
+				"name": "Clint"
+			}
+		]
+	}
+}
