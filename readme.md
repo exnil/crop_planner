@@ -83,3 +83,7 @@ Corn takes 14 days to grow after the day it is planted. In Spring and Fall, it i
 400g / 54
 <b>= 7.4g/day</b>
 </pre>
+
+---
+
+<i>All copyrighted content (images, textures, etc.) belong to their respective owners (ConcernedApe / Stardew Valley) and are not included under the MIT license of this project.</i>
