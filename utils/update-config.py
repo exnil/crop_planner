@@ -14,6 +14,7 @@ from os.path import getmtime
 from collections import OrderedDict
 
 # For downloading XNBNode (on user prompt)
+# Not used for now
 from io import BytesIO
 from zipfile import ZipFile
 from urllib.request import urlopen
@@ -165,6 +166,7 @@ class Main:
 			
 			return inp
 			
+	# Not used
 	def download_xnbnode(self):
 		print("Downloading XNBNode to data/temp/XNBNode-master...")
 		with urlopen(self.xnbnode_url) as zipresp:
