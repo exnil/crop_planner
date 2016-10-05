@@ -389,13 +389,52 @@ function planner_controller($scope){
 	
 	// Add self.newplan to plans list
 	function add_plan(date, auto_replant){
+		if (!validate_plan_amount()) return;
 		self.cyear.add_plan(self.newplan, date, auto_replant);
 		self.newplan = new Plan;
 	}
 	
 	// Add plan to plans list on enter keypress
 	function add_plan_key(date, e){
-		if (e.which == 13) add_plan(date);
+		if (e.which != 13) return;
+		if (!validate_plan_amount()) return;
+		add_plan(date);
+	}
+	
+	// Validate newplan amount
+	function validate_plan_amount(){
+		// Remove all whitespace
+		var amount = (self.newplan.amount + "") || "";
+		amount = amount.replace(/\s/g, "");
+		
+		// Is empty string
+		if (!amount){
+			self.newplan.amount = 1;
+			return;
+		}
+		
+		// Check if input is in gold
+		if (amount.toLowerCase().endsWith("g")){
+			var match = amount.match(/^([0-9]+)g$/)
+			if (!match) return;
+			
+			var gold = parseInt(match[1] || 0);
+			var crop = self.crops[self.newplan.crop_id];
+			if (!crop) return;
+			amount = Math.floor(gold / crop.buy);
+			amount = amount || 1;
+			self.newplan.amount = amount;
+			return;
+		}
+		
+		// Invalid non-integer amount
+		if (!amount.match(/^[0-9]+$/)) return;
+		
+		// Parse normal integer input
+		amount = parseInt(amount || 0);
+		if (amount <= 0) return;
+		
+		return true;
 	}
 	
 	// Edit plan
