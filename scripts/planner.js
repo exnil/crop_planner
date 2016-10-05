@@ -415,7 +415,7 @@ function planner_controller($scope){
 		
 		// Check if input is in gold
 		if (amount.toLowerCase().endsWith("g")){
-			var match = amount.match(/^([0-9]+)g$/)
+			var match = amount.match(/^([0-9]+)g$/i)
 			if (!match) return;
 			
 			var gold = parseInt(match[1] || 0);
