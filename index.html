@@ -222,6 +222,7 @@
 									<tr>
 										<th ng-click="self.ci_set_sort('name')" colspan="2">Crop</th>
 										<th ng-click="self.ci_set_sort('grow')"><i class="fa fa-clock-o"></i> Days</th>
+										<th ng-click="self.ci_set_sort('buy')">Buy</th>
 										<th ng-click="self.ci_set_sort('sell')">Sell</th>
 										<th ng-click="self.ci_set_sort('profit')">g/day</th>
 									</tr>
@@ -234,6 +235,7 @@
 											<span class="text-muted" ng-show="crop.harvest.min>1">(x{{crop.harvest.min}})</span>
 										</td>
 										<td>{{crop.grow}}</td>
+										<td>{{crop.buy}}g</td>
 										<td>{{crop.get_sell()}}g</td>
 										<td>{{crop.profit}}g</td>
 									</tr>
