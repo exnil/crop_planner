@@ -18,6 +18,12 @@ function LOAD_JSON(key, raw_json){
 	return JSON.parse(json_data);
 }
 
+// Misc helper functions
+function round(num, decimals){
+	decimals = Math.pow(10, decimals || 0);
+	return Math.round(num * decimals) / decimals;
+}
+
 
 // Angular app
 angular.module("planner_app", ["checklist-model"])
@@ -90,6 +96,7 @@ function planner_controller($scope){
 		search: "",
 		regrows: false,
 		order: false,
+		use_fbp: false,
 	};
 	
 	
@@ -967,6 +974,7 @@ function planner_controller($scope){
 		self.end = 0;			// End of grow season(s)
 		self.grow = 0;			// Total days to grow
 		self.profit = 0;		// Minimum profit/day (for crops info menu)
+		self.fixed_profit = 0;	// Fixed budget profit
 		
 		
 		init();
@@ -1002,15 +1010,24 @@ function planner_controller($scope){
 			
 			// Calculate profit per day
 			var season_days = (self.end - self.start) + 1;
-			var regrowths = self.regrow ? Math.floor(((season_days-1)-self.grow)/self.regrow) : 0;
+			var regrowths = self.regrow ? Math.floor(((season_days - 1) - self.grow) / self.regrow) : 0;
 			
 			var plantings = 1;
-			if (!regrowths) plantings = Math.floor((season_days-1)/self.grow);
+			if (!regrowths) plantings = Math.floor((season_days - 1) / self.grow);
 			var growth_days = (plantings * self.grow) + (regrowths * (self.regrow ? self.regrow : 0));
 			
 			self.profit -= self.buy * plantings;
 			self.profit += self.harvest.min * self.get_sell() * (plantings + regrowths);
-			self.profit = Math.round((self.profit/growth_days) * 10) / 10;
+			self.profit = round(self.profit / growth_days, 1);
+			
+			// Calculate fixed budget profit
+			var budget = 1000; // 1000g worth of seeds
+			var plantings = Math.floor(budget / self.buy);
+			var growth_days = self.grow + (regrowths * (self.regrow ? self.regrow : 0));
+			
+			self.fixed_profit -= self.buy * plantings;
+			self.fixed_profit += self.harvest.min * self.get_sell() * (plantings + regrowths);
+			self.fixed_profit = round((self.fixed_profit / growth_days), 1);
 		}
 	}
 	

@@ -217,6 +217,7 @@
 						</div>
 						
 						<div class="crops_container">
+							<label><input type="checkbox" ng-model="self.cinfo_settings.use_fbp"> Use Fixed Budget Profit</label>
 							<table class="table table-condensed crops">
 								<thead>
 									<tr>
@@ -224,7 +225,7 @@
 										<th ng-click="self.ci_set_sort('grow')"><i class="fa fa-clock-o"></i> Days</th>
 										<th ng-click="self.ci_set_sort('buy')">Buy</th>
 										<th ng-click="self.ci_set_sort('sell')">Sell</th>
-										<th ng-click="self.ci_set_sort('profit')">g/day</th>
+										<th ng-click="self.ci_set_sort(self.cinfo_settings.use_fbp && 'fixed_profit' || 'profit')">g/day</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -237,7 +238,10 @@
 										<td>{{crop.grow}}</td>
 										<td>{{crop.buy}}g</td>
 										<td>{{crop.get_sell()}}g</td>
-										<td>{{crop.profit}}g</td>
+										<td>
+											<span ng-show="!self.cinfo_settings.use_fbp">{{crop.profit}}g</span>
+											<span ng-show="self.cinfo_settings.use_fbp">{{crop.fixed_profit}}g</span>
+										</td>
 									</tr>
 								</tbody>
 							</table>
@@ -277,6 +281,10 @@
 							<tr>
 								<th><i class="fa fa-fw fa-bar-chart"></i> Profit/day</th>
 								<td>{{self.sidebar.crop.profit}}g</td>
+							</tr>
+							<tr>
+								<th><i class="fa fa-fw fa-line-chart"></i> Fixed Budget Profit/day</th>
+								<td>{{self.sidebar.crop.fixed_profit}}g</td>
 							</tr>
 							<tr ng-show="self.sidebar.crop.note">
 								<th><i class="fa fa-fw fa-exclamation-circle"></i> Note</th>
