@@ -112,7 +112,7 @@ function planner_controller($scope){
 		for (var i = 0; i < self.days.length; i++) self.days[i] = i + 1;
 		self.seasons = [new Season(0), new Season(1), new Season(2), new Season(3)];
 		self.cseason = self.seasons[0];
-		self.cinfo_settings.season_options = [self.seasons[0], self.seasons[1], self.seasons[2]];
+		self.cinfo_settings.season_options = self.seasons;
 		
 		// Enable bootstrap tooltips
 		$("body").tooltip({selector: "[data-toggle=tooltip]", trigger: "hover", container: "body"});
