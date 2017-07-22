@@ -991,6 +991,7 @@ function planner_controller($scope){
 			self.seasons = data.seasons;
 			self.stages = data.stages;
 			self.regrow = data.regrow;
+			self.wiki_page = data.wiki_page;
 			if (data.wild) self.wild = true;
 			
 			// Harvest data
@@ -1064,6 +1065,7 @@ function planner_controller($scope){
 	
 	// Get url to Stardew Valley wiki
 	Crop.prototype.get_url = function(){
+		if (this.wiki_page) return "http://stardewvalleywiki.com/"+this.wiki_page;
 		var fragment = this.id.split("_");
 		for (var i=0; i<fragment.length; i++){
 			fragment[i] = fragment[i].charAt(0).toUpperCase() + fragment[i].slice(1);

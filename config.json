@@ -725,6 +725,7 @@
 			"id": "wild_spring",
 			"index": 495,
 			"name": "Spring Forage",
+			"wiki_page": "Spring_Seeds",
 			"seasons": [
 				"spring"
 			],
@@ -740,6 +741,7 @@
 			"id": "wild_summer",
 			"index": 496,
 			"name": "Summer Forage",
+			"wiki_page": "Summer_Seeds",
 			"seasons": [
 				"summer"
 			],
@@ -755,6 +757,7 @@
 			"id": "wild_fall",
 			"index": 497,
 			"name": "Fall Forage",
+			"wiki_page": "Fall_Seeds",
 			"seasons": [
 				"fall"
 			],
@@ -770,6 +773,7 @@
 			"id": "wild_winter",
 			"index": 498,
 			"name": "Winter Forage",
+			"wiki_page": "Winter_Seeds",
 			"seasons": [
 				"winter"
 			],
