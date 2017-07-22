@@ -718,6 +718,70 @@
 				3,
 				3
 			]
+		},
+		{
+			"buy": 0,
+			"harvest": {},
+			"id": "wild_spring",
+			"index": 495,
+			"name": "Spring Forage",
+			"wiki_page": "Spring_Seeds",
+			"seasons": [
+				"spring"
+			],
+			"sell": 30,
+			"stages": [
+				3,
+				4
+			]
+		},
+		{
+			"buy": 0,
+			"harvest": {},
+			"id": "wild_summer",
+			"index": 496,
+			"name": "Summer Forage",
+			"wiki_page": "Summer_Seeds",
+			"seasons": [
+				"summer"
+			],
+			"sell": 50,
+			"stages": [
+				3,
+				4
+			]
+		},
+		{
+			"buy": 0,
+			"harvest": {},
+			"id": "wild_fall",
+			"index": 497,
+			"name": "Fall Forage",
+			"wiki_page": "Fall_Seeds",
+			"seasons": [
+				"fall"
+			],
+			"sell": 20,
+			"stages": [
+				3,
+				4
+			]
+		},
+		{
+			"buy": 0,
+			"harvest": {},
+			"id": "wild_winter",
+			"index": 498,
+			"name": "Winter Forage",
+			"wiki_page": "Winter_Seeds",
+			"seasons": [
+				"winter"
+			],
+			"sell": 60,
+			"stages": [
+				3,
+				4
+			]
 		}
 	],
 	"fertilizer": [
