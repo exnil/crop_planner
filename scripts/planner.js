@@ -894,12 +894,12 @@ function planner_controller($scope){
 			mult = mult || 0;			// Multiplier given by type of fertilizer used (0, 1, or 2)
 			
 			var gold_chance = 0.2 * (self.level / 10) + 0.2 * mult * ((self.level + 2) / 12) + 0.01;
-			var silver_chance = Math.min(0.75, gold_chance * 2);
+			var silver_chance = Math.min(0.75, gold_chance * 2) * (1 - gold_chance);
 			
 			var chance = 0;
 			switch (quality){
 				case 0:
-					chance = Math.max(0, 1 - (gold_chance + silver_chance));
+					chance = 1 - (gold_chance + silver_chance);
 					break;
 				case 1:
 					chance = Math.min(1, silver_chance);
