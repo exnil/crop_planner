@@ -55,7 +55,7 @@
 					</div>
 				</div>
 				
-				<div class="col-md-6 col-xs-8">
+				<div class="col-md-6 col-xs-12">
 					<div class="season_stats">
 						<table class="table table-striped">
 							<tbody>
@@ -85,7 +85,7 @@
 					</div>
 				</div>
 				
-				<div class="col-md-2 col-md-offset-1 col-xs-4 clear_buttons">
+				<div class="col-md-2 col-md-offset-1 col-xs-12 clear_buttons">
 					<div class="btn btn-default btn-block" ng-click="self.clear_season(self.cseason)"><i class="fa fa-calendar"></i> Clear {{self.cseason.name}}</div>
 					<div class="btn btn-default btn-block" ng-click="self.clear_year(self.cyear)"><i class="fa fa-trash"></i> Clear Year</div>
 				</div>
@@ -398,7 +398,7 @@
 							<div class="col-md-2 col-xs-4">
 								<label>
 									<b>Amount</b><br>
-									<input class="form-control" type="text" ng-model="self.newplan.amount" ng-keypress="self.add_plan_key(self.cdate, $event)">
+									<input class="form-control" type="number" ng-model="self.newplan.amount" ng-keypress="self.add_plan_key(self.cdate, $event)">
 								</label>
 							</div>
 							<div class="col-md-3 col-xs-4">
@@ -406,7 +406,7 @@
 								<select class="form-control" ng-model="self.newplan.fertilizer" ng-options="fert as fert.name for fert in self.config.fertilizer track by fert.id">
 								</select>
 							</div>
-							<div class="col-md-3 col-xs-4">
+							<div class="col-md-3 col-xs-12">
 								<b></b><br>
 								<div class="btn btn-default" ng-click="self.add_plan(self.cdate)"><i class="fa fa-plus"></i> Plant</div>
 								<div class="btn btn-default" ng-click="self.add_plan(self.cdate, true)" data-toggle="tooltip" data-placement="bottom" title="Auto-replant on day of harvest"><i class="fa fa-calendar"></i> Autoplant</div>
@@ -420,53 +420,51 @@
 							<div class="panel-heading">
 								<h3 class="panel-title"><i class="fa fa-tint"></i> Planting</h3>
 							</div>
-							<div class="panel-body">
-								<table class="crops table table-condensed">
-									<thead>
-										<tr>
-											<th colspan="2">Crop</th>
-											<th>Amount</th>
-											<th>Fertilizer</th>
-											<th>Cost</th>
-											<th><i class="fa fa-clock-o"></i> Days</th>
-											<th><i class="fa fa-refresh"></i> Regrows</th>
-											<th width="1"></th>
-											<th width="1"></th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr class="crop" ng-repeat="plan in self.cfarm().plans[self.cdate]">
-											<td width="1">
-												<img ng-src="{{plan.crop.get_image(1)}}">
-											</td>
-											<td>
-												{{plan.crop.name}}
-											</td>
-											<td>
-												<span ng-show="self.editplan!=plan">x{{plan.amount}}</span>
-												<span ng-show="self.editplan==plan">x<input style="padding-left:2px;width:100px" class="form-control" type="number" min="1" ng-model="plan.amount"></span>
-											</td>
-											<td>
-												<div ng-show="plan.fertilizer.id!='none' && self.editplan!=plan">
-													<img ng-src="{{plan.fertilizer.get_image()}}">
-													{{plan.fertilizer.name}}
-												</div>
-												<div ng-show="self.editplan==plan">
-													<select class="form-control" ng-model="plan.fertilizer" ng-options="fert as fert.name for fert in self.config.fertilizer track by fert.id"></select>
-												</div>
-											</td>
-											<td>-{{plan.get_cost(1)}}g</td>
-											<td>{{plan.get_grow_time()}}</td>
-											<td>{{plan.crop.regrow}}</td>
-											<td>
-												<div ng-show="self.editplan!=plan" class="btn btn-default" ng-click="self.edit_plan(plan)"><i class="fa fa-pencil"></i></div>
-												<div ng-show="self.editplan==plan" class="btn btn-success" ng-click="self.edit_plan(plan, 1)"><i class="fa fa-save"></i></div>
-											</td>
-											<td><div class="btn btn-default" ng-click="self.remove_plan(self.cdate, $index)"><i class="fa fa-trash"></i></div></td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
+							<table class="crops table table-condensed table-responsive">
+								<thead>
+									<tr>
+										<th colspan="2">Crop</th>
+										<th>Amount</th>
+										<th>Fertilizer</th>
+										<th>Cost</th>
+										<th><i class="fa fa-clock-o"></i> Days</th>
+										<th><i class="fa fa-refresh"></i> Regrows</th>
+										<th width="1"></th>
+										<th width="1"></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="crop" ng-repeat="plan in self.cfarm().plans[self.cdate]">
+										<td width="1">
+											<img ng-src="{{plan.crop.get_image(1)}}">
+										</td>
+										<td>
+											{{plan.crop.name}}
+										</td>
+										<td>
+											<span ng-show="self.editplan!=plan">x{{plan.amount}}</span>
+											<span ng-show="self.editplan==plan">x<input style="padding-left:2px;width:100px" class="form-control" type="number" min="1" ng-model="plan.amount"></span>
+										</td>
+										<td>
+											<div ng-show="plan.fertilizer.id!='none' && self.editplan!=plan">
+												<img ng-src="{{plan.fertilizer.get_image()}}">
+												{{plan.fertilizer.name}}
+											</div>
+											<div ng-show="self.editplan==plan">
+												<select class="form-control" ng-model="plan.fertilizer" ng-options="fert as fert.name for fert in self.config.fertilizer track by fert.id"></select>
+											</div>
+										</td>
+										<td>-{{plan.get_cost(1)}}g</td>
+										<td>{{plan.get_grow_time()}}</td>
+										<td>{{plan.crop.regrow}}</td>
+										<td>
+											<div ng-show="self.editplan!=plan" class="btn btn-default" ng-click="self.edit_plan(plan)"><i class="fa fa-pencil"></i></div>
+											<div ng-show="self.editplan==plan" class="btn btn-success" ng-click="self.edit_plan(plan, 1)"><i class="fa fa-save"></i></div>
+										</td>
+										<td><div class="btn btn-default" ng-click="self.remove_plan(self.cdate, $index)"><i class="fa fa-trash"></i></div></td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
 					</div>
 					<div ng-show="!self.cfarm().plans[self.cdate].length" class="text-muted"><i class="fa fa-tint"></i> No planting.<hr></div>

@@ -689,10 +689,11 @@ header{
 		
 		.responsive-xs({
 			.image{
-				display: none;
+				// display: none;
 			}
 			
 			.name{
+				display: none;
 				margin-left: 0;
 			}
 		});
@@ -790,8 +791,8 @@ header{
 			});
 			
 			.responsive-xs({
-				width: 50%;
-				border-right: 2px solid @border_color !important;
+				width: 100%;
+				border-right: 0px solid @border_color !important;
 				padding-top: 30px;
 				
 				&:nth-child(1), &:nth-child(2){
@@ -839,7 +840,7 @@ header{
 					
 					.responsive-sm({
 						left: 2px;
-						font-size: 16px;
+						font-size: 14px;
 					});
 				}
 				
@@ -1111,7 +1112,7 @@ header{
 	
 	.modal-dialog{
 		width: auto;
-		min-width: 400px;
+		// min-width: 400px;
 		max-width: 1000px;
 		
 		.modal-content{
@@ -1143,4 +1144,25 @@ header{
 			}
 		}
 	}
+}
+
+// Adjust input font size to prevent iOS zoom on select
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+.form-control,
+select:focus,
+textarea {
+  font-size: 16px;
 }
