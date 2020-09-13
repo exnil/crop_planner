@@ -18,9 +18,10 @@ Note that this does include one spoiler for Stardew Valley Expanded.
 * Champagne Wishes (CHAMP)
 * Fantasy Crops (FANT)
 * Farmer to Florist (F2F)
-* Fresh Meat (MEAT)
 * Fizzy Drinks (FIZZ)
-* Wild Seeds from Vanilla
+* Fresh Meat (MEAT)
+* Fruits & Veggies (FV)
+* Wild Seeds & Rice from Vanilla
 
 ---
 *Everything from this point on is the original Readme from Exnil's version.*

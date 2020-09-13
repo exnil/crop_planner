@@ -3216,7 +3216,7 @@
             "seasons": [
                 "fall"
             ],
-            "sell": ,
+            "sell": 120,
             "stages": [
                 1,
                 2,
@@ -3225,6 +3225,122 @@
                 1
             ]
         },
+        {
+            "buy": 130,
+            "harvest": {
+                "extra_chance": 0.2,
+                "level_increase": 5,
+                "max": 3,
+                "min": 1
+            },
+            "id": "tabasco",
+            "index": 1108,
+            "name": "Tabasco (FV) (Y3)",
+            "regrow": 4,
+            "seasons": [
+                "fall"
+            ],
+            "sell": 80,
+            "stages": [
+                1,
+                2,
+                3,
+                2,
+                2
+            ]
+        },
+        {
+            "buy": 30,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 1,
+                "min": 1
+            },
+            "id": "thyme",
+            "index": 1109,
+            "name": "Thyme (FV)",
+            "seasons": [
+                "fall"
+            ],
+            "sell": 55,
+            "stages": [
+                1,
+                1,
+                2,
+                1
+            ]
+        },
+        {
+            "buy": 100,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 1,
+                "min": 1
+            },
+            "id": "wasabi",
+            "index": 1110,
+            "name": "Wasabi (FV)",
+            "seasons": [
+                "summer"
+            ],
+            "sell": 165,
+            "stages": [
+                1,
+                2,
+                3,
+                2
+            ]
+        },
+        {
+            "buy": 250,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 1,
+                "min": 1
+            },
+            "id": "watermelon",
+            "index": 1111,
+            "name": "Watermelon (FV)",
+            "regrow": 5,
+            "seasons": [
+                "fall"
+            ],
+            "sell": 175,
+            "stages": [
+                1,
+                2,
+                3,
+                4,
+                4
+            ]
+        },
+        {
+            "buy": 225,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 1,
+                "min": 1
+            },
+            "id": "zucchini",
+            "index": 1112,
+            "name": "Zucchini (FV) (Y3)",
+            "regrow": 2,
+            "seasons": [
+                "summer"
+            ],
+            "sell": 175,
+            "stages": [
+                3,
+                2,
+                3,
+                2,
+                4
+            ]
+        }
 	],
 	"fertilizer": [
 		{
