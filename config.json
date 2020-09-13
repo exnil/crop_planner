@@ -729,7 +729,7 @@
             },
             "id": "ancient_coffee_bean",
             "index": 1001,
-            "name": "Ancient Coffee Bean (Ancient Crops)",
+            "name": "Ancient Coffee Bean (AC)",
             "regrow": 4,
             "seasons": [
                 "spring",
@@ -755,7 +755,7 @@
             },
             "id": "ancient_fern",
             "index": 1002,
-            "name": "Ancient Fern (Ancient Crops)",
+            "name": "Ancient Fern (AC)",
             "regrow": 3,
             "seasons": [
                 "spring",
@@ -781,7 +781,7 @@
             },
             "id": "ancient_flower",
             "index": 1003,
-            "name": "Ancient Flower (Ancient Crops)",
+            "name": "Ancient Flower (AC)",
             "seasons": [
                 "spring",
                 "summer",
@@ -806,7 +806,7 @@
             },
             "id": "ancient_nut",
             "index": 1004,
-            "name": "Ancient Nut (Ancient Crops)",
+            "name": "Ancient Nut (AC)",
             "regrow": 3,
             "seasons": [
                 "spring",
@@ -832,7 +832,7 @@
             },
             "id": "ancient_olive",
             "index": 1005,
-            "name": "Ancient Olive (Ancient Crops)",
+            "name": "Ancient Olive (AC)",
             "regrow": 4,
             "seasons": [
                 "spring",
@@ -858,19 +858,187 @@
             },
             "id": "ancient_tuber",
             "index": 1006,
-            "name": "Ancient Tuber (Ancient Crops)",
+            "name": "Ancient Tuber (AC)",
             "seasons": [
                 "spring",
                 "summer",
                 "fall"
             ],
-            "sell": 250,
+            "sell": 750,
             "stages": [
                 4,
                 5,
                 5,
                 5,
                 1
+            ]
+        },
+        {
+            "buy": 100,
+            "harvest": {
+                "extra_chance": 0,
+                "level_increase": 5,
+                "max": 2,
+                "min": 2
+            },
+            "id": "beef",
+            "index": 1007,
+            "name": "Beef (FM)",
+            "seasons": [
+                "spring",
+                "summer"
+            ],
+            "sell": 75,
+            "stages": [
+                1,
+                2,
+                1,
+                2,
+                2
+            ]
+        },
+        {
+            "buy": 100,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 2,
+                "min": 2
+            },
+            "id": "chevon",
+            "index": 1008,
+            "name": "Chevon (FM)",
+            "seasons": [
+                "summer",
+                "fall"
+            ],
+            "sell": 100,
+            "stages": [
+                1,
+                2,
+                1,
+                2,
+                2
+            ]
+        },
+        {
+            "buy": 100,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 2,
+                "min": 2
+            },
+            "id": "chicken",
+            "index": 1009,
+            "name": "Chicken (FM)",
+            "seasons": [
+                "spring",
+                "summer"
+            ],
+            "sell": 60,
+            "stages": [
+                1,
+                2,
+                1,
+                2,
+                2
+            ]
+        },
+        {
+            "buy": 100,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 2,
+                "min": 2
+            },
+            "id": "duck",
+            "index": 1010,
+            "name": "Duck (FM)",
+            "seasons": [
+                "summer",
+                "fall"
+            ],
+            "sell": 85,
+            "stages": [
+                1,
+                2,
+                1,
+                2,
+                2
+            ]
+        },
+        {
+            "buy": 100,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 2,
+                "min": 2
+            },
+            "id": "mutton",
+            "index": 1011,
+            "name": "Mutton (FM)",
+            "seasons": [
+                "spring",
+                "summer"
+            ],
+            "sell": 100,
+            "stages": [
+                1,
+                2,
+                1,
+                2,
+                2
+            ]
+        },
+        {
+            "buy": 100,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 2,
+                "min": 2
+            },
+            "id": "pork",
+            "index": 1012,
+            "name": "Pork (FM)",
+            "seasons": [
+                "summer",
+                "fall"
+            ],
+            "sell": 80,
+            "stages": [
+                1,
+                2,
+                1,
+                2,
+                2
+            ]
+        },
+        {
+            "buy": 100,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 2,
+                "min": 2
+            },
+            "id": "rabbit",
+            "index": 1013,
+            "name": "Rabbit (FM)",
+            "seasons": [
+                "spring",
+                "summer"
+            ],
+            "sell": 50,
+            "stages": [
+                1,
+                2,
+                1,
+                2,
+                2
             ]
         }
 	],
@@ -942,6 +1110,11 @@
 				"day": 20,
 				"name": "Shane"
 			},
+            {
+                "day": 22,
+                "name": "Community Day (SVE)",
+                "festival": true
+            },
             {
                 "day": 23,
                 "name": "Andy"
@@ -1042,6 +1215,11 @@
 				"day": 21,
 				"name": "Robin"
 			},
+            {
+                "day": 22,
+                "name": "Community Day (SVE)",
+                "festival": true
+            },
 			{
 				"day": 24,
 				"name": "George"
@@ -1094,6 +1272,11 @@
 				"day": 20,
 				"name": "Evelyn"
 			},
+            {
+                "day": 22,
+                "name": "Community Day (SVE)",
+                "festival": true
+            },
 			{
 				"day": 23,
 				"name": "Leah"
