@@ -1190,7 +1190,7 @@
             },
             "id": "champagne_grape",
             "index": 1020,
-            "name": "Champagne Grape (CHAMP)",
+            "name": "Champagne Grape (CHAMP) (Y3)",
             "regrow": 3,
             "seasons": [
                 "spring"
@@ -1202,7 +1202,397 @@
                 3,
                 3,
                 3
+            ],
+            "trellis": true
+        },
+        {
+            "buy": 60,
+            "harvest": {},
+            "id": "allium",
+            "index": 1021,
+            "name": "Allium (F2F)",
+            "seasons": [
+                "summer"
+            ],
+            "sell": 50,
+            "stages": [
+                1,
+                1,
+                1,
+                1
             ]
+        },
+        {
+            "buy": 60,
+            "harvest": {
+                "extra_chance": 0.02,
+                "level_increase": 10,
+                "max": 3,
+                "min": 2
+            },
+            "id": "camellia",
+            "index": 1022,
+            "name": "Camellia (F2F) (Y2)",
+            "regrow": 3,
+            "seasons": [
+                "spring",
+                "fall"
+            ],
+            "sell": 50,
+            "stages": [
+                1,
+                2,
+                3,
+                4,
+                3
+            ]
+        },
+        {
+            "buy": 45,
+            "harvest": {},
+            "id": "carnation",
+            "index": 1023,
+            "name": "Carnation (F2F)",
+            "seasons": [
+                "spring",
+                "summer"
+            ],
+            "sell": 140,
+            "stages": [
+                1,
+                2,
+                2,
+                2
+            ]
+        },
+        {
+            "buy": 15,
+            "harvest": {},
+            "id": "chrysanthemum",
+            "index": 1024,
+            "name": "Carnation (F2F)",
+            "seasons": [
+                "fall"
+            ],
+            "sell": 60,
+            "stages": [
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "buy": 50,
+            "harvest": {
+                "extra_chance": 0.2,
+                "level_increase": 8,
+                "max": 2,
+                "min": 1
+            },
+            "id": "clematis",
+            "index": 1025,
+            "name": "Clematis (F2F)",
+            "seasons": [
+                "fall"
+            ],
+            "sell": 60,
+            "stages": [
+                1,
+                2,
+                2,
+                3,
+                2
+            ],
+            "trellis": true
+        },
+        {
+            "buy": 20,
+            "harvest": {},
+            "id": "dahlia",
+            "index": 1026,
+            "name": "Dahlia (F2F) (Y3)",
+            "seasons": [
+                "fall"
+            ],
+            "sell": 75,
+            "stages": [
+                1,
+                2,
+                2,
+                1
+            ]
+        },
+        {
+            "buy": 50,
+            "harvest": {},
+            "id": "delphinium",
+            "index": 1027,
+            "name": "Delphinium (F2F) (Y2)",
+            "seasons": [
+                "spring"
+            ],
+            "sell": 160,
+            "stages": [
+                1,
+                2,
+                2,
+                2,
+                2
+            ]
+        },
+        {
+            "buy": 100,
+            "harvest": {},
+            "id": "english_rose",
+            "index": 1028,
+            "name": "English Rose (F2F)",
+            "seasons": [
+                "fall"
+            ],
+            "sell": 290,
+            "stages": [
+                1,
+                2,
+                3,
+                3,
+                3
+            ]
+        },
+        {
+            "buy": 40,
+            "harvest": {},
+            "id": "freesia",
+            "index": 1029,
+            "name": "Freesia (F2F)",
+            "seasons": [
+                "fall"
+            ],
+            "sell": 150,
+            "stages": [
+                1,
+                2,
+                3,
+                2
+            ]
+        },
+        {
+            "buy": 40,
+            "harvest": {},
+            "id": "geranium",
+            "index": 1030,
+            "name": "Geranium (F2F) (Y3)",
+            "seasons": [
+                "fall"
+            ],
+            "sell": 140,
+            "stages": [
+                1,
+                2,
+                3,
+                3
+            ]
+        },
+        {
+            "buy": 50,
+            "harvest": {},
+            "id": "herbal_peony",
+            "index": 1031,
+            "name": "Herbal Peony (F2F)",
+            "seasons": [
+                "spring"
+            ],
+            "sell": 240,
+            "stages": [
+                1,
+                2,
+                3,
+                4,
+                3
+            ]
+        },
+        {
+            "buy": 20,
+            "harvest": {},
+            "id": "hyacinth",
+            "index": 1032,
+            "name": "Hyacinth (F2F) (Y2)",
+            "seasons": [
+                "spring"
+            ],
+            "sell": 60,
+            "stages": [
+                1,
+                1,
+                2,
+                1
+            ]
+        },
+        {
+            "buy": 50,
+            "harvest": {},
+            "id": "hydrangea",
+            "index": 1033,
+            "name": "Hydrangea (F2F) (Y3)",
+            "seasons": [
+                "summer"
+            ],
+            "sell": 170,
+            "stages": [
+                1,
+                2,
+                2,
+                3,
+                2
+            ]
+        },
+        {
+            "buy": 60,
+            "harvest": {},
+            "id": "iris",
+            "index": 1034,
+            "name": "Iris (F2F)",
+            "seasons": [
+                "fall"
+            ],
+            "sell": 200,
+            "stages": [
+                1,
+                2,
+                2,
+                3,
+                2
+            ]
+        },
+        {
+            "buy": 50,
+            "harvest": {},
+            "id": "lavender",
+            "index": 1035,
+            "name": "Lavender (F2F)",
+            "seasons": [
+                "summer"
+            ],
+            "sell": 220,
+            "stages": [
+                1,
+                2,
+                3,
+                4,
+                3
+            ]
+        },
+        {
+            "buy": 40,
+            "harvest": {},
+            "id": "lilac",
+            "index": 1036,
+            "name": "Lilac (F2F)",
+            "seasons": [
+                "spring"
+            ],
+            "sell": 180,
+            "stages": [
+                1,
+                2,
+                3,
+                3,
+                2
+            ]
+        },
+        {
+            "buy": 35,
+            "harvest": {},
+            "id": "lily",
+            "index": 1037,
+            "name": "Lily (F2F)",
+            "seasons": [
+                "summer"
+            ],
+            "sell": 150,
+            "stages": [
+                1,
+                2,
+                3,
+                3
+            ]
+        },
+        {
+            "buy": 40,
+            "harvest": {},
+            "id": "lotus",
+            "index": 1038,
+            "name": "Lotus (F2F)",
+            "seasons": [
+                "summer"
+            ],
+            "sell": 70,
+            "stages": [
+                1,
+                2,
+                3,
+                3,
+                2
+            ],
+            "trellis": true
+        },
+        {
+            "buy": 25,
+            "harvest": {},
+            "id": "petnunia",
+            "index": 1039,
+            "name": "Petunia (F2F) (Y3)",
+            "seasons": [
+                "summer"
+            ],
+            "sell": 80,
+            "stages": [
+                1,
+                2,
+                2,
+                1
+            ]
+        },
+        {
+            "buy": 20,
+            "harvest": {},
+            "id": "violet",
+            "index": 1040,
+            "name": "Violet (F2F)",
+            "seasons": [
+                "spring"
+            ],
+            "sell": 90,
+            "stages": [
+                1,
+                1,
+                2,
+                2
+            ]
+        },
+        {
+            "buy": 80,
+            "harvest": {
+                "extra_chance": 0.1,
+                "level_increase": 6,
+                "max": 3,
+                "min": 1
+            },
+            "id": "wisteria",
+            "index": 1041,
+            "name": "Wisteria (F2F)",
+            "seasons": [
+                "fall"
+            ],
+            "sell": 280,
+            "stages": [
+                2,
+                4,
+                5,
+                5,
+                4
+            ],
+            "trellis": true
         },
 	],
 	"fertilizer": [

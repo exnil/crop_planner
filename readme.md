@@ -15,6 +15,7 @@ Note that this does include one spoiler for Stardew Valley Expanded.
 
 * Stardew Valley Expanded Character birthdays + Festival.
 * Ancient Crops
+* Champagne Wishes
 * Fantasy Crops
 * Fresh Meat
 
