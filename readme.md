@@ -19,6 +19,7 @@ Note that this does include one spoiler for Stardew Valley Expanded.
 * Fantasy Crops (FANT)
 * Farmer to Florist (F2F)
 * Fresh Meat (MEAT)
+* Wild Seeds from Vanilla
 
 ---
 *Everything from this point on is the original Readme from Exnil's version.*

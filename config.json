@@ -702,6 +702,74 @@
 				1
 			]
 		},
+        {
+            "buy": 0,
+            "harvest": {},
+            "id": "spring_forage",
+            "index": 996,
+            "name": "Wild Seeds (Sp)",
+            "seasons": [
+                "spring",
+            ],
+            "sell": 50,
+            "stages": [
+                1,
+                2,
+                2,
+                2
+            ]
+        },
+        {
+            "buy": 0,
+            "harvest": {},
+            "id": "summer_forage",
+            "index": 997,
+            "name": "Wild Seeds (Su)",
+            "seasons": [
+                "summer",
+            ],
+            "sell": 50,
+            "stages": [
+                1,
+                2,
+                2,
+                2
+            ]
+        },
+        {
+            "buy": 0,
+            "harvest": {},
+            "id": "fall_forage",
+            "index": 998,
+            "name": "Wild Seeds (Fa)",
+            "seasons": [
+                "fall",
+            ],
+            "sell": 50,
+            "stages": [
+                1,
+                2,
+                2,
+                2
+            ]
+        },
+        {
+            "buy": 0,
+            "harvest": {},
+            "id": "winter_forage",
+            "index": 999,
+            "name": "Wild Seeds (Wi)",
+            "seasons": [
+                "winter",
+            ],
+            "sell": 50,
+            "stages": [
+                1,
+                2,
+                2,
+                2
+            ]
+        },
 		{
 			"buy": 60,
 			"harvest": {},
