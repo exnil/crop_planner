@@ -721,10 +721,15 @@
 		},
         {
             "buy": 125,
-            "harvest": {},
+            "harvest": {
+                "extra_chance": 0.04,
+                "level_increase": 10,
+                "max": 6,
+                "min": 3
+            },
             "id": "ancient_coffee_bean",
             "index": 1001,
-            "name": "Ancient Coffee Bean",
+            "name": "Ancient Coffee Bean (Ancient Crops)",
             "regrow": 4,
             "seasons": [
                 "spring",
@@ -738,6 +743,134 @@
                 8,
                 14,
                 4
+            ]
+        },
+        {
+            "buy": 400,
+            "harvest": {
+                "extra_chance": 0,
+                "level_increase": 10,
+                "max": 1,
+                "min": 1
+            },
+            "id": "ancient_fern",
+            "index": 1002,
+            "name": "Ancient Fern (Ancient Crops)",
+            "regrow": 3,
+            "seasons": [
+                "spring",
+                "summer",
+                "fall"
+            ],
+            "sell": 400,
+            "stages": [
+                5,
+                7,
+                8,
+                10,
+                4
+            ]
+        },
+        {
+            "buy": 300,
+            "harvest": {
+                "extra_chance": 0,
+                "level_increase": 10,
+                "max": 1,
+                "min": 1
+            },
+            "id": "ancient_flower",
+            "index": 1003,
+            "name": "Ancient Flower (Ancient Crops)",
+            "seasons": [
+                "spring",
+                "summer",
+                "fall"
+            ],
+            "sell": 500,
+            "stages": [
+                1,
+                2,
+                2,
+                2,
+                1
+            ]
+        },
+        {
+            "buy": 250,
+            "harvest": {
+                "extra_chance": 0.05,
+                "level_increase": 10,
+                "max": 4,
+                "min": 2
+            },
+            "id": "ancient_nut",
+            "index": 1004,
+            "name": "Ancient Nut (Ancient Crops)",
+            "regrow": 3,
+            "seasons": [
+                "spring",
+                "summer",
+                "fall"
+            ],
+            "sell": 250,
+            "stages": [
+                8,
+                12,
+                10,
+                10,
+                6
+            ]
+        },
+        {
+            "buy": 300,
+            "harvest": {
+                "extra_chance": 0.06,
+                "level_increase": 10,
+                "max": 3,
+                "min": 2
+            },
+            "id": "ancient_olive",
+            "index": 1005,
+            "name": "Ancient Olive (Ancient Crops)",
+            "regrow": 4,
+            "seasons": [
+                "spring",
+                "summer",
+                "fall"
+            ],
+            "sell": 300,
+            "stages": [
+                6,
+                10,
+                12,
+                12,
+                6
+            ]
+        },
+        {
+            "buy": 750,
+            "harvest": {
+                "extra_chance": 0.2,
+                "level_increase": 10,
+                "max": 3,
+                "min": 1
+            },
+            "id": "ancient_tuber",
+            "index": 1006,
+            "name": "Ancient Tuber (Ancient Crops)",
+            "seasons": [
+                "spring",
+                "summer",
+                "fall"
+            ],
+            "sell": 250,
+            "stages": [
+                4,
+                5,
+                5,
+                5,
+                1
             ]
         }
 	],
