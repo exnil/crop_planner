@@ -705,11 +705,11 @@
         {
             "buy": 0,
             "harvest": {},
-            "id": "spring_forage",
+            "id": "wild_spring",
             "index": 996,
             "name": "Wild Seeds (Sp)",
             "seasons": [
-                "spring",
+                "spring"
             ],
             "sell": 50,
             "stages": [
@@ -722,11 +722,11 @@
         {
             "buy": 0,
             "harvest": {},
-            "id": "summer_forage",
+            "id": "wild_summer",
             "index": 997,
             "name": "Wild Seeds (Su)",
             "seasons": [
-                "summer",
+                "summer"
             ],
             "sell": 50,
             "stages": [
@@ -739,11 +739,11 @@
         {
             "buy": 0,
             "harvest": {},
-            "id": "fall_forage",
+            "id": "wild_fall",
             "index": 998,
             "name": "Wild Seeds (Fa)",
             "seasons": [
-                "fall",
+                "fall"
             ],
             "sell": 50,
             "stages": [
@@ -756,11 +756,11 @@
         {
             "buy": 0,
             "harvest": {},
-            "id": "winter_forage",
+            "id": "wild_winter",
             "index": 999,
             "name": "Wild Seeds (Wi)",
             "seasons": [
-                "winter",
+                "winter"
             ],
             "sell": 50,
             "stages": [
@@ -1661,7 +1661,7 @@
                 4
             ],
             "trellis": true
-        },
+        }
 	],
 	"fertilizer": [
 		{
