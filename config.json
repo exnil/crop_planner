@@ -883,7 +883,7 @@
             },
             "id": "beef",
             "index": 1007,
-            "name": "Beef (FM)",
+            "name": "Beef (MEAT)",
             "seasons": [
                 "spring",
                 "summer"
@@ -907,7 +907,7 @@
             },
             "id": "chevon",
             "index": 1008,
-            "name": "Chevon (FM)",
+            "name": "Chevon (MEAT)",
             "seasons": [
                 "summer",
                 "fall"
@@ -931,7 +931,7 @@
             },
             "id": "chicken",
             "index": 1009,
-            "name": "Chicken (FM)",
+            "name": "Chicken (MEAT)",
             "seasons": [
                 "spring",
                 "summer"
@@ -955,7 +955,7 @@
             },
             "id": "duck",
             "index": 1010,
-            "name": "Duck (FM)",
+            "name": "Duck (MEAT)",
             "seasons": [
                 "summer",
                 "fall"
@@ -979,7 +979,7 @@
             },
             "id": "mutton",
             "index": 1011,
-            "name": "Mutton (FM)",
+            "name": "Mutton (MEAT)",
             "seasons": [
                 "spring",
                 "summer"
@@ -1003,7 +1003,7 @@
             },
             "id": "pork",
             "index": 1012,
-            "name": "Pork (FM)",
+            "name": "Pork (MEAT)",
             "seasons": [
                 "summer",
                 "fall"
@@ -1027,7 +1027,7 @@
             },
             "id": "rabbit",
             "index": 1013,
-            "name": "Rabbit (FM)",
+            "name": "Rabbit (MEAT)",
             "seasons": [
                 "spring",
                 "summer"
@@ -1039,6 +1039,145 @@
                 1,
                 2,
                 2
+            ]
+        },
+        {
+            "buy": 50,
+            "harvest": {
+                "extra_chance": 2.0,
+                "level_increase": 5,
+                "max": 5,
+                "min": 1
+            },
+            "id": "copper",
+            "index": 1014,
+            "name": "Copper Ore (FANT)",
+            "seasons": [
+                "spring"
+            ],
+            "sell": 5,
+            "stages": [
+                1,
+                2,
+                3,
+                2,
+                2
+            ]
+        },
+        {
+            "buy": 30,
+            "harvest": {
+                "extra_chance": 0.2,
+                "level_increase": 5,
+                "max": 3,
+                "min": 2
+            },
+            "id": "coal",
+            "index": 1015,
+            "name": "Coal (FANT)",
+            "seasons": [
+                "spring",
+                "summer"
+            ],
+            "sell": 15,
+            "stages": [
+                1,
+                2,
+                3,
+                2
+            ]
+        },
+        {
+            "buy": 200,
+            "harvest": {
+                "extra_chance": 0.2,
+                "level_increase": 5,
+                "max": 3,
+                "min": 2
+            },
+            "id": "gold",
+            "index": 1016,
+            "name": "Gold Ore (FANT)",
+            "seasons": [
+                "fall"
+            ],
+            "sell": 25,
+            "stages": [
+                2,
+                4,
+                5,
+                4,
+                5
+            ]
+        },
+        {
+            "buy": 100,
+            "harvest": {
+                "extra_chance": 0.2,
+                "level_increase": 5,
+                "max": 3,
+                "min": 2
+            },
+            "id": "iron",
+            "index": 1017,
+            "name": "Iron Ore (MEAT)",
+            "seasons": [
+                "summer"
+            ],
+            "sell": 10,
+            "stages": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        },
+        {
+            "buy": 400,
+            "harvest": {
+                "extra_chance": 0.2,
+                "level_increase": 5,
+                "max": 3,
+                "min": 2
+            },
+            "id": "iridium",
+            "index": 1018,
+            "name": "Iridium Ore (FANT)",
+            "seasons": [
+                "winter"
+            ],
+            "sell": 100,
+            "stages": [
+                3,
+                4,
+                6,
+                6,
+                5
+            ]
+        },
+        {
+            "buy": 250,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 1,
+                "min": 1
+            },
+            "id": "doubloon",
+            "index": 1019,
+            "name": "Doubloons (FANT)",
+            "regrow": 6,
+            "seasons": [
+                "fall"
+            ],
+            "sell": 150,
+            "stages": [
+                2,
+                2,
+                3,
+                3,
+                3
             ]
         }
 	],
