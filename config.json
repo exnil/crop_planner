@@ -1120,7 +1120,7 @@
             },
             "id": "iron",
             "index": 1017,
-            "name": "Iron Ore (MEAT)",
+            "name": "Iron Ore (FANT)",
             "seasons": [
                 "summer"
             ],
@@ -1179,7 +1179,31 @@
                 3,
                 3
             ]
-        }
+        },
+        {
+            "buy": 175,
+            "harvest": {
+                "extra_chance": 0.4,
+                "level_increase": 4,
+                "max": 2,
+                "min": 1
+            },
+            "id": "champagne_grape",
+            "index": 1020,
+            "name": "Champagne Grape (CHAMP)",
+            "regrow": 3,
+            "seasons": [
+                "spring"
+            ],
+            "sell": 85,
+            "stages": [
+                1,
+                2,
+                3,
+                3,
+                3
+            ]
+        },
 	],
 	"fertilizer": [
 		{
