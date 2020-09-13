@@ -5,11 +5,21 @@ This will hopefully be a version that inludes JSON Assets crops. Forked on 2020-
 
 A tool for planning crop schedules in the Stardew Valley game.
 
-#### **<a href="http://exnil.github.io/crop_planner/">Live version on github.io</a>**
+Note that this does include one spoiler for Stardew Valley Expanded.
 
-<a href="https://www.reddit.com/r/StardewValley/comments/55puw1/crop_planner_v2_released_multiple_years_importing/" target="_blank">Reddit thread</a>
+#### **<a href="http://scriptsforweirdos.github.io/crop_planner/">Live version on github.io</a>**
+
+*Link to reddit thread here once finished.*
+
+### Mods implemented:
+
+* Stardew Valley Expanded Character birthdays + Festival.
+* Ancient Crops
+* Fantasy Crops
+* Fresh Meat
 
 ---
+*Everything from this point on is the original Readme from Exnil's version.*
 
 ### New in v2
 
