@@ -721,21 +721,17 @@
 		},
         {
             "buy": 125,
-            "harvest": {
-                "extra_chance": 0.04,
-                "level_increase": 10,
-                "max": 6,
-                "min": 3
-            },
+            "harvest": {},
             "id": "ancient_coffee_bean",
             "index": 1001,
             "name": "Ancient Coffee Bean",
             "regrow": 4,
-            "scythe": true,
             "seasons": [
-                "spring, summer, fall"
+                "spring",
+                "summer",
+                "fall"
             ],
-            "sell": 125,
+            "sell": 160,
             "stages": [
                 4,
                 6,
@@ -776,7 +772,11 @@
 	],
 	"events": {
 		"spring": [
-			{
+            {
+				"day": 2,
+				"name": "Morris"
+			},
+            {
 				"day": 4,
 				"name": "Kent"
 			},
@@ -797,6 +797,10 @@
 				"day": 14,
 				"name": "Haley"
 			},
+            {
+                "day": 15,
+                "name": "Olivia"
+            },
 			{
 				"day": 18,
 				"name": "Pam"
@@ -805,6 +809,10 @@
 				"day": 20,
 				"name": "Shane"
 			},
+            {
+                "day": 23,
+                "name": "Andy"
+            },
 			{
 				"day": 24,
 				"name": "Flower Dance",
@@ -853,6 +861,10 @@
 				"day": 22,
 				"name": "Dwarf"
 			},
+            {
+                "day": 23,
+                "name": "Victor"
+            },
 			{
 				"day": 24,
 				"name": "Willy"
@@ -905,7 +917,11 @@
 				"day": 27,
 				"name": "Spirit's Eve",
 				"festival": true
-			}
+			},
+            {
+                "day": 28,
+                "name": "Susan"
+            }
 		],
 		"winter": [
 			{
@@ -937,6 +953,10 @@
 				"day": 17,
 				"name": "Wizard"
 			},
+            {
+				"day": 19,
+				"name": "Marlon"
+			},
 			{
 				"day": 20,
 				"name": "Evelyn"
@@ -953,7 +973,12 @@
 			{
 				"day": 26,
 				"name": "Clint"
-			}
+			},
+            {
+                "day": 27,
+                "name": "Sophia"
+            }
+
 		]
 	}
 }
