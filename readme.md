@@ -14,10 +14,11 @@ Note that this does include one spoiler for Stardew Valley Expanded.
 ### Mods implemented:
 
 * Stardew Valley Expanded Character birthdays + Festival.
-* Ancient Crops
-* Champagne Wishes
-* Fantasy Crops
-* Fresh Meat
+* Ancient Crops (AC)
+* Champagne Wishes (CHAMP)
+* Fantasy Crops (FANT)
+* Farmer to Florist (F2F)
+* Fresh Meat (MEAT)
 
 ---
 *Everything from this point on is the original Readme from Exnil's version.*
