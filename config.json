@@ -730,12 +730,12 @@
             "id": "ancient_coffee_bean",
             "index": 1001,
             "name": "Ancient Coffee Bean",
+            "regrow": 4,
             "scythe": true,
             "seasons": [
                 "spring, summer, fall"
             ],
             "sell": 125,
-            "regrow": 4,
             "stages": [
                 4,
                 6,
