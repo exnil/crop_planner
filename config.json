@@ -942,174 +942,6 @@
             ]
         },
         {
-            "buy": 100,
-            "harvest": {
-                "extra_chance": 0,
-                "level_increase": 5,
-                "max": 2,
-                "min": 2
-            },
-            "id": "beef",
-            "index": 1007,
-            "name": "Beef (MEAT)",
-            "seasons": [
-                "spring",
-                "summer"
-            ],
-            "sell": 75,
-            "stages": [
-                1,
-                2,
-                1,
-                2,
-                2
-            ]
-        },
-        {
-            "buy": 100,
-            "harvest": {
-                "extra_chance": 0.0,
-                "level_increase": 5,
-                "max": 2,
-                "min": 2
-            },
-            "id": "chevon",
-            "index": 1008,
-            "name": "Chevon (MEAT)",
-            "seasons": [
-                "summer",
-                "fall"
-            ],
-            "sell": 100,
-            "stages": [
-                1,
-                2,
-                1,
-                2,
-                2
-            ]
-        },
-        {
-            "buy": 100,
-            "harvest": {
-                "extra_chance": 0.0,
-                "level_increase": 5,
-                "max": 2,
-                "min": 2
-            },
-            "id": "chicken",
-            "index": 1009,
-            "name": "Chicken (MEAT)",
-            "seasons": [
-                "spring",
-                "summer"
-            ],
-            "sell": 60,
-            "stages": [
-                1,
-                2,
-                1,
-                2,
-                2
-            ]
-        },
-        {
-            "buy": 100,
-            "harvest": {
-                "extra_chance": 0.0,
-                "level_increase": 5,
-                "max": 2,
-                "min": 2
-            },
-            "id": "duck",
-            "index": 1010,
-            "name": "Duck (MEAT)",
-            "seasons": [
-                "summer",
-                "fall"
-            ],
-            "sell": 85,
-            "stages": [
-                1,
-                2,
-                1,
-                2,
-                2
-            ]
-        },
-        {
-            "buy": 100,
-            "harvest": {
-                "extra_chance": 0.0,
-                "level_increase": 5,
-                "max": 2,
-                "min": 2
-            },
-            "id": "mutton",
-            "index": 1011,
-            "name": "Mutton (MEAT)",
-            "seasons": [
-                "spring",
-                "summer"
-            ],
-            "sell": 100,
-            "stages": [
-                1,
-                2,
-                1,
-                2,
-                2
-            ]
-        },
-        {
-            "buy": 100,
-            "harvest": {
-                "extra_chance": 0.0,
-                "level_increase": 5,
-                "max": 2,
-                "min": 2
-            },
-            "id": "pork",
-            "index": 1012,
-            "name": "Pork (MEAT)",
-            "seasons": [
-                "summer",
-                "fall"
-            ],
-            "sell": 80,
-            "stages": [
-                1,
-                2,
-                1,
-                2,
-                2
-            ]
-        },
-        {
-            "buy": 100,
-            "harvest": {
-                "extra_chance": 0.0,
-                "level_increase": 5,
-                "max": 2,
-                "min": 2
-            },
-            "id": "rabbit",
-            "index": 1013,
-            "name": "Rabbit (MEAT)",
-            "seasons": [
-                "spring",
-                "summer"
-            ],
-            "sell": 50,
-            "stages": [
-                1,
-                2,
-                1,
-                2,
-                2
-            ]
-        },
-        {
             "buy": 50,
             "harvest": {
                 "extra_chance": 2.0,
@@ -1661,7 +1493,194 @@
                 4
             ],
             "trellis": true
-        }
+        },
+        {
+            "buy": 100,
+            "harvest": {
+                "extra_chance": 0,
+                "level_increase": 5,
+                "max": 2,
+                "min": 2
+            },
+            "id": "beef",
+            "index": 1007,
+            "name": "Beef (MEAT)",
+            "seasons": [
+                "spring",
+                "summer"
+            ],
+            "sell": 75,
+            "stages": [
+                1,
+                2,
+                1,
+                2,
+                2
+            ]
+        },
+        {
+            "buy": 100,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 2,
+                "min": 2
+            },
+            "id": "chevon",
+            "index": 1008,
+            "name": "Chevon (MEAT)",
+            "seasons": [
+                "summer",
+                "fall"
+            ],
+            "sell": 100,
+            "stages": [
+                1,
+                2,
+                1,
+                2,
+                2
+            ]
+        },
+        {
+            "buy": 100,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 2,
+                "min": 2
+            },
+            "id": "chicken",
+            "index": 1009,
+            "name": "Chicken (MEAT)",
+            "seasons": [
+                "spring",
+                "summer"
+            ],
+            "sell": 60,
+            "stages": [
+                1,
+                2,
+                1,
+                2,
+                2
+            ]
+        },
+        {
+            "buy": 100,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 2,
+                "min": 2
+            },
+            "id": "duck",
+            "index": 1010,
+            "name": "Duck (MEAT)",
+            "seasons": [
+                "summer",
+                "fall"
+            ],
+            "sell": 85,
+            "stages": [
+                1,
+                2,
+                1,
+                2,
+                2
+            ]
+        },
+        {
+            "buy": 100,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 2,
+                "min": 2
+            },
+            "id": "mutton",
+            "index": 1011,
+            "name": "Mutton (MEAT)",
+            "seasons": [
+                "spring",
+                "summer"
+            ],
+            "sell": 100,
+            "stages": [
+                1,
+                2,
+                1,
+                2,
+                2
+            ]
+        },
+        {
+            "buy": 100,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 2,
+                "min": 2
+            },
+            "id": "pork",
+            "index": 1012,
+            "name": "Pork (MEAT)",
+            "seasons": [
+                "summer",
+                "fall"
+            ],
+            "sell": 80,
+            "stages": [
+                1,
+                2,
+                1,
+                2,
+                2
+            ]
+        },
+        {
+            "buy": 100,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 2,
+                "min": 2
+            },
+            "id": "rabbit",
+            "index": 1013,
+            "name": "Rabbit (MEAT)",
+            "seasons": [
+                "spring",
+                "summer"
+            ],
+            "sell": 50,
+            "stages": [
+                1,
+                2,
+                1,
+                2,
+                2
+            ]
+        },
+        {
+            "buy": 60,
+            "harvest": {},
+            "id": "stevia",
+            "index": 1042,
+            "name": "Stevia (FIZZ)",
+            "seasons": [
+                "spring",
+                "summer"
+            ],
+            "sell": 225,
+            "stages": [
+                1,
+                2,
+                3,
+                2,
+                1
+            ]
+        },
 	],
 	"fertilizer": [
 		{

@@ -19,6 +19,7 @@ Note that this does include one spoiler for Stardew Valley Expanded.
 * Fantasy Crops (FANT)
 * Farmer to Florist (F2F)
 * Fresh Meat (MEAT)
+* Fizzy Drinks (FIZZ)
 * Wild Seeds from Vanilla
 
 ---
