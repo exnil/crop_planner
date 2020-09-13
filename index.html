@@ -1,41 +1,41 @@
 <!doctype html>
 <html>
 <head>
-	<title>Stardew Valley Crop Planner</title>
+	<title>Stardew Valley Crop Planner - JSON Assets Edition</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+
 	<link rel="icon" href="images/favicon.png" type="image/png">
-	
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="style.css">
-	
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
-	
-	<script src="scripts/checklist-model.js"></script>	
+
+	<script src="scripts/checklist-model.js"></script>
 	<script src="scripts/planner.js"></script>
 </head>
 <body ng-app="planner_app" ng-controller="planner_controller as self" ng-class="{'sidebar_open': self.sidebar.mode != ''}">
-	
+
 	<!-- [HEADER] -->
 	<header>
 		<img src="images/logo.png" class="logo">
-		<div class="page_title">Crop Planner</div>
+		<div class="page_title">Crop Planner (JSON Assets/SVE Edition)</div>
 	</header>
 	<!-- [/HEADER] -->
-	
-	
+
+
 	<!-- [CONTENT] -->
 	<div id="content" class="container">
 		<div ng-show="!self.loaded" class="loading">
 			<i class="fa fa-circle-o-notch fa-spin"></i>
 			Loading...
 		</div>
-		
+
 		<div ng-show="self.loaded" ng-cloak>
 			<!-- [TOP_MENU] -->
 			<nav id="top_menu" class="row">
@@ -54,7 +54,7 @@
 						<div class="yi_farmtype">{{self.cmode}}</div>
 					</div>
 				</div>
-				
+
 				<div class="col-md-6 col-xs-8">
 					<div class="season_stats">
 						<table class="table table-striped">
@@ -62,7 +62,7 @@
 								<tr>
 									<th width="25%"><i class="fa fa-fw fa-tint"></i> Planted</th>
 									<td>{{self.cfarm().totals.season[self.cseason.index].get_plantings(1)}}</td>
-									
+
 									<th width="25%"><i class="fa fa-fw fa-pagelines"></i> Harvests</th>
 									<td>{{self.cfarm().totals.season[self.cseason.index].get_harvests(1)}}</td>
 								</tr>
@@ -72,10 +72,10 @@
 										<div class="profit min" ng-show="self.cfarm().totals.season[self.cseason.index].profit.min==self.cfarm().totals.season[self.cseason.index].profit.max">
 											<div>{{self.cfarm().totals.season[self.cseason.index].profit.min>0 && '+' || ''}}{{self.cfarm().totals.season[self.cseason.index].get_profit(1)}}g</div>
 										</div>
-										
+
 										<div class="profit" ng-show="self.cfarm().totals.season[self.cseason.index].profit.min!=self.cfarm().totals.season[self.cseason.index].profit.max">
 											<span>{{self.cfarm().totals.season[self.cseason.index].profit.min>0 && '+' || ''}}{{self.cfarm().totals.season[self.cseason.index].get_profit(1)}}g</span>
-											<i class="asc_icon fa fa-sort-amount-asc fa-rotate-270"></i> 
+											<i class="asc_icon fa fa-sort-amount-asc fa-rotate-270"></i>
 											<span>{{self.cfarm().totals.season[self.cseason.index].profit.max>0 && '+' || ''}}{{self.cfarm().totals.season[self.cseason.index].get_profit(1, 1)}}g</span>
 										</div>
 									</td>
@@ -84,26 +84,26 @@
 						</table>
 					</div>
 				</div>
-				
+
 				<div class="col-md-2 col-md-offset-1 col-xs-4 clear_buttons">
 					<div class="btn btn-default btn-block" ng-click="self.clear_season(self.cseason)"><i class="fa fa-calendar"></i> Clear {{self.cseason.name}}</div>
 					<div class="btn btn-default btn-block" ng-click="self.clear_year(self.cyear)"><i class="fa fa-trash"></i> Clear Year</div>
 				</div>
 			</nav>
 			<!-- [/TOP_MENU] -->
-			
-			
+
+
 			<!-- [SEASON_PICKER] -->
 			<div id="season_picker" class="row">
 				<div class="col-xs-3" ng-repeat="season in self.seasons">
 					<div class="season" ng-class="{'active': season.id==self.cseason.id}" ng-click="self.set_season(season.index)">
 						<img ng-src="{{season.get_image()}}" class="image">
 						<div class="name">{{season.name}}</div>
-						
+
 						<div class="profit min hidden-xs" ng-show="self.cfarm().totals.season[season.index].profit.min==self.cfarm().totals.season[season.index].profit.max">
 							<div>{{self.cfarm().totals.season[season.index].profit.min>0 && '+' || ''}}{{self.cfarm().totals.season[season.index].get_profit(1)}}g</div>
 						</div>
-						
+
 						<div class="profit hidden-xs" ng-show="self.cfarm().totals.season[season.index].profit.min!=self.cfarm().totals.season[season.index].profit.max">
 							<i class="asc_icon fa fa-sort-amount-asc"></i>
 							<div>{{self.cfarm().totals.season[season.index].profit.min>0 && '+' || ''}}{{self.cfarm().totals.season[season.index].get_profit(1)}}g</div>
@@ -113,8 +113,8 @@
 				</div>
 			</div>
 			<!-- [/SEASON_PICKER] -->
-			
-			
+
+
 			<!-- [CALENDAR] -->
 			<div id="calendar">
 				<div class="day_names">
@@ -128,7 +128,7 @@
 				</div>
 				<div class="day_container">
 					<div class="day" ng-repeat="date in self.days | limitTo:self.SEASON_DAYS:self.cseason.start-1" ng-click="self.open_plans(date)" ng-class="{'filled': self.cfarm().plans[date].length || self.cfarm().harvests[date].length}">
-						
+
 						<div class="date_top">
 							<div class="date">
 								<span class="visible-xs">{{self.get_date(date, '%j%S - %l')}}</span>
@@ -139,7 +139,7 @@
 								<span>{{self.events[date].get_text()}}</span>
 							</div>
 						</div>
-						
+
 						<div ng-show="self.cfarm().plans[date].length" class="items">
 							<div class="planting">
 								<div class="plan" ng-repeat="plan in self.cfarm().plans[date] | limitTo:4">
@@ -149,7 +149,7 @@
 							</div>
 							<div class="more" ng-show="self.cfarm().plans[date].length > 4">{{self.cfarm().plans[date].length-4}} more...</div>
 						</div>
-						
+
 						<div ng-show="self.cfarm().harvests[date].length">
 							<div class="harvesting">
 								<div class="plan" ng-repeat="harvest in self.cfarm().harvests[date] | limitTo:4">
@@ -159,12 +159,12 @@
 							</div>
 							<div class="more" ng-show="self.cfarm().harvests[date].length > 4">{{self.cfarm().harvests[date].length-4}} more...</div>
 						</div>
-						
+
 						<div ng-show="self.cfarm().totals.day[date].profit.min || self.cfarm().totals.day[date].profit.max">
 							<div class="profit min" ng-show="self.cfarm().totals.day[date].profit.min==self.cfarm().totals.day[date].profit.max">
 								<div>{{self.cfarm().totals.day[date].profit.min>0 && '+' || ''}}{{self.cfarm().totals.day[date].get_profit(1)}}g</div>
 							</div>
-							
+
 							<div class="profit" ng-show="self.cfarm().totals.day[date].profit.min!=self.cfarm().totals.day[date].profit.max">
 								<i class="asc_icon fa fa-sort-amount-asc"></i>
 								<div>{{self.cfarm().totals.day[date].profit.min>0 && '+' || ''}}{{self.cfarm().totals.day[date].get_profit(1)}}g</div>
@@ -178,12 +178,12 @@
 		</div>
 	</div>
 	<!-- [/CONTENT] -->
-	
-	
+
+
 	<!-- [SIDEBAR] -->
 	<div id="sidebar_backdrop" ng-click="self.sidebar.close()" ng-class="{'open': self.sidebar.mode != ''}"></div>
 	<div id="sidebar" ng-class="{'open': self.sidebar.mode != ''}" ng-show="self.loaded" ng-cloak>
-		
+
 		<!-- [SIDEBAR_BUTTONS] -->
 		<ul class="sb_buttons">
 			<li ng-click="self.sidebar.open('cropinfo')" ng-class="{'active': self.sidebar.mode == 'cropinfo'}" title="Crop Info">
@@ -194,11 +194,11 @@
 			</li>
 		</ul>
 		<!-- [/SIDEBAR_BUTTONS] -->
-		
-		
+
+
 		<!-- [SIDEBAR_CONTENT] -->
 		<div class="sb_content">
-		
+
 			<!-- [SB_CROP_INFO] -->
 			<div id="sb_cropinfo" class="panel panel-default sb_section" ng-class="{'active': self.sidebar.mode == 'cropinfo'}">
 				<div class="panel-heading">
@@ -215,7 +215,7 @@
 							<label><input type="checkbox" ng-model="self.cinfo_settings.regrows"> Regrows</label>
 							<input type="text" class="form-control search" placeholder="Search" ng-model="self.cinfo_settings.search">
 						</div>
-						
+
 						<div class="crops_container">
 							<label><input type="checkbox" ng-model="self.cinfo_settings.use_fbp"> Use Fixed Budget Profit</label>
 							<table class="table table-condensed crops">
@@ -247,7 +247,7 @@
 							</table>
 						</div>
 					</div>
-					
+
 					<div class="crop_info" ng-show="self.sidebar.crop">
 						<div class="ci_header">
 							<img ng-src="{{self.sidebar.crop.get_image()}}">
@@ -256,7 +256,7 @@
 								<span ng-repeat="season in self.sidebar.crop.seasons">{{season}}{{$last ? '' : ', '}}</span>
 							</div>
 						</div>
-						
+
 						<table class="table table-condensed">
 							<tr>
 								<th><i class="fa fa-fw fa-clock-o"></i> Grows</th>
@@ -300,8 +300,8 @@
 				</div>
 			</div>
 			<!-- [/SB_CROP_INFO] -->
-			
-			
+
+
 			<!-- [SB_SETTINGS] -->
 			<div id="sb_settings" class="panel panel-default sb_section" ng-class="{'active': self.sidebar.mode == 'settings'}">
 				<div class="panel-heading">
@@ -312,7 +312,7 @@
 					<div class="farm_level">
 						<h4>Farming Level</h4>
 						<label><input type="number" ng-model="self.player.level" min="0" max="10" class="form-control"></label>
-						
+
 						<span>Base crop quality chances</span>
 						<div class="chance_scale">
 							<div class="regular" ng-style="{width: self.player.quality_chance(0, 0, true)+'%'}">
@@ -329,55 +329,55 @@
 							</div>
 						</div>
 					</div>
-					
+
 					<hr>
-					
+
 					<div class="farm_professions">
 						<h4>Farming Professions</h4>
 						<div class="btn" ng-class="{'btn-success': self.player.tiller, 'btn-default': !self.player.tiller}" ng-click="self.player.toggle_perk('tiller')" data-toggle="tooltip" title="Crops worth 10% more">
 							<i class="fa fa-tint"></i> Tiller
 						</div>
-						
+
 						<div class="btn" ng-class="{'btn-success': self.player.agriculturist, 'btn-default': !self.player.agriculturist}" ng-click="self.player.toggle_perk('agriculturist')" data-toggle="tooltip" title="All crops grow 10% faster">
 							<i class="fa fa-pagelines"></i> Agriculturist
 						</div>
 					</div>
-					
+
 					<hr>
-					
+
 					<div>
 						<h4>Miscellaneous</h4>
 						<label><input type="checkbox" ng-model="self.player.settings.show_events"> Show events on calendar</label>
-						
+
 						<br><br>
-						
+
 						<div class="btn btn-default" ng-click="self.clear_all()"><i class="fa fa-trash"></i> Clear Planner</div>
 					</div>
-					
+
 					<hr>
-					
+
 					<h4>Importing & Exporting</h4>
 					<div class="btn btn-default" ng-click="self.sidebar.import_data()"><i class="fa fa-sign-in"></i> Import</div>
 					<div class="btn btn-default" ng-click="self.sidebar.export_data()"><i class="fa fa-sign-out"></i> Export</div>
 					<br>
 					<br>
 					<div class="btn btn-default" ng-click="self.sidebar.legacy_import_data()"><i class="fa fa-repeat"></i> Import Planner v1 Data</div>
-					
-					
+
+
 					<hr>
-					
+
 					<a class="btn btn-primary" href="http://stardewvalleywiki.com/Stardew_Valley_Wiki" target="_blank" rel="noreferrer"><i class="fa fa-book"></i> Stardew Valley Wiki</a>
 					<a class="btn btn-primary" href="./v1/" target="_blank"><i class="fa fa-code-fork"></i> Crop Planner v1</a>
 				</div>
 			</div>
 			<!-- [/SB_SETTINGS] -->
-			
+
 		</div>
 		<!-- [/SIDEBAR_CONTENT] -->
 	</div>
 	<!-- [/SIDEBAR] -->
-	
-	
+
+
 	<!-- [CROP_PLANNER_MODAL] -->
 	<div class="modal fade" id="crop_planner">
 		<div class="modal-dialog">
@@ -414,7 +414,7 @@
 						</div>
 						<br>
 					</div>
-					
+
 					<div ng-show="self.cfarm().plans[self.cdate].length">
 						<div class="panel panel-default">
 							<div class="panel-heading">
@@ -470,7 +470,7 @@
 						</div>
 					</div>
 					<div ng-show="!self.cfarm().plans[self.cdate].length" class="text-muted"><i class="fa fa-tint"></i> No planting.<hr></div>
-					
+
 					<div ng-show="self.cfarm().harvests[self.cdate].length">
 						<div class="panel panel-default">
 							<div class="panel-heading">
@@ -533,11 +533,11 @@
 		</div>
 	</div>
 	<!-- [/CROP_PLANNER_MODAL] -->
-	
-	
+
+
 	<!-- [LICENSE] -->
 	<div class="license">
-		<a href="http://stardewvalley.net/" target="_blank" rel="noreferrer">Stardew Valley</a> (v1.1) © <a href="https://twitter.com/ConcernedApe" target="_blank" rel="noreferrer">ConcernedApe</a>. Unofficial <a href="https://github.com/exnil/crop_planner" target="_blank" rel="noreferrer">crop planner source code</a> made available under the MIT License. 
+		<a href="http://stardewvalley.net/" target="_blank" rel="noreferrer">Stardew Valley</a> (v1.1) © <a href="https://twitter.com/ConcernedApe" target="_blank" rel="noreferrer">ConcernedApe</a>. Unofficial <a href="https://github.com/exnil/crop_planner" target="_blank" rel="noreferrer">crop planner source code</a> made available under the MIT License.
 		<br>
 		<a href="https://github.com/exnil/crop_planner" target="_blank" rel="noreferrer" title="GitHub Page"><i class="fa fa-github fa-lg"></i></a>
 		&ensp;
