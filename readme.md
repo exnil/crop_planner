@@ -1,7 +1,7 @@
 # Stardew Valley Crop Planner
 
 **Fork Note:**
-This will hopefully be a version that includes JSON Assets crops. Forked on 2020-09-13, be patient please.
+This will hopefully be a version that includes JSON Assets crops.
 
 A tool for planning crop schedules in the Stardew Valley game.
 
@@ -33,9 +33,16 @@ Note that this does include one spoiler for Stardew Valley Expanded.
 * Stephan's Lots of Wild Crops
 * Wild Seeds & Rice from Vanilla
 
-QOL changes
+**QOL changes**
+
 * Crops grouped by mod
 * Added Winter crops to crop filter
+
+** To do **
+[] Turn mods on and off in the settings
+[] Filter Crops by Mod in the existing search panel
+
+*(General note: Angular ain't my thing so if someone wants to take a crack at these two s'cool by me.)*
 
 ---
 *Everything from this point on is the original Readme from Exnil's version.*
