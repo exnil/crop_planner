@@ -4872,6 +4872,227 @@
             ]
         },
         {
+            "buy": 900,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 1,
+                "min": 1
+            },
+            "id": "aerinite_root",
+            "index": 1186,
+            "mod": "Gem + Mineral Crops",
+			"name": "Aerinite Root",
+            "regrow": 1,
+            "seasons": [
+                "winter"
+            ],
+            "sell": 125,
+            "stages": [
+                3,
+                2,
+                1,
+                7,
+                1
+            ]
+        },
+        {
+            "buy": 600,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 1,
+                "min": 1
+            },
+            "id": "aquamarine_rose",
+            "index": 1187,
+            "mod": "Gem + Mineral Crops",
+			"name": "Aquamarine Rose",
+            "regrow": 3,
+            "seasons": [
+                "winter"
+            ],
+            "sell": 180,
+            "stages": [
+                1,
+                1,
+                2,
+                4,
+                2
+            ]
+        },
+        {
+            "buy": 300,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 1,
+                "min": 1
+            },
+            "id": "celestine_flower",
+            "index": 1188,
+            "mod": "Gem + Mineral Crops",
+            "name": "Celestine Flower",
+            "regrow": 6,
+            "seasons": [
+                "winter"
+            ],
+            "sell": 125,
+            "stages": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "buy": 2000,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 1,
+                "min": 1
+            },
+            "id": "diamond_flower",
+            "index": 1189,
+            "mod": "Gem + Mineral Crops",
+            "name": "Diamond Flower",
+            "regrow": 3,
+            "seasons": [
+                "winter"
+            ],
+            "sell": 750,
+            "stages": [
+                1,
+                1,
+                2,
+                3,
+                5
+            ]
+        },
+        {
+            "buy": 400,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 1,
+                "min": 1
+            },
+            "id": "ghost_rose",
+            "index": 1190,
+            "mod": "Gem + Mineral Crops",
+            "name": "Ghost Rose",
+            "regrow": 6,
+            "seasons": [
+                "winter"
+            ],
+            "sell": 200,
+            "stages": [
+                1,
+                1,
+                2,
+                2
+            ]
+        },
+        {
+            "buy": 500,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 1,
+                "min": 1
+            },
+            "id": "kyanite_flower",
+            "index": 1191,
+            "mod": "Gem + Mineral Crops",
+            "name": "Kyanite Flower",
+            "regrow": 6,
+            "seasons": [
+                "winter"
+            ],
+            "sell": 250,
+            "stages": [
+                1,
+                1,
+                1,
+                1,
+                3
+            ]
+        },
+        {
+            "buy": 900,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 1,
+                "min": 1
+            },
+            "id": "opal_cat",
+            "index": 1192,
+            "mod": "Gem + Mineral Crops",
+            "name": "Opal Cat",
+            "regrow": 4,
+            "seasons": [
+                "winter"
+            ],
+            "sell": 150,
+            "stages": [
+                1,
+                1,
+                3,
+                3
+            ]
+        },
+        {
+            "buy": 500,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 1,
+                "min": 1
+            },
+            "id": "slate_bean",
+            "index": 1193,
+            "mod": "Gem + Mineral Crops",
+            "name": "Slate Bean",
+            "regrow": 12,
+            "seasons": [
+                "winter"
+            ],
+            "sell": 85,
+            "stages": [
+                1,
+                1,
+                1,
+                2,
+                7
+            ]
+        },
+        {
+            "buy": 200,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 1,
+                "min": 1
+            },
+            "id": "soap_root",
+            "index": 1194,
+            "mod": "Gem + Mineral Crops",
+            "name": "Soap Root",
+            "regrow": 5,
+            "seasons": [
+                "winter"
+            ],
+            "sell": 125,
+            "stages": [
+                1,
+                2,
+                2,
+                2,
+                3
+            ]
+        },
+        {
             "buy": 60,
             "harvest": {
                 "extra_chance": 0.0,
