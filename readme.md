@@ -26,6 +26,7 @@ Note that this does include one spoiler for Stardew Valley Expanded.
 * Fresh Meat
 * Fruits & Veggies
 * Gem + Mineral Crops
+* Green Pear
 * Mizu's Flowers
 * Wild Seeds & Rice from Vanilla
 

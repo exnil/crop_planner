@@ -5093,6 +5093,32 @@
             ]
         },
         {
+            "buy": 300,
+            "harvest": {
+                "extra_chance": 0.01,
+                "level_increase": 5,
+                "max": 2,
+                "min": 1
+            },
+            "id": "green_pear",
+            "index": 1195,
+            "mod": "Green Pear",
+            "name": "Green Pear",
+            "regrow": 5,
+            "seasons": [
+                "summer",
+                "fall"
+            ],
+            "sell": 300,
+            "stages": [
+                2,
+                2,
+                4,
+                3,
+                5
+            ]
+        },
+        {
             "buy": 60,
             "harvest": {
                 "extra_chance": 0.0,
