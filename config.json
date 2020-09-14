@@ -1687,6 +1687,379 @@
             ]
         },
         {
+            "buy": 400,
+            "harvest": {
+                "extra_chance": 0.1,
+                "level_increase": 5,
+                "max": 5,
+                "min": 3
+            },
+            "id": "blue_dream",
+            "index": 1159,
+            "mod": "Cannabis Kit",
+            "name": "Blue Dream",
+            "regrow": 3,
+            "seasons": [
+                "summer",
+                "fall"
+            ],
+            "sell": 40,
+            "stages": [
+                2,
+                3,
+                4,
+                4,
+                3
+            ],
+            "trellis": true
+        },
+        {
+            "buy": 1000,
+            "harvest": {
+                "extra_chance": 0.1,
+                "level_increase": 5,
+                "max": 5,
+                "min": 2
+            },
+            "id": "cannabis",
+            "index": 1160,
+            "mod": "Cannabis Kit",
+            "name": "Cannabis",
+            "regrow": 3,
+            "seasons": [
+                "spring",
+                "summer",
+                "fall"
+            ],
+            "sell": 30,
+            "stages": [
+                1,
+                3,
+                4,
+                4,
+                4
+            ],
+            "trellis": true
+        },
+        {
+            "buy": 400,
+            "harvest": {
+                "extra_chance": 0.1,
+                "level_increase": 5,
+                "max": 5,
+                "min": 3
+            },
+            "id": "girl_scout_cookies",
+            "index": 1161,
+            "mod": "Cannabis Kit",
+            "name": "Girl Scout Cookies",
+            "regrow": 3,
+            "seasons": [
+                "summer",
+                "fall"
+            ],
+            "sell": 40,
+            "stages": [
+                2,
+                3,
+                4,
+                4,
+                3
+            ],
+            "trellis": true
+        },
+        {
+            "buy": 300,
+            "harvest": {
+                "extra_chance": 0.2,
+                "level_increase": 5,
+                "max": 5,
+                "min": 3
+            },
+            "id": "green_crack",
+            "index": 1162,
+            "mod": "Cannabis Kit",
+            "name": "Green Crack",
+            "regrow": 3,
+            "seasons": [
+                "summer",
+                "fall"
+            ],
+            "sell": 50,
+            "stages": [
+                2,
+                3,
+                4,
+                4,
+                3
+            ],
+            "trellis": true
+        },
+        {
+            "buy": 320,
+            "harvest": {
+                "extra_chance": 0.2,
+                "level_increase": 5,
+                "max": 6,
+                "min": 2
+            },
+            "id": "hemp",
+            "index": 1163,
+            "mod": "Cannabis Kit",
+            "name": "Hemp",
+            "regrow": 3,
+            "seasons": [
+                "spring",
+                "summer",
+                "fall"
+            ],
+            "sell": 70,
+            "stages": [
+                1,
+                2,
+                3,
+                2,
+                2
+            ],
+            "trellis": true
+        },
+        {
+            "buy": 200,
+            "harvest": {
+                "extra_chance": 0.2,
+                "level_increase": 5,
+                "max": 5,
+                "min": 1
+            },
+            "id": "hybrid",
+            "index": 1164,
+            "mod": "Cannabis Kit",
+            "name": "Hybrid",
+            "regrow": 3,
+            "seasons": [
+                "summer",
+                "fall"
+            ],
+            "sell": 30,
+            "stages": [
+                2,
+                3,
+                4,
+                4,
+                3
+            ],
+            "trellis": true
+        },
+        {
+            "buy": 300,
+            "harvest": {
+                "extra_chance": 0.2,
+                "level_increase": 5,
+                "max": 5,
+                "min": 3
+            },
+            "id": "indica",
+            "index": 1165,
+            "mod": "Cannabis Kit",
+            "name": "Indica",
+            "regrow": 3,
+            "seasons": [
+                "summer"
+            ],
+            "sell": 30,
+            "stages": [
+                2,
+                3,
+                4,
+                4,
+                3
+            ],
+            "trellis": true
+        },
+        {
+            "buy": 300,
+            "harvest": {
+                "extra_chance": 0.1,
+                "level_increase": 5,
+                "max": 5,
+                "min": 3
+            },
+            "id": "northern_lights",
+            "index": 1166,
+            "mod": "Cannabis Kit",
+            "name": "Northern Lights",
+            "regrow": 3,
+            "seasons": [
+                "summer"
+            ],
+            "sell": 20,
+            "stages": [
+                1,
+                2,
+                3,
+                4,
+                3
+            ],
+            "trellis": true
+        },
+        {
+            "buy": 350,
+            "harvest": {
+                "extra_chance": 0.1,
+                "level_increase": 5,
+                "max": 5,
+                "min": 3
+            },
+            "id": "og_kush",
+            "index": 1167,
+            "mod": "Cannabis Kit",
+            "name": "OG Kush",
+            "regrow": 3,
+            "seasons": [
+                "summer",
+                "fall"
+            ],
+            "sell": 30,
+            "stages": [
+                2,
+                3,
+                4,
+                4,
+                3
+            ],
+            "trellis": true
+        },
+        {
+            "buy": 350,
+            "harvest": {
+                "extra_chance": 0.2,
+                "level_increase": 5,
+                "max": 3,
+                "min": 2
+            },
+            "id": "sativa",
+            "index": 1168,
+            "mod": "Cannabis Kit",
+            "name": "Sativa",
+            "regrow": 3,
+            "seasons": [
+                "fall"
+            ],
+            "sell": 30,
+            "stages": [
+                1,
+                3,
+                4,
+                4,
+                4
+            ],
+            "trellis": true
+        },
+        {
+            "buy": 350,
+            "harvest": {
+                "extra_chance": 0.1,
+                "level_increase": 5,
+                "max": 5,
+                "min": 2
+            },
+            "id": "sour_diesel",
+            "index": 1169,
+            "mod": "Cannabis Kit",
+            "name": "Sour Diesel",
+            "regrow": 3,
+            "seasons": [
+                "fall"
+            ],
+            "sell": 30,
+            "stages": [
+                1,
+                3,
+                4,
+                4,
+                3
+            ],
+            "trellis": true
+        },
+        {
+            "buy": 350,
+            "harvest": {
+                "extra_chance": 0.1,
+                "level_increase": 5,
+                "max": 5,
+                "min": 3
+            },
+            "id": "strawberry_cough",
+            "index": 1170,
+            "mod": "Cannabis Kit",
+            "name": "Strawberry Cough",
+            "regrow": 3,
+            "seasons": [
+                "summer",
+                "fall"
+            ],
+            "sell": 20,
+            "stages": [
+                2,
+                3,
+                4,
+                5,
+                3
+            ],
+            "trellis": true
+        },
+        {
+            "buy": 30,
+            "harvest": {
+                "extra_chance": 0.1,
+                "level_increase": 5,
+                "max": 2,
+                "min": 1
+            },
+            "id": "tobacco",
+            "index": 1171,
+            "mod": "Cannabis Kit",
+            "name": "Tobacco",
+            "seasons": [
+                "spring",
+                "summer"
+            ],
+            "sell": 35,
+            "stages": [
+                1,
+                2,
+                2,
+                2
+            ]
+        },
+        {
+            "buy": 400,
+            "harvest": {
+                "extra_chance": 0.2,
+                "level_increase": 5,
+                "max": 4,
+                "min": 3
+            },
+            "id": "white_widow",
+            "index": 1172,
+            "mod": "Cannabis Kit",
+            "name": "White Widow",
+            "regrow": 3,
+            "seasons": [
+                "summer",
+                "fall"
+            ],
+            "sell": 50,
+            "stages": [
+                2,
+                5,
+                5,
+                3,
+                2
+            ],
+            "trellis": true
+        },
+        {
             "buy": 175,
             "harvest": {
                 "extra_chance": 0.4,

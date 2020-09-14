@@ -16,6 +16,7 @@ Note that this does include one spoiler for Stardew Valley Expanded.
 * Stardew Valley Expanded Character birthdays + Festival.
 * Ancient Crops
 * Bonster's Fruit + Veggies
+* Cannabis Kit
 * Champagne Wishes
 * Fantasy Crops
 * Farmer to Florist

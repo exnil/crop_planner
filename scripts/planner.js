@@ -115,7 +115,7 @@ function planner_controller($scope){
 		self.cinfo_settings.season_options = [self.seasons[0], self.seasons[1], self.seasons[2], self.seasons[3]];
 
         // List mods
-        self.cinfo_settings.mods_available = ["Vanilla", "Ancient Crops", "Bonster's Fruits + Veggies", "Champagne Wishes", "Fantasy Crops", "Farmer to Florist",
+        self.cinfo_settings.mods_available = ["Vanilla", "Ancient Crops", "Bonster's Fruits + Veggies", "Cannabis Kit", "Champagne Wishes", "Fantasy Crops", "Farmer to Florist",
             "Fizzy Drinks", "Fresh Meat", "Fruits + Veggies", "Mizu's Flowers"];
 
 		// Enable bootstrap tooltips
