@@ -1,12 +1,12 @@
 /********************************
 	Crop Planner Stylesheet
-	
+
 	Compile with Less CSS:
 		lessc style.less style.css
-		
+
 	Or run utils/watch.py to
 	auto-compile on changes
-	
+
 	Use #dev fragment in url to
 	auto-refresh stylesheet
 ********************************/
@@ -28,7 +28,7 @@
 		content: " ";
 		display: table;
 	}
-	
+
 	&:after{
 		clear: both;
 	}
@@ -69,42 +69,42 @@ body{
 	background-repeat: no-repeat;
 	background-position: 50% 100%;
 	//overflow-y: scroll;
-	
+
 	color: #111;
 	font-size: 14px;
 	font-family: Source Sans Pro, Verdana;
-	
+
 	&.sidebar_open{
 		overflow: hidden;
 	}
-	
+
 	a:hover, a:focus{
 		text-decoration: none;
 	}
-	
+
 	a, button, .btn{
 		.transition(all .2s);
 	}
-	
+
 	hr{
 		border-color: #ddd;
 	}
-	
+
 	button, .btn{
 		&.active, &:active, &:focus, &:active:focus{
 			outline: 0;
 		}
 	}
-	
+
 	label{
 		font-weight: normal;
 	}
-	
+
 	.panel.panel-default{
 		border-radius: 0;
 		border-color: #ccc;
 		background-color: #f5f5f5;
-		
+
 		.panel-heading{
 			background-color: #ddd;
 			border-color: #ccc;
@@ -121,7 +121,7 @@ body{
 	html body{
 		#content{
 			padding-right: 70px;
-			
+
 			#top_menu{
 				margin-right: -70px;
 				padding-right: 70px;
@@ -139,12 +139,12 @@ header{
 	margin: 4px auto;
 	max-width: @content_max_width;
 	cursor: default;
-	
+
 	.logo{
 		height: 60px;
 		width: auto;
 	}
-	
+
 	.page_title{
 		font-size: 28px;
 		font-weight: bold;
@@ -156,13 +156,13 @@ header{
 		position: relative;
 		top: 7px;
 	}
-	
+
 	.responsive-sm({
 		padding-left: 10px;
 		.logo{
 			height: 50px;
 		}
-		
+
 		.page_title{
 			font-size: 20px;
 		}
@@ -183,7 +183,7 @@ header{
 	background-color: rgba(0, 0, 0, 0);
 	cursor: pointer;
 	.transition(background-color .4s);
-	
+
 	&.open{
 		width: 100%;
 		height: 100%;
@@ -197,32 +197,32 @@ header{
 	position: fixed;
 	top: 0; right: -@sidebar_width;
 	z-index: 10;
-	
+
 	background-color: #f0f0f0;
 	border-left: 1px solid #aaa;
-	
+
 	box-sizing: border-box;
 	.transition(right .2s);
-	
+
 	.responsive-sm({
 		width: 0%;
-		
+
 		&.open{
 			width: 90%;
-			
+
 			.sb_buttons{
 				right: 100%;
 			}
 		}
 	});
-	
+
 	&.open{
 		right: 0;
 		box-shadow: -2px 0 4px rgba(0, 0, 0, .2);
-		
+
 		.sb_buttons{
 			padding-right: 0;
-			
+
 			li{
 				margin-right: 0;
 				border-radius: 6px 0 0 6px;
@@ -230,27 +230,27 @@ header{
 				right: -7px;
 				border-right: 0;
 				box-shadow: -2px 0 2px rgba(0, 0, 0, .05) inset;
-				
+
 				&.active{
 					right: 0;
 					border-left-width: 4px;
 					background-color: #f0f0f0;
 				}
-				
+
 				&:not(.active){
 					box-shadow: -10px 0 4px rgba(0, 0, 0, .15) inset;
 					//padding-left: 8px;
 				}
 			}
 		}
-		
+
 		.sb_content{
 			.sb_section.active{
 				display: block;
 			}
 		}
 	}
-	
+
 	.sb_buttons{
 		position: absolute;
 		right: @sidebar_width;
@@ -258,14 +258,14 @@ header{
 		margin-top: 48px;
 		list-style: none;
 		overflow: hidden;
-		
+
 		li{
 			background-color: #ddd;
 			border: 1px solid #aaa;
 			box-shadow: 0px 2px 2px rgba(0, 0, 0, .55);
 			//color: #eee;
 			color: #333;
-			
+
 			margin: 0; padding: 0;
 			margin-top: 15px;
 			width: 50px;
@@ -276,13 +276,13 @@ header{
 			padding: 7px 13px;
 			box-sizing: border-box;
 			.transition(all .2s);
-			
+
 			&:hover{
 				background-color: #eee;
 			}
 		}
 	}
-	
+
 	.sb_content{
 		// hidden scrollbar
 		overflow-y: scroll;
@@ -292,20 +292,20 @@ header{
 		bottom: 0px;
 		left: 0px;
 		right: -17px;
-		
+
 		.sb_section{
 			display: none;
-			
+
 			&.panel{
 				border: 0;
 				border-radius: 0;
 				box-shadow: none;
 				background-color: transparent;
-				
+
 				.panel-body{
 					padding-right: 20px;
 				}
-				
+
 				.panel-heading{
 					border-color: #ccc;
 					background-color: #ddd;
@@ -313,12 +313,12 @@ header{
 					padding-right: 20px;
 					position: relative;
 					border-radius: 0;
-					
+
 					.panel-title{
 						font-weight: bold;
 						margin-left: 48px;
 					}
-					
+
 					.back{
 						position: absolute;
 						top: 0; left: 0;
@@ -329,7 +329,7 @@ header{
 						padding: 9px 13px;
 						cursor: pointer;
 						.transition(all .2s);
-						
+
 						&:hover{
 							background-color: #ccc;
 						}
@@ -346,12 +346,12 @@ header{
 		label{
 			margin-right: 8px;
 		}
-		
+
 		.search{
 			margin-top: 5px;
 		}
 	}
-	
+
 	.crops_container{
 		position: absolute;
 		top: 180px; bottom: 0;
@@ -361,20 +361,20 @@ header{
 		overflow-x: hidden;
 		border-top: 1px solid #ddd;
 		min-height: 250px;
-		
+
 		.crops{
 			thead th{
 				cursor: pointer;
 			}
-			
+
 			tbody{
 				tr{
 					cursor: pointer;
-					
+
 					td{
 						.transition(all .2s);
 					}
-					
+
 					&:hover{
 						td{
 							background-color: #fff;
@@ -384,35 +384,35 @@ header{
 			}
 		}
 	}
-	
+
 	.crop_info{
 		.ci_header{
 			margin-bottom: 20px;
 			.clearfix;
-			
+
 			img{
 				float: left;
 				margin-right: 15px;
 			}
-			
+
 			.ci_name{
 				font-size: 18px;
 				font-weight: bold;
 			}
-			
+
 			.ci_seasons{
 				color: #777;
 				text-transform: capitalize;
 			}
 		}
-		
+
 		table{
 			tr:first-child{
 				th, td{
 					border-top-width: 2px;
 				}
 			}
-			
+
 			.fa{
 				color: #888;
 				font-size: 13px;
@@ -429,65 +429,65 @@ header{
 			margin-top: 5px;
 			margin-right: 5px;
 		}
-		
+
 		.btn-success{
 			opacity: 1;
 		}
-			
+
 		.btn-default{
 			opacity: .6;
 		}
 	}
-	
+
 	.farm_level{
 		overflow: hidden;
-	
+
 		label{
 			width: 100%;
 		}
-		
+
 		.chance_scale{
 			height: 25px;
 			border: 1px solid #888;
 			border-radius: 0px;
 			.clearfix;
-			
+
 			> div{
 				height: 100%;
 				float: left;
 				position: relative;
 				box-sizing: border-box;
-				
+
 				&:not(:last-child){
 					border-right: 1px solid #aaa;
 				}
-				
+
 				&.regular{
 					background-color: #bf8550;
 				}
-				
+
 				&.silver{
 					background-color: silver;
 					background: linear-gradient(135deg, rgba(242,246,248,1) 0%,rgba(216,225,231,1) 50%,rgba(181,198,208,1) 51%,rgba(224,239,249,1) 100%);
 					box-shadow: 0 0 1px 1px rgba(255, 255, 255, .45) inset;
-					
+
 					.name{
 						left: -28px;
 					}
 				}
-				
+
 				&.gold{
 					background-color: gold;
 					background: linear-gradient(135deg, rgba(230,240,163,1) 0%,rgba(210,230,56,1) 50%,rgba(195,216,37,1) 51%,rgba(219,240,67,1) 100%);
 					box-shadow: 0 0 1px 1px rgba(255, 255, 255, .45) inset;
 				}
-				
+
 				.percent{
 					font-size: 12px;
 					padding: 2px 2px;
 					overflow: hidden;
 				}
-				
+
 				.name{
 					position: absolute;
 					bottom: -20px;
@@ -498,6 +498,12 @@ header{
 			}
 		}
 	}
+
+    .modlist{
+        label{
+            margin-left: 5px;
+        }
+    }
 }
 
 
@@ -512,12 +518,12 @@ header{
 	max-width: @content_max_width;
 	width: auto;
 	min-height: 845px;
-	
+
 	.loading{
 		font-size: 20px;
 		text-align: center;
 		color: #444;
-		
+
 		.fa{
 			display: block;
 			font-size: 32px;
@@ -533,10 +539,10 @@ header{
 	text-shadow: 0 1px 1px #000;
 	width: 100%;
 	margin: 5px 0;
-	
+
 	a{
 		color: lighten(#337ab7, 35%);
-		
+
 		&:hover, &:focus{
 			color: lighten(#337ab7, 50%);
 			text-decoration: underline;
@@ -556,11 +562,11 @@ header{
 	background-color: #e3e3e3;
 	border-bottom: 1px solid #ccc;
 	position: relative;
-	
+
 	> div{
 		margin-bottom: 15px;
 		padding: 0 15px;
-		
+
 		/*
 		&:after{
 			content: " ";
@@ -573,33 +579,33 @@ header{
 		}
 		*/
 	}
-	
+
 	.year_navigation{
 		.clearfix;
-		
+
 		> div{
 			float: left;
 			margin-right: 8px;
 		}
-		
+
 		.sn_arrows{
 			.btn{
 				padding: 12px 10px;
 			}
 		}
-		
+
 		.farm_picker{
 			.btn{
 				padding: 6px;
 			}
 		}
-		
+
 		.year_info{
 			.yi_name{
 				font-size: 18px;
 				font-weight: bold;
 			}
-			
+
 			.yi_farmtype{
 				font-size: 16px;
 				color: #777;
@@ -607,7 +613,7 @@ header{
 			}
 		}
 	}
-	
+
 	.season_stats{
 		position: relative;
 		font-size: 12px;
@@ -615,24 +621,24 @@ header{
 		border: 1px solid #ccc;
 		border-right-width: 3px;
 		border-left-width: 3px;
-		
+
 		.table{
 			margin-bottom: 0;
 			border-top: 0;
-			
+
 			tr:first-child{
 				th, td{
 					border-top: 0;
 				}
 			}
 		}
-		
+
 		.asc_icon{
 			margin: 0 5px;
 			color: #777;
 		}
 	}
-	
+
 	.clear_buttons{
 		.btn-block + .btn-block{
 			margin-top: 2px;
@@ -647,7 +653,7 @@ header{
 #season_picker{
 	overflow: hidden;
 	margin: 0;
-	
+
 	.season{
 		height: 40px;
 		padding: 2px 12px;
@@ -660,16 +666,16 @@ header{
 		position: relative;
 		bottom: -6px;
 		.transition(all .1s);
-		
+
 		&:hover{
 			opacity: .65;
 		}
-		
+
 		&.active{
 			opacity: 1;
 			bottom: -2px;
 		}
-		
+
 		.image{
 			position: absolute;
 			left: 0;
@@ -679,40 +685,40 @@ header{
 			margin: 10px 8px;
 			border: 1px solid #777;
 		}
-		
+
 		.name{
 			font-size: 18px;
 			margin-left: 28px;
 			margin-top: 2px;
 			text-transform: capitalize;
 		}
-		
+
 		.responsive-xs({
 			.image{
 				display: none;
 			}
-			
+
 			.name{
 				margin-left: 0;
 			}
 		});
-		
+
 		.profit{
 			position: absolute;
 			top: 5px; right: 26px;
 			font-size: 12px;
 			line-height: 11px;
-			
+
 			> div{
-				
+
 			}
-			
+
 			&.min{
 				top: 9px;
 				right: 12px;
 				font-size: 13px;
 			}
-			
+
 			.asc_icon{
 				position: absolute;
 				top: 5px;
@@ -721,11 +727,11 @@ header{
 				color: #777;
 			}
 		}
-		
+
 		.responsive-sm({
 			font-size: 18px;
 		});
-	}	
+	}
 }
 
 
@@ -736,11 +742,11 @@ header{
 #calendar{
 	background-color: #FBEBC2;
 	border: 3px solid @border_color;
-	
+
 	// Day abbreviations at top of calendar
 	.day_names{
 		.clearfix;
-		
+
 		.day_name{
 			width: @day_width;
 			float: left;
@@ -748,16 +754,16 @@ header{
 			text-align: center;
 			font-size: 22px;
 			padding: 4px;
-			
+
 			.responsive-xs({
 				display: none;
 			});
 		}
 	}
-	
+
 	.day_container{
 		.clearfix;
-		
+
 		.day{
 			width: @day_width;
 			height: 160px;
@@ -771,37 +777,37 @@ header{
 			cursor: pointer;
 			.transition(all .2s);
 			.clearfix;
-			
+
 			&.filled{
 				//background-color: lighten(#DDD1B2, 3%);
 			}
-			
+
 			&:nth-child(7n){
 				border-right: 0;
 			}
-			
+
 			&:hover{
 				background-color: darken(#DDD1B2, 7%);
 				//box-shadow: 0 0 10px rgba(0, 0, 0, .1) inset;
 			}
-			
+
 			.responsive-sm({
 				height: 135px;
 			});
-			
+
 			.responsive-xs({
 				width: 50%;
 				border-right: 2px solid @border_color !important;
 				padding-top: 30px;
-				
+
 				&:nth-child(1), &:nth-child(2){
 					border-top: 0;
 				}
-				
+
 				&:nth-child(2n){
 					border-right: 0 !important;
 				}
-				
+
 				.date_top{
 					height: 31px !important;
 					padding: 4px 8px;
@@ -812,12 +818,12 @@ header{
 					width: 100%;
 					overflow: hidden;
 					.clearfix;
-					
+
 					.date{
 						position: static !important;
 						float: left;
 					}
-					
+
 					.event{
 						text-align: right;
 						top: 6px !important;
@@ -827,22 +833,22 @@ header{
 					}
 				}
 			});
-			
+
 			.date_top{
 				height: 26px;
 				position: relative;
-				
+
 				.date{
 					position: absolute;
 					top: 0px; left: 4px;
 					font-size: 18px;
-					
+
 					.responsive-sm({
 						left: 2px;
 						font-size: 16px;
 					});
 				}
-				
+
 				.event{
 					position: absolute;
 					top: 3px; left: 30px;
@@ -852,7 +858,7 @@ header{
 					text-overflow: ellipsis;
 					overflow: hidden;
 					color: #555;
-					
+
 					img{
 						width: 16px;
 						height: auto;
@@ -860,21 +866,21 @@ header{
 					}
 				}
 			}
-			
+
 			.planting, .harvesting{
 				padding-bottom: 11px;
 				.clearfix;
-				
+
 				.plan{
 					float: left;
 					position: relative;
 					margin-right: 10px;
-					
+
 					img{
 						width: 24px;
 						height: auto;
 					}
-					
+
 					.amount{
 						position: absolute;
 						bottom: -9px;
@@ -882,19 +888,19 @@ header{
 						color: #000;
 						font-size: 12px;
 						line-height: 10px;
-						
+
 						.responsive-sm({
 							font-size: 10px;
 						});
 					}
-					
+
 					.responsive-sm({
 						margin-right: 4px;
-						
+
 						img{
 							width: 14px;
 						}
-						
+
 						.amount{
 							bottom: -7px;
 							right: -6px;
@@ -902,13 +908,13 @@ header{
 					});
 				}
 			}
-			
+
 			.more{
 				font-size: 13px;
 				color: #777;
 				margin-top: -6px;
 			}
-			
+
 			.profit{
 				position: absolute;
 				left: 13px; bottom: -3px;
@@ -916,16 +922,16 @@ header{
 				font-size: 12px;
 				line-height: 12px;
 				font-weight: bold;
-				
+
 				&.min{
 					left: 0; bottom: 3px;
 					font-size: 13px;
 				}
-				
+
 				> div{
-				
+
 				}
-				
+
 				.asc_icon{
 					position: absolute;
 					bottom: 4px; left: -16px;
@@ -944,28 +950,28 @@ header{
 #crop_planner, #crop_info, #sb_cropinfo{
 	.crops{
 		margin-bottom: 0;
-		
+
 		.crop{
-			td{			
+			td{
 				vertical-align: middle;
 				position: relative;
 			}
-			
+
 			img{
 				width: 32px;
 				height: auto;
 			}
-			
+
 			&.error td{
 				background-color: #ff8888;
 			}
-			
+
 			.compare{
 				color: #aaa;
 				font-size: 13px;
 				margin: 0 2px;
 			}
-			
+
 			.form-control{
 				display: inline-block;
 				width: auto;
@@ -978,7 +984,7 @@ header{
 // Crop planner modal
 #crop_planner{
 	.plant_crop{
-		
+
 	}
 }
 
@@ -987,10 +993,10 @@ header{
 	th{
 		cursor: pointer;
 	}
-	
+
 	.seasons{
 		border-bottom: 2px solid #ccc;
-		
+
 		.season{
 			padding: 6px 0;
 			cursor: pointer;
@@ -999,26 +1005,26 @@ header{
 			border: 1px solid transparent;
 			border-bottom: 0;
 			.transition(all .2s);
-			
+
 			&:hover{
 				background-color: #ddd;
 			}
-			
+
 			&.active{
 				border-color: #ccc;
 				background-color: #fff;
 			}
 		}
 	}
-	
+
 	.crops_container{
 		//max-height: 700px;
 		//overflow-y: scroll;
 		//overflow-x: hidden;
-		
+
 		.name{
 			position: relative;
-			
+
 			.note{
 				position: absolute;
 				font-size: 10px;
@@ -1033,62 +1039,62 @@ header{
 #player_settings{
 	.settings{
 		margin-bottom: 20px;
-		
+
 		.btn-success{
 			opacity: 1;
 		}
-			
+
 		.btn-default{
 			opacity: .5;
 		}
 	}
-	
+
 	.statistics{
 		overflow: hidden;
-		
+
 		.chance_scale{
 			height: 25px;
 			border: 1px solid #888;
 			border-radius: 2px;
 			margin-bottom: 38px;
 			.clearfix;
-			
+
 			> div{
 				height: 100%;
 				float: left;
 				position: relative;
 				box-sizing: border-box;
-				
+
 				&:not(:last-child){
 					border-right: 1px solid #aaa;
 				}
-				
+
 				&.regular{
 					background-color: #bf8550;
 				}
-				
+
 				&.silver{
 					background-color: silver;
 					background: linear-gradient(135deg, rgba(242,246,248,1) 0%,rgba(216,225,231,1) 50%,rgba(181,198,208,1) 51%,rgba(224,239,249,1) 100%);
 					box-shadow: 0 0 1px 1px rgba(255, 255, 255, .45) inset;
-					
+
 					.name{
 						left: -28px;
 					}
 				}
-				
+
 				&.gold{
 					background-color: gold;
 					background: linear-gradient(135deg, rgba(230,240,163,1) 0%,rgba(210,230,56,1) 50%,rgba(195,216,37,1) 51%,rgba(219,240,67,1) 100%);
 					box-shadow: 0 0 1px 1px rgba(255, 255, 255, .45) inset;
 				}
-				
+
 				.percent{
 					font-size: 12px;
 					padding: 2px 2px;
 					overflow: hidden;
 				}
-				
+
 				.name{
 					position: absolute;
 					bottom: -20px;
@@ -1108,36 +1114,36 @@ header{
 // Restyle Bootstrap modal
 .modal{
 	padding-right: 0 !important;
-	
+
 	.modal-dialog{
 		width: auto;
 		min-width: 400px;
 		max-width: 1000px;
-		
+
 		.modal-content{
 			background-color: #f0f0f0;
 			border-radius: 0;
 			//overflow: hidden;
-			
+
 			.modal-header{
 				background-color: #ddd;
-				
+
 				.modal-title{
 					text-align: center;
 					font-weight: bold;
 				}
 			}
-			
+
 			.modal-body{
 				label{
 					width: 100%;
 				}
 			}
-			
+
 			.modal-footer{
 				background-color: #ddd;
 			}
-			
+
 			.modal-header, .modal-body, .modal-footer{
 				border-color: #ccc;
 			}

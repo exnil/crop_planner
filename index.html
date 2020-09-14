@@ -222,6 +222,7 @@
 								<thead>
 									<tr>
 										<th ng-click="self.ci_set_sort('name')" colspan="2">Crop</th>
+                                        <th ng-click="self.ci_set_sort('mod')">Mod</th>
 										<th ng-click="self.ci_set_sort('grow')"><i class="fa fa-clock-o"></i> Days</th>
 										<th ng-click="self.ci_set_sort('buy')">Buy</th>
 										<th ng-click="self.ci_set_sort('sell')">Sell</th>
@@ -235,6 +236,7 @@
 											{{crop.name}}
 											<span class="text-muted" ng-show="crop.harvest.min>1">(x{{crop.harvest.min}})</span>
 										</td>
+                                        <td>{{crop.mod}}</td>
 										<td>{{crop.grow}}</td>
 										<td>{{crop.buy}}g</td>
 										<td>{{crop.get_sell()}}g</td>
@@ -392,7 +394,7 @@
 							<div class="col-md-4 col-xs-12">
 								<b>Plant Crop</b><br>
 								<select class="form-control" ng-model="self.newplan.crop_id"
-									ng-options="crop.id as crop.name for crop in self.crops_list | filter:self.planner_valid_crops">
+									ng-options="crop.id as crop.name group by crop.mod for crop in self.crops_list | filter:self.planner_valid_crops">
 								</select>
 							</div>
 							<div class="col-md-2 col-xs-4">

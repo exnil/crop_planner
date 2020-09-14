@@ -14,14 +14,19 @@ Note that this does include one spoiler for Stardew Valley Expanded.
 ### Mods implemented:
 
 * Stardew Valley Expanded Character birthdays + Festival.
-* Ancient Crops (AC)
-* Champagne Wishes (CHAMP)
-* Fantasy Crops (FANT)
-* Farmer to Florist (F2F)
-* Fizzy Drinks (FIZZ)
-* Fresh Meat (MEAT)
-* Fruits & Veggies (FV)
+* Ancient Crops
+* Bonster's Fruit + Veggies
+* Champagne Wishes
+* Fantasy Crops
+* Farmer to Florist
+* Fizzy Drinks
+* Fresh Meat
+* Fruits & Veggies
 * Wild Seeds & Rice from Vanilla
+
+QOL changes
+* Crops grouped by mod
+* Added Winter crops to crop filter
 
 ---
 *Everything from this point on is the original Readme from Exnil's version.*

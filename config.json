@@ -5,6 +5,7 @@
 			"harvest": {},
 			"id": "amaranth",
 			"index": 299,
+            "mod": "Vanilla",
 			"name": "Amaranth",
 			"scythe": true,
 			"seasons": [
@@ -23,6 +24,7 @@
 			"harvest": {},
 			"id": "ancient_fruit",
 			"index": 499,
+            "mod": "Vanilla",
 			"name": "Ancient Fruit",
 			"regrow": 7,
 			"seasons": [
@@ -44,6 +46,7 @@
 			"harvest": {},
 			"id": "artichoke",
 			"index": 489,
+            "mod": "Vanilla",
 			"name": "Artichoke",
 			"seasons": [
 				"fall"
@@ -62,6 +65,7 @@
 			"harvest": {},
 			"id": "beet",
 			"index": 494,
+            "mod": "Vanilla",
 			"name": "Beet",
 			"seasons": [
 				"fall"
@@ -79,6 +83,7 @@
 			"harvest": {},
 			"id": "blue_jazz",
 			"index": 429,
+            "mod": "Vanilla",
 			"name": "Blue Jazz",
 			"seasons": [
 				"spring"
@@ -101,6 +106,7 @@
 			},
 			"id": "blueberry",
 			"index": 481,
+            "mod": "Vanilla",
 			"name": "Blueberry",
 			"regrow": 4,
 			"seasons": [
@@ -120,6 +126,7 @@
 			"harvest": {},
 			"id": "bok_choy",
 			"index": 491,
+            "mod": "Vanilla",
 			"name": "Bok Choy",
 			"seasons": [
 				"fall"
@@ -137,6 +144,7 @@
 			"harvest": {},
 			"id": "cauliflower",
 			"index": 474,
+            "mod": "Vanilla",
 			"name": "Cauliflower",
 			"seasons": [
 				"spring"
@@ -160,7 +168,8 @@
 			},
 			"id": "coffee_bean",
 			"index": 433,
-			"name": "Coffee Bean",
+			"mod": "Vanilla",
+            "name": "Coffee Bean",
 			"note": "Sold by Travelling Cart for ~2500g",
 			"regrow": 2,
 			"seasons": [
@@ -186,6 +195,7 @@
 			},
 			"id": "corn",
 			"index": 487,
+			"mod": "Vanilla",
 			"name": "Corn",
 			"regrow": 4,
 			"seasons": [
@@ -211,6 +221,7 @@
 			},
 			"id": "cranberries",
 			"index": 493,
+			"mod": "Vanilla",
 			"name": "Cranberries",
 			"regrow": 5,
 			"seasons": [
@@ -235,6 +246,7 @@
 			},
 			"id": "eggplant",
 			"index": 488,
+			"mod": "Vanilla",
 			"name": "Eggplant",
 			"regrow": 5,
 			"seasons": [
@@ -254,6 +266,7 @@
 			"harvest": {},
 			"id": "fairy_rose",
 			"index": 425,
+			"mod": "Vanilla",
 			"name": "Fairy Rose",
 			"seasons": [
 				"fall"
@@ -271,6 +284,7 @@
 			"harvest": {},
 			"id": "garlic",
 			"index": 476,
+			"mod": "Vanilla",
 			"name": "Garlic",
 			"seasons": [
 				"spring"
@@ -293,6 +307,7 @@
 			},
 			"id": "grape",
 			"index": 301,
+			"mod": "Vanilla",
 			"name": "Grape",
 			"regrow": 3,
 			"seasons": [
@@ -318,6 +333,7 @@
 			},
 			"id": "green_bean",
 			"index": 473,
+			"mod": "Vanilla",
 			"name": "Green Bean",
 			"regrow": 3,
 			"seasons": [
@@ -343,6 +359,7 @@
 			},
 			"id": "hops",
 			"index": 302,
+			"mod": "Vanilla",
 			"name": "Hops",
 			"regrow": 1,
 			"seasons": [
@@ -368,6 +385,7 @@
 			},
 			"id": "hot_pepper",
 			"index": 482,
+			"mod": "Vanilla",
 			"name": "Hot Pepper",
 			"regrow": 3,
 			"seasons": [
@@ -387,6 +405,7 @@
 			"harvest": {},
 			"id": "kale",
 			"index": 477,
+			"mod": "Vanilla",
 			"name": "Kale",
 			"scythe": true,
 			"seasons": [
@@ -405,6 +424,7 @@
 			"harvest": {},
 			"id": "melon",
 			"index": 479,
+			"mod": "Vanilla",
 			"name": "Melon",
 			"seasons": [
 				"summer"
@@ -423,6 +443,7 @@
 			"harvest": {},
 			"id": "parsnip",
 			"index": 472,
+			"mod": "Vanilla",
 			"name": "Parsnip",
 			"seasons": [
 				"spring"
@@ -440,6 +461,7 @@
 			"harvest": {},
 			"id": "poppy",
 			"index": 453,
+			"mod": "Vanilla",
 			"name": "Poppy",
 			"seasons": [
 				"summer"
@@ -462,6 +484,7 @@
 			},
 			"id": "potato",
 			"index": 475,
+			"mod": "Vanilla",
 			"name": "Potato",
 			"seasons": [
 				"spring"
@@ -480,6 +503,7 @@
 			"harvest": {},
 			"id": "pumpkin",
 			"index": 490,
+			"mod": "Vanilla",
 			"name": "Pumpkin",
 			"seasons": [
 				"fall"
@@ -498,6 +522,7 @@
 			"harvest": {},
 			"id": "radish",
 			"index": 484,
+			"mod": "Vanilla",
 			"name": "Radish",
 			"seasons": [
 				"summer"
@@ -515,6 +540,7 @@
 			"harvest": {},
 			"id": "red_cabbage",
 			"index": 485,
+			"mod": "Vanilla",
 			"name": "Red Cabbage",
 			"seasons": [
 				"summer"
@@ -533,6 +559,7 @@
 			"harvest": {},
 			"id": "rhubarb",
 			"index": 478,
+			"mod": "Vanilla",
 			"name": "Rhubarb",
 			"seasons": [
 				"spring"
@@ -551,6 +578,7 @@
 			"harvest": {},
 			"id": "starfruit",
 			"index": 486,
+			"mod": "Vanilla",
 			"name": "Starfruit",
 			"seasons": [
 				"summer"
@@ -574,6 +602,7 @@
 			},
 			"id": "strawberry",
 			"index": 745,
+			"mod": "Vanilla",
 			"name": "Strawberry",
 			"regrow": 4,
 			"seasons": [
@@ -593,6 +622,7 @@
 			"harvest": {},
 			"id": "summer_spangle",
 			"index": 455,
+			"mod": "Vanilla",
 			"name": "Summer Spangle",
 			"seasons": [
 				"summer"
@@ -610,6 +640,7 @@
 			"harvest": {},
 			"id": "sunflower",
 			"index": 431,
+			"mod": "Vanilla",
 			"name": "Sunflower",
 			"note": "Cheapest at JojaMart",
 			"seasons": [
@@ -629,6 +660,7 @@
 			"harvest": {},
 			"id": "sweet_gem_berry",
 			"index": 347,
+			"mod": "Vanilla",
 			"name": "Sweet Gem Berry",
 			"seasons": [
 				"fall"
@@ -652,6 +684,7 @@
 			},
 			"id": "tomato",
 			"index": 480,
+			"mod": "Vanilla",
 			"name": "Tomato",
 			"regrow": 4,
 			"seasons": [
@@ -671,6 +704,7 @@
 			"harvest": {},
 			"id": "tulip",
 			"index": 427,
+			"mod": "Vanilla",
 			"name": "Tulip",
 			"seasons": [
 				"spring"
@@ -688,6 +722,7 @@
 			"harvest": {},
 			"id": "unmilled_rice",
 			"index": 271,
+			"mod": "Vanilla",
 			"name": "Unmilled Rice (Paddy)",
             "scythe": true,
 			"seasons": [
@@ -706,6 +741,7 @@
 			"harvest": {},
 			"id": "unmilled_rice",
 			"index": 272,
+			"mod": "Vanilla",
 			"name": "Unmilled Rice (Dry)",
             "scythe": true,
 			"seasons": [
@@ -724,6 +760,7 @@
 			"harvest": {},
 			"id": "wheat",
 			"index": 483,
+			"mod": "Vanilla",
 			"name": "Wheat",
 			"scythe": true,
 			"seasons": [
@@ -743,7 +780,8 @@
             "harvest": {},
             "id": "wild_spring",
             "index": 996,
-            "name": "Wild Seeds (Sp)",
+            "mod": "Vanilla",
+			"name": "Wild Seeds (Sp)",
             "seasons": [
                 "spring"
             ],
@@ -760,7 +798,8 @@
             "harvest": {},
             "id": "wild_summer",
             "index": 997,
-            "name": "Wild Seeds (Su)",
+            "mod": "Vanilla",
+			"name": "Wild Seeds (Su)",
             "seasons": [
                 "summer"
             ],
@@ -777,7 +816,8 @@
             "harvest": {},
             "id": "wild_fall",
             "index": 998,
-            "name": "Wild Seeds (Fa)",
+            "mod": "Vanilla",
+			"name": "Wild Seeds (Fa)",
             "seasons": [
                 "fall"
             ],
@@ -794,7 +834,8 @@
             "harvest": {},
             "id": "wild_winter",
             "index": 999,
-            "name": "Wild Seeds (Wi)",
+            "mod": "Vanilla",
+			"name": "Wild Seeds (Wi)",
             "seasons": [
                 "winter"
             ],
@@ -811,6 +852,7 @@
 			"harvest": {},
 			"id": "yam",
 			"index": 492,
+			"mod": "Vanilla",
 			"name": "Yam",
 			"seasons": [
 				"fall"
@@ -833,7 +875,8 @@
             },
             "id": "ancient_coffee_bean",
             "index": 1001,
-            "name": "Ancient Coffee Bean (AC)",
+            "mod": "Ancient Crops",
+			"name": "Ancient Coffee Bean",
             "regrow": 4,
             "seasons": [
                 "spring",
@@ -859,7 +902,8 @@
             },
             "id": "ancient_fern",
             "index": 1002,
-            "name": "Ancient Fern (AC)",
+            "mod": "Ancient Crops",
+			"name": "Ancient Fern",
             "regrow": 3,
             "seasons": [
                 "spring",
@@ -885,7 +929,8 @@
             },
             "id": "ancient_flower",
             "index": 1003,
-            "name": "Ancient Flower (AC)",
+            "mod": "Ancient Crops",
+			"name": "Ancient Flower",
             "seasons": [
                 "spring",
                 "summer",
@@ -910,7 +955,8 @@
             },
             "id": "ancient_nut",
             "index": 1004,
-            "name": "Ancient Nut (AC)",
+            "mod": "Ancient Crops",
+			"name": "Ancient Nut",
             "regrow": 3,
             "seasons": [
                 "spring",
@@ -936,7 +982,8 @@
             },
             "id": "ancient_olive",
             "index": 1005,
-            "name": "Ancient Olive (AC)",
+            "mod": "Ancient Crops",
+			"name": "Ancient Olive",
             "regrow": 4,
             "seasons": [
                 "spring",
@@ -962,7 +1009,8 @@
             },
             "id": "ancient_tuber",
             "index": 1006,
-            "name": "Ancient Tuber (AC)",
+            "mod": "Ancient Crops",
+			"name": "Ancient Tuber",
             "seasons": [
                 "spring",
                 "summer",
@@ -987,7 +1035,8 @@
             },
             "id": "copper",
             "index": 1014,
-            "name": "Copper Ore (FANT)",
+            "mod": "Fantasy Crops",
+			"name": "Copper Ore",
             "seasons": [
                 "spring"
             ],
@@ -1010,7 +1059,8 @@
             },
             "id": "coal",
             "index": 1015,
-            "name": "Coal (FANT)",
+            "mod": "Fantasy Crops",
+			"name": "Coal",
             "seasons": [
                 "spring",
                 "summer"
@@ -1033,7 +1083,8 @@
             },
             "id": "gold",
             "index": 1016,
-            "name": "Gold Ore (FANT)",
+            "mod": "Fantasy Crops",
+			"name": "Gold Ore",
             "seasons": [
                 "fall"
             ],
@@ -1056,7 +1107,8 @@
             },
             "id": "iron",
             "index": 1017,
-            "name": "Iron Ore (FANT)",
+            "mod": "Fantasy Crops",
+			"name": "Iron Ore",
             "seasons": [
                 "summer"
             ],
@@ -1079,7 +1131,8 @@
             },
             "id": "iridium",
             "index": 1018,
-            "name": "Iridium Ore (FANT)",
+            "mod": "Fantasy Crops",
+			"name": "Iridium Ore",
             "seasons": [
                 "winter"
             ],
@@ -1102,7 +1155,8 @@
             },
             "id": "doubloon",
             "index": 1019,
-            "name": "Doubloons (FANT)",
+            "mod": "Fantasy Crops",
+			"name": "Doubloons",
             "regrow": 6,
             "seasons": [
                 "fall"
@@ -1126,7 +1180,8 @@
             },
             "id": "champagne_grape",
             "index": 1020,
-            "name": "Champagne Grape (CHAMP) (Y3)",
+            "mod": "Champagne Wishes",
+			"name": "Champagne Grape (Y3)",
             "regrow": 3,
             "seasons": [
                 "spring"
@@ -1146,7 +1201,8 @@
             "harvest": {},
             "id": "allium",
             "index": 1021,
-            "name": "Allium (F2F)",
+            "mod": "Farmer to Florist",
+			"name": "Allium",
             "seasons": [
                 "summer"
             ],
@@ -1168,7 +1224,8 @@
             },
             "id": "camellia",
             "index": 1022,
-            "name": "Camellia (F2F) (Y2)",
+            "mod": "Farmer to Florist",
+			"name": "Camellia (Y2)",
             "regrow": 3,
             "seasons": [
                 "spring",
@@ -1188,7 +1245,8 @@
             "harvest": {},
             "id": "carnation",
             "index": 1023,
-            "name": "Carnation (F2F)",
+            "mod": "Farmer to Florist",
+			"name": "Carnation",
             "seasons": [
                 "spring",
                 "summer"
@@ -1206,7 +1264,8 @@
             "harvest": {},
             "id": "chrysanthemum",
             "index": 1024,
-            "name": "Carnation (F2F)",
+            "mod": "Farmer to Florist",
+			"name": "Carnation",
             "seasons": [
                 "fall"
             ],
@@ -1228,7 +1287,8 @@
             },
             "id": "clematis",
             "index": 1025,
-            "name": "Clematis (F2F)",
+            "mod": "Farmer to Florist",
+			"name": "Clematis",
             "seasons": [
                 "fall"
             ],
@@ -1247,7 +1307,8 @@
             "harvest": {},
             "id": "dahlia",
             "index": 1026,
-            "name": "Dahlia (F2F) (Y3)",
+            "mod": "Farmer to Florist",
+			"name": "Dahlia (Y3)",
             "seasons": [
                 "fall"
             ],
@@ -1264,7 +1325,8 @@
             "harvest": {},
             "id": "delphinium",
             "index": 1027,
-            "name": "Delphinium (F2F) (Y2)",
+            "mod": "Farmer to Florist",
+			"name": "Delphinium (Y2)",
             "seasons": [
                 "spring"
             ],
@@ -1282,7 +1344,8 @@
             "harvest": {},
             "id": "english_rose",
             "index": 1028,
-            "name": "English Rose (F2F)",
+            "mod": "Farmer to Florist",
+			"name": "English Rose",
             "seasons": [
                 "fall"
             ],
@@ -1300,7 +1363,8 @@
             "harvest": {},
             "id": "freesia",
             "index": 1029,
-            "name": "Freesia (F2F)",
+            "mod": "Farmer to Florist",
+			"name": "Freesia",
             "seasons": [
                 "fall"
             ],
@@ -1317,7 +1381,8 @@
             "harvest": {},
             "id": "geranium",
             "index": 1030,
-            "name": "Geranium (F2F) (Y3)",
+            "mod": "Farmer to Florist",
+			"name": "Geranium (Y3)",
             "seasons": [
                 "fall"
             ],
@@ -1334,7 +1399,8 @@
             "harvest": {},
             "id": "herbal_peony",
             "index": 1031,
-            "name": "Herbal Peony (F2F)",
+            "mod": "Farmer to Florist",
+			"name": "Herbal Peony",
             "seasons": [
                 "spring"
             ],
@@ -1352,7 +1418,8 @@
             "harvest": {},
             "id": "hyacinth",
             "index": 1032,
-            "name": "Hyacinth (F2F) (Y2)",
+            "mod": "Farmer to Florist",
+			"name": "Hyacinth (Y2)",
             "seasons": [
                 "spring"
             ],
@@ -1369,7 +1436,8 @@
             "harvest": {},
             "id": "hydrangea",
             "index": 1033,
-            "name": "Hydrangea (F2F) (Y3)",
+            "mod": "Farmer to Florist",
+			"name": "Hydrangea (Y3)",
             "seasons": [
                 "summer"
             ],
@@ -1387,7 +1455,8 @@
             "harvest": {},
             "id": "iris",
             "index": 1034,
-            "name": "Iris (F2F)",
+            "mod": "Farmer to Florist",
+			"name": "Iris",
             "seasons": [
                 "fall"
             ],
@@ -1405,7 +1474,8 @@
             "harvest": {},
             "id": "lavender",
             "index": 1035,
-            "name": "Lavender (F2F)",
+            "mod": "Farmer to Florist",
+			"name": "Lavender",
             "seasons": [
                 "summer"
             ],
@@ -1423,7 +1493,8 @@
             "harvest": {},
             "id": "lilac",
             "index": 1036,
-            "name": "Lilac (F2F)",
+            "mod": "Farmer to Florist",
+			"name": "Lilac",
             "seasons": [
                 "spring"
             ],
@@ -1441,7 +1512,8 @@
             "harvest": {},
             "id": "lily",
             "index": 1037,
-            "name": "Lily (F2F)",
+            "mod": "Farmer to Florist",
+			"name": "Lily",
             "seasons": [
                 "summer"
             ],
@@ -1458,7 +1530,8 @@
             "harvest": {},
             "id": "lotus",
             "index": 1038,
-            "name": "Lotus (F2F)",
+            "mod": "Farmer to Florist",
+			"name": "Lotus",
             "seasons": [
                 "summer"
             ],
@@ -1477,7 +1550,8 @@
             "harvest": {},
             "id": "petunia",
             "index": 1039,
-            "name": "Petunia (F2F) (Y3)",
+            "mod": "Farmer to Florist",
+			"name": "Petunia (Y3)",
             "seasons": [
                 "summer"
             ],
@@ -1494,7 +1568,8 @@
             "harvest": {},
             "id": "violet",
             "index": 1040,
-            "name": "Violet (F2F)",
+            "mod": "Farmer to Florist",
+			"name": "Violet",
             "seasons": [
                 "spring"
             ],
@@ -1516,7 +1591,8 @@
             },
             "id": "wisteria",
             "index": 1041,
-            "name": "Wisteria (F2F)",
+            "mod": "Farmer to Florist",
+			"name": "Wisteria",
             "seasons": [
                 "fall"
             ],
@@ -1540,7 +1616,8 @@
             },
             "id": "beef",
             "index": 1007,
-            "name": "Beef (MEAT)",
+            "mod": "Fresh Meat",
+			"name": "Beef",
             "seasons": [
                 "spring",
                 "summer"
@@ -1564,7 +1641,8 @@
             },
             "id": "chevon",
             "index": 1008,
-            "name": "Chevon (MEAT)",
+            "mod": "Fresh Meat",
+			"name": "Chevon",
             "seasons": [
                 "summer",
                 "fall"
@@ -1588,7 +1666,8 @@
             },
             "id": "chicken",
             "index": 1009,
-            "name": "Chicken (MEAT)",
+            "mod": "Fresh Meat",
+			"name": "Chicken",
             "seasons": [
                 "spring",
                 "summer"
@@ -1612,7 +1691,8 @@
             },
             "id": "duck",
             "index": 1010,
-            "name": "Duck (MEAT)",
+            "mod": "Fresh Meat",
+			"name": "Duck",
             "seasons": [
                 "summer",
                 "fall"
@@ -1636,7 +1716,8 @@
             },
             "id": "mutton",
             "index": 1011,
-            "name": "Mutton (MEAT)",
+            "mod": "Fresh Meat",
+			"name": "Mutton",
             "seasons": [
                 "spring",
                 "summer"
@@ -1660,7 +1741,8 @@
             },
             "id": "pork",
             "index": 1012,
-            "name": "Pork (MEAT)",
+            "mod": "Fresh Meat",
+			"name": "Pork",
             "seasons": [
                 "summer",
                 "fall"
@@ -1684,7 +1766,8 @@
             },
             "id": "rabbit",
             "index": 1013,
-            "name": "Rabbit (MEAT)",
+            "mod": "Fresh Meat",
+			"name": "Rabbit",
             "seasons": [
                 "spring",
                 "summer"
@@ -1703,7 +1786,8 @@
             "harvest": {},
             "id": "stevia",
             "index": 1042,
-            "name": "Stevia (FIZZ)",
+            "mod": "Fizzy Drinks",
+			"name": "Stevia",
             "seasons": [
                 "spring",
                 "summer"
@@ -1722,7 +1806,8 @@
             "harvest": {},
             "id": "adzuki_bean",
             "index": 1043,
-            "name": "Adzuki Bean (FV)",
+            "mod": "Fruits + Veggies",
+			"name": "Adzuki Bean",
             "seasons": [
                 "summer"
             ],
@@ -1740,7 +1825,8 @@
             "harvest": {},
             "id": "aloe",
             "index": 1044,
-            "name": "Aloe (FV) (Y2)",
+            "mod": "Fruits + Veggies",
+			"name": "Aloe (Y2)",
             "seasons": [
                 "summer"
             ],
@@ -1757,7 +1843,8 @@
             "harvest": {},
             "id": "asparagus",
             "index": 1045,
-            "name": "Asparagus (FV) (Y4)",
+            "mod": "Fruits + Veggies",
+			"name": "Asparagus (Y4)",
             "seasons": [
                 "summer"
             ],
@@ -1779,7 +1866,8 @@
             },
             "id": "bamboo",
             "index": 1046,
-            "name": "Bamboo (Paddy) (FV) (Y4)",
+            "mod": "Fruits + Veggies",
+			"name": "Bamboo (Paddy) (Y4)",
             "regrow": 5,
             "seasons": [
                 "spring",
@@ -1805,7 +1893,8 @@
             },
             "id": "bamboo",
             "index": 1047,
-            "name": "Bamboo (Dry) (FV) (Y4)",
+            "mod": "Fruits + Veggies",
+			"name": "Bamboo (Dry) (Y4)",
             "regrow": 5,
             "seasons": [
                 "spring",
@@ -1826,7 +1915,8 @@
             "harvest": {},
             "id": "barley",
             "index": 1048,
-            "name": "Barley (FV) (Y2)",
+            "mod": "Fruits + Veggies",
+			"name": "Barley (Y2)",
             "seasons": [
                 "fall"
             ],
@@ -1844,7 +1934,8 @@
             "harvest": {},
             "id": "basil",
             "index": 1049,
-            "name": "Basil (FV)",
+            "mod": "Fruits + Veggies",
+			"name": "Basil",
             "seasons": [
                 "spring"
             ],
@@ -1866,7 +1957,8 @@
             },
             "id": "bell_pepper",
             "index": 1050,
-            "name": "Bell Pepper (FV)",
+            "mod": "Fruits + Veggies",
+			"name": "Bell Pepper",
             "regrow": 5,
             "seasons": [
                 "fall"
@@ -1890,7 +1982,8 @@
             },
             "id": "blackberry",
             "index": 1051,
-            "name": "Blackberry (FV) (Y2)",
+            "mod": "Fruits + Veggies",
+			"name": "Blackberry (Y2)",
             "regrow": 4,
             "seasons": [
                 "fall"
@@ -1914,7 +2007,8 @@
             },
             "id": "blue_agave",
             "index": 1052,
-            "name": "Blue Agave (FV) (Y3)",
+            "mod": "Fruits + Veggies",
+			"name": "Blue Agave (Y3)",
             "seasons": [
                 "summer"
             ],
@@ -1936,7 +2030,8 @@
             },
             "id": "broccoli",
             "index": 1053,
-            "name": "Broccoli (FV) (Y2)",
+            "mod": "Fruits + Veggies",
+			"name": "Broccoli (Y2)",
             "seasons": [
                 "fall"
             ],
@@ -1958,7 +2053,8 @@
             },
             "id": "buckwheat",
             "index": 1054,
-            "name": "Buckwheat (FV) (Y2)",
+            "mod": "Fruits + Veggies",
+			"name": "Buckwheat (Y2)",
             "scythe": true,
             "seasons": [
                 "spring"
@@ -1981,7 +2077,8 @@
             },
             "id": "butternut_squash",
             "index": 1055,
-            "name": "Butternut Squash (FV) (Y3)",
+            "mod": "Fruits + Veggies",
+			"name": "Butternut Squash (Y3)",
             "regrow": 4,
             "seasons": [
                 "summer"
@@ -2005,7 +2102,8 @@
             },
             "id": "cabbage",
             "index": 1056,
-            "name": "Cabbage (FV)",
+            "mod": "Fruits + Veggies",
+			"name": "Cabbage",
             "seasons": [
                 "spring",
                 "fall"
@@ -2029,7 +2127,8 @@
             },
             "id": "cactus_flower",
             "index": 1057,
-            "name": "Cactus_Flower (FV) (Y3)",
+            "mod": "Fruits + Veggies",
+			"name": "Cactus_Flower (Y3)",
             "regrow": 5,
             "seasons": [
                 "spring",
@@ -2055,7 +2154,8 @@
             },
             "id": "carrot",
             "index": 1058,
-            "name": "Carrot (FV)",
+            "mod": "Fruits + Veggies",
+			"name": "Carrot",
             "seasons": [
                 "fall"
             ],
@@ -2078,7 +2178,8 @@
             },
             "id": "cassava",
             "index": 1059,
-            "name": "Cassava (FV) (Y2)",
+            "mod": "Fruits + Veggies",
+			"name": "Cassava (Y2)",
             "scythe": true,
             "seasons": [
                 "summer"
@@ -2102,7 +2203,8 @@
             },
             "id": "celery",
             "index": 1060,
-            "name": "Celery (FV) (Y2)",
+            "mod": "Fruits + Veggies",
+			"name": "Celery (Y2)",
             "seasons": [
                 "fall"
             ],
@@ -2124,7 +2226,8 @@
             },
             "id": "chickpea",
             "index": 1061,
-            "name": "Chickpea (FV) (Y4)",
+            "mod": "Fruits + Veggies",
+			"name": "Chickpea (Y4)",
             "regrow": 5,
             "seasons": [
                 "summer"
@@ -2147,7 +2250,8 @@
             },
             "id": "chives",
             "index": 1062,
-            "name": "Chives (FV)",
+            "mod": "Fruits + Veggies",
+			"name": "Chives",
             "seasons": [
                 "summer"
             ],
@@ -2169,7 +2273,8 @@
             },
             "id": "cotton",
             "index": 1063,
-            "name": "Cotton (FV)",
+            "mod": "Fruits + Veggies",
+			"name": "Cotton",
             "regrow": 3,
             "seasons": [
                 "summer",
@@ -2194,7 +2299,8 @@
             },
             "id": "cucumber",
             "index": 1064,
-            "name": "Cucumber (FV) (Y2)",
+            "mod": "Fruits + Veggies",
+			"name": "Cucumber (Y2)",
             "seasons": [
                 "summer"
             ],
@@ -2217,7 +2323,8 @@
             },
             "id": "durum",
             "index": 1065,
-            "name": "Durum (FV) (Y4)",
+            "mod": "Fruits + Veggies",
+			"name": "Durum (Y4)",
             "scythe": true,
             "seasons": [
                 "fall"
@@ -2241,7 +2348,8 @@
             },
             "id": "elderberry",
             "index": 1066,
-            "name": "Elderberry (FV) (Y2)",
+            "mod": "Fruits + Veggies",
+			"name": "Elderberry (Y2)",
             "regrow": 4,
             "seasons": [
                 "winter"
@@ -2265,7 +2373,8 @@
             },
             "id": "fennel",
             "index": 1066,
-            "name": "Fennel (FV) (Y2)",
+            "mod": "Fruits + Veggies",
+			"name": "Fennel (Y2)",
             "seasons": [
                 "fall"
             ],
@@ -2287,7 +2396,8 @@
             },
             "id": "ginger",
             "index": 1067,
-            "name": "Ginger (FV)",
+            "mod": "Fruits + Veggies",
+			"name": "Ginger",
             "seasons": [
                 "fall"
             ],
@@ -2309,7 +2419,8 @@
             },
             "id": "ginseng",
             "index": 1068,
-            "name": "Ginseng (FV)",
+            "mod": "Fruits + Veggies",
+			"name": "Ginseng",
             "seasons": [
                 "spring",
                 "summer",
@@ -2334,7 +2445,8 @@
             },
             "id": "gooseberry",
             "index": 1069,
-            "name": "Gooseberry (FV) (Y2)",
+            "mod": "Fruits + Veggies",
+			"name": "Gooseberry (Y2)",
             "regrow": 3,
             "seasons": [
                 "summer"
@@ -2358,7 +2470,8 @@
             },
             "id": "green_pea",
             "index": 1070,
-            "name": "Green Pea (FV) (Y4)",
+            "mod": "Fruits + Veggies",
+			"name": "Green Pea (Y4)",
             "regrow": 3,
             "seasons": [
                 "summer"
@@ -2383,7 +2496,8 @@
             },
             "id": "habanero",
             "index": 1071,
-            "name": "Habanero (FV) (Y3)",
+            "mod": "Fruits + Veggies",
+			"name": "Habanero (Y3)",
             "regrow": 4,
             "seasons": [
                 "fall"
@@ -2407,7 +2521,8 @@
             },
             "id": "jalapeno",
             "index": 1071,
-            "name": "Jalapeno (FV) (Y3)",
+            "mod": "Fruits + Veggies",
+			"name": "Jalapeno (Y3)",
             "regrow": 4,
             "seasons": [
                 "fall"
@@ -2431,7 +2546,8 @@
             },
             "id": "juniper",
             "index": 1072,
-            "name": "Juniper (FV)",
+            "mod": "Fruits + Veggies",
+			"name": "Juniper",
             "seasons": [
                 "winter"
             ],
@@ -2454,7 +2570,8 @@
             },
             "id": "kidney_bean",
             "index": 1073,
-            "name": "Kidney Bean (FV) (Yy)",
+            "mod": "Fruits + Veggies",
+			"name": "Kidney Bean (Y4)",
             "regrow": 4,
             "seasons": [
                 "fall"
@@ -2479,7 +2596,8 @@
             },
             "id": "kiwi",
             "index": 1074,
-            "name": "Kiwi (FV)",
+            "mod": "Fruits + Veggies",
+			"name": "Kiwi",
             "regrow": 3,
             "seasons": [
                 "summer",
@@ -2505,7 +2623,8 @@
             },
             "id": "lettuce",
             "index": 1075,
-            "name": "Lettuce (FV)",
+            "mod": "Fruits + Veggies",
+			"name": "Lettuce",
             "seasons": [
                 "summer"
             ],
@@ -2528,7 +2647,8 @@
             },
             "id": "licorice_root",
             "index": 1076,
-            "name": "Licorice Root (FV) (Y4)",
+            "mod": "Fruits + Veggies",
+			"name": "Licorice Root (Y4)",
             "seasons": [
                 "spring"
             ],
@@ -2551,7 +2671,8 @@
             },
             "id": "maguey",
             "index": 1077,
-            "name": "Maguey (FV) (Y4)",
+            "mod": "Fruits + Veggies",
+			"name": "Maguey (Y4)",
             "seasons": [
                 "spring",
                 "summer"
@@ -2574,7 +2695,8 @@
             },
             "id": "mint",
             "index": 1078,
-            "name": "Mint (FV)",
+            "mod": "Fruits + Veggies",
+			"name": "Mint",
             "seasons": [
                 "winter"
             ],
@@ -2596,7 +2718,8 @@
             },
             "id": "muskmelon",
             "index": 1079,
-            "name": "Muskmelon (FV) (Y2)",
+            "mod": "Fruits + Veggies",
+			"name": "Muskmelon (Y2)",
             "seasons": [
                 "spring"
             ],
@@ -2618,7 +2741,8 @@
             },
             "id": "navy_bean",
             "index": 1080,
-            "name": "Navy Bean (FV)",
+            "mod": "Fruits + Veggies",
+			"name": "Navy Bean",
             "regrow": 3,
             "seasons": [
                 "summer"
@@ -2643,7 +2767,8 @@
             },
             "id": "oat",
             "index": 1081,
-            "name": "Oat (Green) (FV) (Y3)",
+            "mod": "Fruits + Veggies",
+			"name": "Oat (Green) (Y3)",
             "seasons": [
                 "fall"
             ],
@@ -2665,7 +2790,8 @@
             },
             "id": "okra",
             "index": 1082,
-            "name": "Okra (FV) (Y3)",
+            "mod": "Fruits + Veggies",
+			"name": "Okra (Y3)",
             "regrow": 4,
             "seasons": [
                 "summer",
@@ -2690,7 +2816,8 @@
             },
             "id": "onion",
             "index": 1083,
-            "name": "Onion (FV)",
+            "mod": "Fruits + Veggies",
+			"name": "Onion",
             "seasons": [
                 "spring"
             ],
@@ -2712,7 +2839,8 @@
             },
             "id": "oregano",
             "index": 1084,
-            "name": "Oregano (FV)",
+            "mod": "Fruits + Veggies",
+			"name": "Oregano",
             "seasons": [
                 "summer"
             ],
@@ -2734,7 +2862,8 @@
             },
             "id": "paddy_taro",
             "index": 1086,
-            "name": "Paddy Taro (Paddy) (FV) (Y2)",
+            "mod": "Fruits + Veggies",
+			"name": "Paddy Taro (Paddy) (Y2)",
             "scythe": true,
             "seasons": [
                 "fall"
@@ -2757,7 +2886,8 @@
             },
             "id": "paddy_taro",
             "index": 1087,
-            "name": "Paddy Taro (Dry) (FV) (Y2)",
+            "mod": "Fruits + Veggies",
+			"name": "Paddy Taro (Dry) (Y2)",
             "scythe": true,
             "seasons": [
                 "fall"
@@ -2780,7 +2910,8 @@
             },
             "id": "parsley",
             "index": 1088,
-            "name": "Parsley (FV)",
+            "mod": "Fruits + Veggies",
+			"name": "Parsley",
             "seasons": [
                 "spring"
             ],
@@ -2802,7 +2933,8 @@
             },
             "id": "passion_fruit",
             "index": 1089,
-            "name": "Passion Fruit (FV)",
+            "mod": "Fruits + Veggies",
+			"name": "Passion Fruit",
             "regrow": 5,
             "seasons": [
                 "spring"
@@ -2826,7 +2958,8 @@
             },
             "id": "peanut",
             "index": 1090,
-            "name": "Peanut (FV) (Y2)",
+            "mod": "Fruits + Veggies",
+			"name": "Peanut (Y2)",
             "seasons": [
                 "fall"
             ],
@@ -2848,7 +2981,8 @@
             },
             "id": "perilla",
             "index": 1091,
-            "name": "Perilla (FV)",
+            "mod": "Fruits + Veggies",
+			"name": "Perilla",
             "seasons": [
                 "summer"
             ],
@@ -2870,7 +3004,8 @@
             },
             "id": "pineapple",
             "index": 1092,
-            "name": "Pineapple (FV)",
+            "mod": "Fruits + Veggies",
+			"name": "Pineapple",
             "seasons": [
                 "spring"
             ],
@@ -2893,7 +3028,8 @@
             },
             "id": "quinoa",
             "index": 1093,
-            "name": "Quinoa (FV) (Y4)",
+            "mod": "Fruits + Veggies",
+			"name": "Quinoa (Y4)",
             "seasons": [
                 "summer"
             ],
@@ -2915,7 +3051,8 @@
             },
             "id": "rapeseed_flower",
             "index": 1094,
-            "name": "Rapeseed Flower (FV) (Y3)",
+            "mod": "Fruits + Veggies",
+			"name": "Rapeseed Flower (Y3)",
             "seasons": [
                 "spring",
                 "summer"
@@ -2939,7 +3076,8 @@
             },
             "id": "raspberry",
             "index": 1095,
-            "name": "Raspberry (FV) (Y2)",
+            "mod": "Fruits + Veggies",
+			"name": "Raspberry (Y2)",
             "regrow": 4,
             "seasons": [
                 "summer"
@@ -2963,7 +3101,8 @@
             },
             "id": "red_onion",
             "index": 1096,
-            "name": "Red Onion (FV) (Y3)",
+            "mod": "Fruits + Veggies",
+			"name": "Red Onion (Y3)",
             "seasons": [
                 "spring"
             ],
@@ -2985,7 +3124,8 @@
             },
             "id": "rosemary",
             "index": 1097,
-            "name": "Rosemary (FV)",
+            "mod": "Fruits + Veggies",
+			"name": "Rosemary",
             "seasons": [
                 "fall"
             ],
@@ -3007,7 +3147,8 @@
             },
             "id": "sage",
             "index": 1098,
-            "name": "SAge (FV)",
+            "mod": "Fruits + Veggies",
+			"name": "SAge",
             "seasons": [
                 "fall"
             ],
@@ -3029,7 +3170,8 @@
             },
             "id": "shallot",
             "index": 1099,
-            "name": "Shallot (FV) (Y4)",
+            "mod": "Fruits + Veggies",
+			"name": "Shallot (Y4)",
             "seasons": [
                 "spring"
             ],
@@ -3051,7 +3193,8 @@
             },
             "id": "shiitake_mushroom",
             "index": 1100,
-            "name": "Shiitake Mushroom (FV) (Y4)",
+            "mod": "Fruits + Veggies",
+			"name": "Shiitake Mushroom (Y4)",
             "seasons": [
                 "spring",
                 "fall"
@@ -3074,7 +3217,8 @@
             },
             "id": "soybean",
             "index": 1101,
-            "name": "Soybean (FV) (Y2)",
+            "mod": "Fruits + Veggies",
+			"name": "Soybean (Y2)",
             "seasons": [
                 "fall"
             ],
@@ -3097,7 +3241,8 @@
             },
             "id": "spinach",
             "index": 1102,
-            "name": "Spinach (FV)",
+            "mod": "Fruits + Veggies",
+			"name": "Spinach",
             "seasons": [
                 "spring",
                 "fall"
@@ -3119,7 +3264,8 @@
             },
             "id": "sugar_beet",
             "index": 1103,
-            "name": "Sugar Beet (FV) (Y2)",
+            "mod": "Fruits + Veggies",
+			"name": "Sugar Beet (Y2)",
             "seasons": [
                 "spring"
             ],
@@ -3142,7 +3288,8 @@
             },
             "id": "sugar_cane",
             "index": 1104,
-            "name": "Sugar Cane (FV)",
+            "mod": "Fruits + Veggies",
+			"name": "Sugar Cane",
             "seasons": [
                 "summer"
             ],
@@ -3165,7 +3312,8 @@
             },
             "id": "sulfur_shelf_mushroom",
             "index": 1105,
-            "name": "Sulfur Shelf Mushroom (FV) (Y4)",
+            "mod": "Fruits + Veggies",
+			"name": "Sulfur Shelf Mushroom (Y4)",
             "seasons": [
                 "summer",
                 "fall"
@@ -3188,7 +3336,8 @@
             },
             "id": "sweet_canary_melon",
             "index": 1106,
-            "name": "Sweet Canary Melon (FV) (Y2)",
+            "mod": "Fruits + Veggies",
+			"name": "Sweet Canary Melon (Y2)",
             "regrow": 4,
             "seasons": [
                 "spring"
@@ -3212,7 +3361,8 @@
             },
             "id": "sweet_potato",
             "index": 1107,
-            "name": "Sweet Potato (FV)",
+            "mod": "Fruits + Veggies",
+			"name": "Sweet Potato",
             "seasons": [
                 "fall"
             ],
@@ -3235,7 +3385,8 @@
             },
             "id": "tabasco",
             "index": 1108,
-            "name": "Tabasco (FV) (Y3)",
+            "mod": "Fruits + Veggies",
+			"name": "Tabasco (Y3)",
             "regrow": 4,
             "seasons": [
                 "fall"
@@ -3259,7 +3410,8 @@
             },
             "id": "thyme",
             "index": 1109,
-            "name": "Thyme (FV)",
+            "mod": "Fruits + Veggies",
+			"name": "Thyme",
             "seasons": [
                 "fall"
             ],
@@ -3281,7 +3433,8 @@
             },
             "id": "wasabi",
             "index": 1110,
-            "name": "Wasabi (FV)",
+            "mod": "Fruits + Veggies",
+			"name": "Wasabi",
             "seasons": [
                 "summer"
             ],
@@ -3303,7 +3456,8 @@
             },
             "id": "watermelon",
             "index": 1111,
-            "name": "Watermelon (FV)",
+            "mod": "Fruits + Veggies",
+			"name": "Watermelon",
             "regrow": 5,
             "seasons": [
                 "fall"
@@ -3327,7 +3481,8 @@
             },
             "id": "zucchini",
             "index": 1112,
-            "name": "Zucchini (FV) (Y3)",
+            "mod": "Fruits + Veggies",
+			"name": "Zucchini (Y3)",
             "regrow": 2,
             "seasons": [
                 "summer"
@@ -3339,6 +3494,692 @@
                 3,
                 2,
                 4
+            ]
+        },
+        {
+            "buy": 50,
+            "harvest": {
+                "extra_chance": 0.2,
+                "level_increase": 5,
+                "max": 3,
+                "min": 1
+            },
+            "id": "benne_sesame",
+            "index": 1113,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Benne Sesame",
+            "scythe": true,
+            "seasons": [
+                "summer"
+            ],
+            "sell": 80,
+            "stages": [
+                1,
+                2,
+                3,
+                2,
+                1
+            ]
+        },
+        {
+            "buy": 80,
+            "harvest": {
+                "extra_chance": 0.2,
+                "level_increase": 5,
+                "max": 2,
+                "min": 1
+            },
+            "id": "black_beans",
+            "index": 1114,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Black Beans",
+            "regrow": 3,
+            "seasons": [
+                "fall"
+            ],
+            "sell": 95,
+            "stages": [
+                1,
+                1,
+                2,
+                2,
+                2
+            ],
+            "trellis": true
+        },
+        {
+            "buy": 80,
+            "harvest": {
+                "extra_chance": 0.2,
+                "level_increase": 5,
+                "max": 5,
+                "min": 3
+            },
+            "id": "blackcurrant",
+            "index": 1115,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Blackcurrant (Y2)",
+            "regrow": 3,
+            "seasons": [
+                "summer"
+            ],
+            "sell": 75,
+            "stages": [
+                1,
+                2,
+                3,
+                4,
+                3
+            ]
+        },
+        {
+            "buy": 65,
+            "harvest": {
+                "extra_chance": 0.1,
+                "level_increase": 5,
+                "max": 2,
+                "min": 1
+            },
+            "id": "blue_corn",
+            "index": 1116,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Blue Corn",
+            "regrow": 3,
+            "seasons": [
+                "summer",
+                "fall"
+            ],
+            "sell": 75,
+            "stages": [
+                1,
+                2,
+                3,
+                3,
+                2
+            ]
+        },
+        {
+            "buy": 80,
+            "harvest": {
+                "extra_chance": 0.2,
+                "level_increase": 5,
+                "max": 2,
+                "min": 1
+            },
+            "id": "candy_roaster_squash",
+            "index": 1117,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Candy Roaster Squash",
+            "regrow": 3,
+            "seasons": [
+                "fall"
+            ],
+            "sell": 95,
+            "stages": [
+                1,
+                1,
+                2,
+                2,
+                2
+            ]
+        },
+        {
+            "buy": 50,
+            "harvest": {
+                "extra_chance": 0.1,
+                "level_increase": 5,
+                "max": 3,
+                "min": 1
+            },
+            "id": "cardamom",
+            "index": 1118,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Cardamom",
+            "regrow": 3,
+            "seasons": [
+                "summer"
+            ],
+            "sell": 75,
+            "stages": [
+                1,
+                2,
+                2,
+                3,
+                3
+            ]
+        },
+        {
+            "buy": 150,
+            "harvest": {
+                "extra_chance": 0.1,
+                "level_increase": 5,
+                "max": 2,
+                "min": 1
+            },
+            "id": "chayote",
+            "index": 1119,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Chayote",
+            "regrow": 3,
+            "seasons": [
+                "spring",
+                "summer"
+            ],
+            "sell": 75,
+            "stages": [
+                1,
+                2,
+                3,
+                4,
+                3
+            ],
+            "trellis": true
+        },
+        {
+            "buy": 80,
+            "harvest": {
+                "extra_chance": 0.2,
+                "level_increase": 5,
+                "max": 5,
+                "min": 3
+            },
+            "id": "cloudberry",
+            "index": 1120,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Cloudberry",
+            "regrow": 3,
+            "seasons": [
+                "spring"
+            ],
+            "sell": 95,
+            "stages": [
+                1,
+                2,
+                3,
+                4,
+                3
+            ]
+        },
+        {
+            "buy": 80,
+            "harvest": {
+                "extra_chance": 0.2,
+                "level_increase": 5,
+                "max": 2,
+                "min": 1
+            },
+            "id": "cowpeas",
+            "index": 1121,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Cowpeas",
+            "regrow": 3,
+            "seasons": [
+                "summer",
+                "fall"
+            ],
+            "sell": 95,
+            "stages": [
+                1,
+                1,
+                2,
+                2,
+                2
+            ],
+            "trellis": true
+        },
+        {
+            "buy": 80,
+            "harvest": {
+                "extra_chance": 0.1,
+                "level_increase": 5,
+                "max": 4,
+                "min": 2
+            },
+            "id": "cranberry_beans",
+            "index": 1122,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Cranberry Beans (Y2)",
+            "regrow": 3,
+            "seasons": [
+                "spring"
+            ],
+            "sell": 75,
+            "stages": [
+                1,
+                1,
+                2,
+                2,
+                3
+            ],
+            "trellis": true
+        },
+        {
+            "buy": 80,
+            "harvest": {
+                "extra_chance": 0.1,
+                "level_increase": 5,
+                "max": 3,
+                "min": 1
+            },
+            "id": "green_chile",
+            "index": 1123,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Green Chile",
+            "regrow": 3,
+            "seasons": [
+                "fall"
+            ],
+            "sell": 95,
+            "stages": [
+                1,
+                1,
+                2,
+                2,
+                2
+            ]
+        },
+        {
+            "buy": 50,
+            "harvest": {
+                "extra_chance": 0.1,
+                "level_increase": 5,
+                "max": 4,
+                "min": 1
+            },
+            "id": "lingonberry",
+            "index": 1124,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Lingonberry",
+            "regrow": 2,
+            "seasons": [
+                "spring"
+            ],
+            "sell": 60,
+            "stages": [
+                1,
+                2,
+                3,
+                2,
+                1
+            ]
+        },
+        {
+            "buy": 80,
+            "harvest": {
+                "extra_chance": 0.1,
+                "level_increase": 5,
+                "max": 2,
+                "min": 1
+            },
+            "id": "maypop",
+            "index": 1125,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Maypop Passion Fruit (Y2)",
+            "regrow": 3,
+            "seasons": [
+                "summer"
+            ],
+            "sell": 175,
+            "stages": [
+                1,
+                2,
+                3,
+                4,
+                3
+            ],
+            "trellis": true
+        },
+        {
+            "buy": 80,
+            "harvest": {
+                "extra_chance": 0.2,
+                "level_increase": 5,
+                "max": 2,
+                "min": 1
+            },
+            "id": "nasturtium",
+            "index": 1126,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Nasturtium",
+            "seasons": [
+                "summer"
+            ],
+            "sell": 95,
+            "stages": [
+                1,
+                1,
+                2,
+                2,
+                2
+            ]
+        },
+        {
+            "buy": 50,
+            "harvest": {
+                "extra_chance": 0.2,
+                "level_increase": 5,
+                "max": 2,
+                "min": 1
+            },
+            "id": "oats",
+            "index": 1127,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Oats (Blue)",
+            "scythe": true,
+            "seasons": [
+                "fall"
+            ],
+            "sell": 80,
+            "stages": [
+                1,
+                2,
+                3,
+                2,
+                1
+            ]
+        },
+        {
+            "buy": 150,
+            "harvest": {
+                "extra_chance": 0.1,
+                "level_increase": 5,
+                "max": 2,
+                "min": 1
+            },
+            "id": "peppercorn",
+            "index": 1128,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Peppercorn",
+            "regrow": 3,
+            "seasons": [
+                "summer",
+                "fall"
+            ],
+            "sell": 75,
+            "stages": [
+                1,
+                2,
+                3,
+                4,
+                3
+            ],
+            "trellis": true
+        },
+        {
+            "buy": 80,
+            "harvest": {
+                "extra_chance": 0.2,
+                "level_increase": 5,
+                "max": 2,
+                "min": 1
+            },
+            "id": "prickly_pear",
+            "index": 1129,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Prickly Pear",
+            "regrow": 3,
+            "seasons": [
+                "summer"
+            ],
+            "sell": 95,
+            "stages": [
+                1,
+                1,
+                2,
+                2,
+                2
+            ]
+        },
+        {
+            "buy": 80,
+            "harvest": {
+                "extra_chance": 0.2,
+                "level_increase": 5,
+                "max": 5,
+                "min": 3
+            },
+            "id": "red_currant",
+            "index": 1130,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Red Currant (Y2)",
+            "regrow": 3,
+            "seasons": [
+                "spring"
+            ],
+            "sell": 75,
+            "stages": [
+                1,
+                2,
+                3,
+                4,
+                3
+            ]
+        },
+        {
+            "buy": 80,
+            "harvest": {
+                "extra_chance": 0.1,
+                "level_increase": 5,
+                "max": 3,
+                "min": 1
+            },
+            "id": "rose_hips",
+            "index": 1131,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Rose Hips (Y2)",
+            "regrow": 3,
+            "seasons": [
+                "spring",
+                "summer"
+            ],
+            "sell": 75,
+            "stages": [
+                1,
+                2,
+                3,
+                4,
+                3
+            ],
+            "trellis": true
+        },
+        {
+            "buy": 100,
+            "harvest": {
+                "extra_chance": 0.1,
+                "level_increase": 5,
+                "max": 3,
+                "min": 1
+            },
+            "id": "roselle_hibiscus",
+            "index": 1132,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Roselle Hibiscus (Y2)",
+            "regrow": 3,
+            "seasons": [
+                "summer"
+            ],
+            "sell": 95,
+            "stages": [
+                1,
+                1,
+                2,
+                2,
+                3
+            ],
+            "trellis": true
+        },
+        {
+            "buy": 80,
+            "harvest": {
+                "extra_chance": 0.1,
+                "level_increase": 5,
+                "max": 2,
+                "min": 1
+            },
+            "id": "salsify",
+            "index": 1133,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Salsify",
+            "seasons": [
+                "fall"
+            ],
+            "sell": 95,
+            "stages": [
+                1,
+                1,
+                2,
+                2,
+                2
+            ]
+        },
+        {
+            "buy": 80,
+            "harvest": {
+                "extra_chance": 0.1,
+                "level_increase": 5,
+                "max": 3,
+                "min": 1
+            },
+            "id": "scotch_bonnet_pepper",
+            "index": 1134,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Scotch Bonnet Pepper",
+            "regrow": 3,
+            "seasons": [
+                "summer"
+            ],
+            "sell": 95,
+            "stages": [
+                1,
+                1,
+                2,
+                2,
+                2
+            ]
+        },
+        {
+            "buy": 50,
+            "harvest": {
+                "extra_chance": 0.1,
+                "level_increase": 5,
+                "max": 3,
+                "min": 1
+            },
+            "id": "summer_squash",
+            "index": 1135,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Summer Squash",
+            "regrow": 3,
+            "seasons": [
+                "summer"
+            ],
+            "sell": 150,
+            "stages": [
+                1,
+                2,
+                2,
+                3,
+                3
+            ]
+        },
+        {
+            "buy": 50,
+            "harvest": {
+                "extra_chance": 0.1,
+                "level_increase": 5,
+                "max": 3,
+                "min": 1
+            },
+            "id": "sunchoke",
+            "index": 1136,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Sunchoke",
+            "seasons": [
+                "summer",
+                "fall"
+            ],
+            "sell": 75,
+            "stages": [
+                1,
+                2,
+                2,
+                3,
+                3
+            ]
+        },
+        {
+            "buy": 50,
+            "harvest": {
+                "extra_chance": 0.1,
+                "level_increase": 5,
+                "max": 2,
+                "min": 1
+            },
+            "id": "taro",
+            "index": 1137,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Taro",
+            "seasons": [
+                "summer",
+                "fall"
+            ],
+            "sell": 175,
+            "stages": [
+                1,
+                2,
+                3,
+                2,
+                1
+            ]
+        },
+        {
+            "buy": 80,
+            "harvest": {
+                "extra_chance": 0.1,
+                "level_increase": 5,
+                "max": 4,
+                "min": 1
+            },
+            "id": "white_alpine_strawberry",
+            "index": 1138,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "White Alpine Strawberry",
+            "regrow": 2,
+            "seasons": [
+                "spring"
+            ],
+            "sell": 95,
+            "stages": [
+                1,
+                2,
+                2,
+                2,
+                3
+            ]
+        },
+        {
+            "buy": 80,
+            "harvest": {
+                "extra_chance": 0.2,
+                "level_increase": 5,
+                "max": 5,
+                "min": 3
+            },
+            "id": "white_currant",
+            "index": 1139,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "White Currant (Y2)",
+            "regrow": 3,
+            "seasons": [
+                "fall"
+            ],
+            "sell": 80,
+            "stages": [
+                1,
+                2,
+                3,
+                4,
+                3
             ]
         }
 	],
