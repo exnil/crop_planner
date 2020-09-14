@@ -30,6 +30,7 @@ Note that this does include one spoiler for Stardew Valley Expanded.
 * Mizu's Flowers
 * Revenant's Crops
 * Soda Vine
+* Stephan's Lots of Wild Crops
 * Wild Seeds & Rice from Vanilla
 
 QOL changes

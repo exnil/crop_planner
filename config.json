@@ -5705,6 +5705,223 @@
                 1
             ],
             "trellis": true
+        },
+        {
+            "buy": 20,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 1,
+                "min": 1
+            },
+            "id": "wild_carrot",
+            "index": 1201,
+            "mod": "Stephan's Lots of Wild Crops",
+            "name": "Wild Carrot",
+            "seasons": [
+                "fall"
+            ],
+            "sell": 55,
+            "stages": [
+                1,
+                2,
+                2,
+                2
+            ]
+        },
+        {
+            "buy": 160,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 1,
+                "min": 1
+            },
+            "id": "wild_cucumber",
+            "index": 1202,
+            "mod": "Stephan's Lots of Wild Crops",
+            "name": "Wild Cucumber",
+            "regrow": 4,
+            "seasons": [
+                "spring"
+            ],
+            "sell": 85,
+            "stages": [
+                1,
+                1,
+                2,
+                2,
+                4
+            ]
+        },
+        {
+            "buy": 40,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 1,
+                "min": 1
+            },
+            "id": "wild_onion",
+            "index": 1203,
+            "mod": "Stephan's Lots of Wild Crops",
+            "name": "Wild Onion",
+            "seasons": [
+                "summer"
+            ],
+            "sell": 80,
+            "stages": [
+                1,
+                1,
+                1,
+                2
+            ]
+        },
+        {
+            "buy": 50,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 1,
+                "min": 1
+            },
+            "id": "wild_pea_pod",
+            "index": 1204,
+            "mod": "Stephan's Lots of Wild Crops",
+            "name": "Wild Pea Pod",
+            "regrow": 2,
+            "seasons": [
+                "spring"
+            ],
+            "sell": 40,
+            "stages": [
+                2,
+                2,
+                3,
+                3,
+                2
+            ],
+            "trellis": true
+        },
+        {
+            "buy": 90,
+            "harvest": {
+                "extra_chance": 0.2,
+                "level_increase": 8,
+                "max": 3,
+                "min": 2
+            },
+            "id": "wild_peanut",
+            "index": 1205,
+            "mod": "Stephan's Lots of Wild Crops",
+            "name": "Wild Peanut",
+            "seasons": [
+                "fall"
+            ],
+            "sell": 90,
+            "stages": [
+                2,
+                2,
+                3,
+                3,
+                2
+            ]
+        },
+        {
+            "buy": 200,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 1,
+                "min": 1
+            },
+            "id": "wild_pineapple",
+            "index": 1206,
+            "mod": "Stephan's Lots of Wild Crops",
+            "name": "Wild Pineapple",
+            "regrow": 3,
+            "seasons": [
+                "summer"
+            ],
+            "sell": 55,
+            "stages": [
+                3,
+                4,
+                4,
+                3,
+                3
+            ]
+        },
+        {
+            "buy": 40,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 1,
+                "min": 1
+            },
+            "id": "wild_spinach",
+            "index": 1207,
+            "mod": "Stephan's Lots of Wild Crops",
+            "name": "Wild Spinach",
+            "seasons": [
+                "fall"
+            ],
+            "sell": 100,
+            "stages": [
+                2,
+                2,
+                2,
+                2
+            ]
+        },
+        {
+            "buy": 20,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 1,
+                "min": 1
+            },
+            "id": "wild_turnip",
+            "index": 1208,
+            "mod": "Stephan's Lots of Wild Crops",
+            "name": "Wild Turnip",
+            "seasons": [
+                "spring"
+            ],
+            "sell": 55,
+            "stages": [
+                1,
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "buy": 120,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 1,
+                "min": 1
+            },
+            "id": "wild_watermelon",
+            "index": 1209,
+            "mod": "Stephan's Lots of Wild Crops",
+            "name": "Wild Watermelon",
+            "regrow": 4,
+            "seasons": [
+                "summer"
+            ],
+            "sell": 110,
+            "stages": [
+                2,
+                3,
+                3,
+                3,
+                3
+            ]
         }
 	],
 	"fertilizer": [

@@ -118,7 +118,7 @@ function planner_controller($scope){
         self.cinfo_settings.mods_available = ["Vanilla", "Ancient Crops", "Bonster's Fruits + Veggies",
         "Cannabis Kit", "Champagne Wishes", "Christmas Crops", "Eemie's Crops", "Fantasy Crops",
         "Farmer to Florist", "Fizzy Drinks", "Fresh Meat", "Fruits + Veggies", "Gem + Mineral Crops",
-        "Green Pear", "Mizu's Flowers", "Revenant's Crops", "Soda Vine"];
+        "Green Pear", "Mizu's Flowers", "Revenant's Crops", "Soda Vine", "Stephan's Lots of Wild Crops"];
 
 		// Enable bootstrap tooltips
 		$("body").tooltip({selector: "[data-toggle=tooltip]", trigger: "hover", container: "body"});
