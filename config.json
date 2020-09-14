@@ -1028,6 +1028,718 @@
         {
             "buy": 50,
             "harvest": {
+                "extra_chance": 0.2,
+                "level_increase": 5,
+                "max": 3,
+                "min": 1
+            },
+            "id": "benne_sesame",
+            "index": 1113,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Benne Sesame",
+            "scythe": true,
+            "seasons": [
+                "summer"
+            ],
+            "sell": 80,
+            "stages": [
+                1,
+                2,
+                3,
+                2,
+                1
+            ]
+        },
+        {
+            "buy": 80,
+            "harvest": {
+                "extra_chance": 0.2,
+                "level_increase": 5,
+                "max": 2,
+                "min": 1
+            },
+            "id": "black_beans",
+            "index": 1114,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Black Beans",
+            "regrow": 3,
+            "seasons": [
+                "fall"
+            ],
+            "sell": 95,
+            "stages": [
+                1,
+                1,
+                2,
+                2,
+                2
+            ],
+            "trellis": true
+        },
+        {
+            "buy": 80,
+            "harvest": {
+                "extra_chance": 0.2,
+                "level_increase": 5,
+                "max": 5,
+                "min": 3
+            },
+            "id": "blackcurrant",
+            "index": 1115,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Blackcurrant (Y2)",
+            "regrow": 3,
+            "seasons": [
+                "summer"
+            ],
+            "sell": 75,
+            "stages": [
+                1,
+                2,
+                3,
+                4,
+                3
+            ]
+        },
+        {
+            "buy": 65,
+            "harvest": {
+                "extra_chance": 0.1,
+                "level_increase": 5,
+                "max": 2,
+                "min": 1
+            },
+            "id": "blue_corn",
+            "index": 1116,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Blue Corn",
+            "regrow": 3,
+            "seasons": [
+                "summer",
+                "fall"
+            ],
+            "sell": 75,
+            "stages": [
+                1,
+                2,
+                3,
+                3,
+                2
+            ]
+        },
+        {
+            "buy": 80,
+            "harvest": {
+                "extra_chance": 0.2,
+                "level_increase": 5,
+                "max": 2,
+                "min": 1
+            },
+            "id": "candy_roaster_squash",
+            "index": 1117,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Candy Roaster Squash",
+            "regrow": 3,
+            "seasons": [
+                "fall"
+            ],
+            "sell": 95,
+            "stages": [
+                1,
+                1,
+                2,
+                2,
+                2
+            ]
+        },
+        {
+            "buy": 50,
+            "harvest": {
+                "extra_chance": 0.1,
+                "level_increase": 5,
+                "max": 3,
+                "min": 1
+            },
+            "id": "cardamom",
+            "index": 1118,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Cardamom",
+            "regrow": 3,
+            "seasons": [
+                "summer"
+            ],
+            "sell": 75,
+            "stages": [
+                1,
+                2,
+                2,
+                3,
+                3
+            ]
+        },
+        {
+            "buy": 150,
+            "harvest": {
+                "extra_chance": 0.1,
+                "level_increase": 5,
+                "max": 2,
+                "min": 1
+            },
+            "id": "chayote",
+            "index": 1119,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Chayote",
+            "regrow": 3,
+            "seasons": [
+                "spring",
+                "summer"
+            ],
+            "sell": 75,
+            "stages": [
+                1,
+                2,
+                3,
+                4,
+                3
+            ],
+            "trellis": true
+        },
+        {
+            "buy": 80,
+            "harvest": {
+                "extra_chance": 0.2,
+                "level_increase": 5,
+                "max": 5,
+                "min": 3
+            },
+            "id": "cloudberry",
+            "index": 1120,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Cloudberry",
+            "regrow": 3,
+            "seasons": [
+                "spring"
+            ],
+            "sell": 95,
+            "stages": [
+                1,
+                2,
+                3,
+                4,
+                3
+            ]
+        },
+        {
+            "buy": 80,
+            "harvest": {
+                "extra_chance": 0.2,
+                "level_increase": 5,
+                "max": 2,
+                "min": 1
+            },
+            "id": "cowpeas",
+            "index": 1121,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Cowpeas",
+            "regrow": 3,
+            "seasons": [
+                "summer",
+                "fall"
+            ],
+            "sell": 95,
+            "stages": [
+                1,
+                1,
+                2,
+                2,
+                2
+            ],
+            "trellis": true
+        },
+        {
+            "buy": 80,
+            "harvest": {
+                "extra_chance": 0.1,
+                "level_increase": 5,
+                "max": 4,
+                "min": 2
+            },
+            "id": "cranberry_beans",
+            "index": 1122,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Cranberry Beans (Y2)",
+            "regrow": 3,
+            "seasons": [
+                "spring"
+            ],
+            "sell": 75,
+            "stages": [
+                1,
+                1,
+                2,
+                2,
+                3
+            ],
+            "trellis": true
+        },
+        {
+            "buy": 80,
+            "harvest": {
+                "extra_chance": 0.1,
+                "level_increase": 5,
+                "max": 3,
+                "min": 1
+            },
+            "id": "green_chile",
+            "index": 1123,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Green Chile",
+            "regrow": 3,
+            "seasons": [
+                "fall"
+            ],
+            "sell": 95,
+            "stages": [
+                1,
+                1,
+                2,
+                2,
+                2
+            ]
+        },
+        {
+            "buy": 50,
+            "harvest": {
+                "extra_chance": 0.1,
+                "level_increase": 5,
+                "max": 4,
+                "min": 1
+            },
+            "id": "lingonberry",
+            "index": 1124,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Lingonberry",
+            "regrow": 2,
+            "seasons": [
+                "spring"
+            ],
+            "sell": 60,
+            "stages": [
+                1,
+                2,
+                3,
+                2,
+                1
+            ]
+        },
+        {
+            "buy": 80,
+            "harvest": {
+                "extra_chance": 0.1,
+                "level_increase": 5,
+                "max": 2,
+                "min": 1
+            },
+            "id": "maypop",
+            "index": 1125,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Maypop Passion Fruit (Y2)",
+            "regrow": 3,
+            "seasons": [
+                "summer"
+            ],
+            "sell": 175,
+            "stages": [
+                1,
+                2,
+                3,
+                4,
+                3
+            ],
+            "trellis": true
+        },
+        {
+            "buy": 80,
+            "harvest": {
+                "extra_chance": 0.2,
+                "level_increase": 5,
+                "max": 2,
+                "min": 1
+            },
+            "id": "nasturtium",
+            "index": 1126,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Nasturtium",
+            "seasons": [
+                "summer"
+            ],
+            "sell": 95,
+            "stages": [
+                1,
+                1,
+                2,
+                2,
+                2
+            ]
+        },
+        {
+            "buy": 50,
+            "harvest": {
+                "extra_chance": 0.2,
+                "level_increase": 5,
+                "max": 2,
+                "min": 1
+            },
+            "id": "oats",
+            "index": 1127,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Oats (Blue)",
+            "scythe": true,
+            "seasons": [
+                "fall"
+            ],
+            "sell": 80,
+            "stages": [
+                1,
+                2,
+                3,
+                2,
+                1
+            ]
+        },
+        {
+            "buy": 150,
+            "harvest": {
+                "extra_chance": 0.1,
+                "level_increase": 5,
+                "max": 2,
+                "min": 1
+            },
+            "id": "peppercorn",
+            "index": 1128,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Peppercorn",
+            "regrow": 3,
+            "seasons": [
+                "summer",
+                "fall"
+            ],
+            "sell": 75,
+            "stages": [
+                1,
+                2,
+                3,
+                4,
+                3
+            ],
+            "trellis": true
+        },
+        {
+            "buy": 80,
+            "harvest": {
+                "extra_chance": 0.2,
+                "level_increase": 5,
+                "max": 2,
+                "min": 1
+            },
+            "id": "prickly_pear",
+            "index": 1129,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Prickly Pear",
+            "regrow": 3,
+            "seasons": [
+                "summer"
+            ],
+            "sell": 95,
+            "stages": [
+                1,
+                1,
+                2,
+                2,
+                2
+            ]
+        },
+        {
+            "buy": 80,
+            "harvest": {
+                "extra_chance": 0.2,
+                "level_increase": 5,
+                "max": 5,
+                "min": 3
+            },
+            "id": "red_currant",
+            "index": 1130,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Red Currant (Y2)",
+            "regrow": 3,
+            "seasons": [
+                "spring"
+            ],
+            "sell": 75,
+            "stages": [
+                1,
+                2,
+                3,
+                4,
+                3
+            ]
+        },
+        {
+            "buy": 80,
+            "harvest": {
+                "extra_chance": 0.1,
+                "level_increase": 5,
+                "max": 3,
+                "min": 1
+            },
+            "id": "rose_hips",
+            "index": 1131,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Rose Hips (Y2)",
+            "regrow": 3,
+            "seasons": [
+                "spring",
+                "summer"
+            ],
+            "sell": 75,
+            "stages": [
+                1,
+                2,
+                3,
+                4,
+                3
+            ],
+            "trellis": true
+        },
+        {
+            "buy": 100,
+            "harvest": {
+                "extra_chance": 0.1,
+                "level_increase": 5,
+                "max": 3,
+                "min": 1
+            },
+            "id": "roselle_hibiscus",
+            "index": 1132,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Roselle Hibiscus (Y2)",
+            "regrow": 3,
+            "seasons": [
+                "summer"
+            ],
+            "sell": 95,
+            "stages": [
+                1,
+                1,
+                2,
+                2,
+                3
+            ],
+            "trellis": true
+        },
+        {
+            "buy": 80,
+            "harvest": {
+                "extra_chance": 0.1,
+                "level_increase": 5,
+                "max": 2,
+                "min": 1
+            },
+            "id": "salsify",
+            "index": 1133,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Salsify",
+            "seasons": [
+                "fall"
+            ],
+            "sell": 95,
+            "stages": [
+                1,
+                1,
+                2,
+                2,
+                2
+            ]
+        },
+        {
+            "buy": 80,
+            "harvest": {
+                "extra_chance": 0.1,
+                "level_increase": 5,
+                "max": 3,
+                "min": 1
+            },
+            "id": "scotch_bonnet_pepper",
+            "index": 1134,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Scotch Bonnet Pepper",
+            "regrow": 3,
+            "seasons": [
+                "summer"
+            ],
+            "sell": 95,
+            "stages": [
+                1,
+                1,
+                2,
+                2,
+                2
+            ]
+        },
+        {
+            "buy": 50,
+            "harvest": {
+                "extra_chance": 0.1,
+                "level_increase": 5,
+                "max": 3,
+                "min": 1
+            },
+            "id": "summer_squash",
+            "index": 1135,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Summer Squash",
+            "regrow": 3,
+            "seasons": [
+                "summer"
+            ],
+            "sell": 150,
+            "stages": [
+                1,
+                2,
+                2,
+                3,
+                3
+            ]
+        },
+        {
+            "buy": 50,
+            "harvest": {
+                "extra_chance": 0.1,
+                "level_increase": 5,
+                "max": 3,
+                "min": 1
+            },
+            "id": "sunchoke",
+            "index": 1136,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Sunchoke",
+            "seasons": [
+                "summer",
+                "fall"
+            ],
+            "sell": 75,
+            "stages": [
+                1,
+                2,
+                2,
+                3,
+                3
+            ]
+        },
+        {
+            "buy": 50,
+            "harvest": {
+                "extra_chance": 0.1,
+                "level_increase": 5,
+                "max": 2,
+                "min": 1
+            },
+            "id": "taro",
+            "index": 1137,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "Taro",
+            "seasons": [
+                "summer",
+                "fall"
+            ],
+            "sell": 175,
+            "stages": [
+                1,
+                2,
+                3,
+                2,
+                1
+            ]
+        },
+        {
+            "buy": 80,
+            "harvest": {
+                "extra_chance": 0.1,
+                "level_increase": 5,
+                "max": 4,
+                "min": 1
+            },
+            "id": "white_alpine_strawberry",
+            "index": 1138,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "White Alpine Strawberry",
+            "regrow": 2,
+            "seasons": [
+                "spring"
+            ],
+            "sell": 95,
+            "stages": [
+                1,
+                2,
+                2,
+                2,
+                3
+            ]
+        },
+        {
+            "buy": 175,
+            "harvest": {
+                "extra_chance": 0.4,
+                "level_increase": 4,
+                "max": 2,
+                "min": 1
+            },
+            "id": "champagne_grape",
+            "index": 1020,
+            "mod": "Champagne Wishes",
+            "name": "Champagne Grape (Y3)",
+            "regrow": 3,
+            "seasons": [
+                "spring"
+            ],
+            "sell": 85,
+            "stages": [
+                1,
+                2,
+                3,
+                3,
+                3
+            ],
+            "trellis": true
+        },
+        {
+            "buy": 80,
+            "harvest": {
+                "extra_chance": 0.2,
+                "level_increase": 5,
+                "max": 5,
+                "min": 3
+            },
+            "id": "white_currant",
+            "index": 1139,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "White Currant (Y2)",
+            "regrow": 3,
+            "seasons": [
+                "fall"
+            ],
+            "sell": 80,
+            "stages": [
+                1,
+                2,
+                3,
+                4,
+                3
+            ]
+        },
+        {
+            "buy": 50,
+            "harvest": {
                 "extra_chance": 2.0,
                 "level_increase": 5,
                 "max": 5,
@@ -1169,32 +1881,6 @@
                 3,
                 3
             ]
-        },
-        {
-            "buy": 175,
-            "harvest": {
-                "extra_chance": 0.4,
-                "level_increase": 4,
-                "max": 2,
-                "min": 1
-            },
-            "id": "champagne_grape",
-            "index": 1020,
-            "mod": "Champagne Wishes",
-			"name": "Champagne Grape (Y3)",
-            "regrow": 3,
-            "seasons": [
-                "spring"
-            ],
-            "sell": 85,
-            "stages": [
-                1,
-                2,
-                3,
-                3,
-                3
-            ],
-            "trellis": true
         },
         {
             "buy": 60,
@@ -1607,6 +2293,26 @@
             "trellis": true
         },
         {
+            "buy": 60,
+            "harvest": {},
+            "id": "stevia",
+            "index": 1042,
+            "mod": "Fizzy Drinks",
+            "name": "Stevia",
+            "seasons": [
+                "spring",
+                "summer"
+            ],
+            "sell": 225,
+            "stages": [
+                1,
+                2,
+                3,
+                2,
+                1
+            ]
+        },
+        {
             "buy": 100,
             "harvest": {
                 "extra_chance": 0,
@@ -1779,26 +2485,6 @@
                 1,
                 2,
                 2
-            ]
-        },
-        {
-            "buy": 60,
-            "harvest": {},
-            "id": "stevia",
-            "index": 1042,
-            "mod": "Fizzy Drinks",
-			"name": "Stevia",
-            "seasons": [
-                "spring",
-                "summer"
-            ],
-            "sell": 225,
-            "stages": [
-                1,
-                2,
-                3,
-                2,
-                1
             ]
         },
         {
@@ -3494,692 +4180,6 @@
                 3,
                 2,
                 4
-            ]
-        },
-        {
-            "buy": 50,
-            "harvest": {
-                "extra_chance": 0.2,
-                "level_increase": 5,
-                "max": 3,
-                "min": 1
-            },
-            "id": "benne_sesame",
-            "index": 1113,
-            "mod": "Bonster's Fruits + Veggies",
-            "name": "Benne Sesame",
-            "scythe": true,
-            "seasons": [
-                "summer"
-            ],
-            "sell": 80,
-            "stages": [
-                1,
-                2,
-                3,
-                2,
-                1
-            ]
-        },
-        {
-            "buy": 80,
-            "harvest": {
-                "extra_chance": 0.2,
-                "level_increase": 5,
-                "max": 2,
-                "min": 1
-            },
-            "id": "black_beans",
-            "index": 1114,
-            "mod": "Bonster's Fruits + Veggies",
-            "name": "Black Beans",
-            "regrow": 3,
-            "seasons": [
-                "fall"
-            ],
-            "sell": 95,
-            "stages": [
-                1,
-                1,
-                2,
-                2,
-                2
-            ],
-            "trellis": true
-        },
-        {
-            "buy": 80,
-            "harvest": {
-                "extra_chance": 0.2,
-                "level_increase": 5,
-                "max": 5,
-                "min": 3
-            },
-            "id": "blackcurrant",
-            "index": 1115,
-            "mod": "Bonster's Fruits + Veggies",
-            "name": "Blackcurrant (Y2)",
-            "regrow": 3,
-            "seasons": [
-                "summer"
-            ],
-            "sell": 75,
-            "stages": [
-                1,
-                2,
-                3,
-                4,
-                3
-            ]
-        },
-        {
-            "buy": 65,
-            "harvest": {
-                "extra_chance": 0.1,
-                "level_increase": 5,
-                "max": 2,
-                "min": 1
-            },
-            "id": "blue_corn",
-            "index": 1116,
-            "mod": "Bonster's Fruits + Veggies",
-            "name": "Blue Corn",
-            "regrow": 3,
-            "seasons": [
-                "summer",
-                "fall"
-            ],
-            "sell": 75,
-            "stages": [
-                1,
-                2,
-                3,
-                3,
-                2
-            ]
-        },
-        {
-            "buy": 80,
-            "harvest": {
-                "extra_chance": 0.2,
-                "level_increase": 5,
-                "max": 2,
-                "min": 1
-            },
-            "id": "candy_roaster_squash",
-            "index": 1117,
-            "mod": "Bonster's Fruits + Veggies",
-            "name": "Candy Roaster Squash",
-            "regrow": 3,
-            "seasons": [
-                "fall"
-            ],
-            "sell": 95,
-            "stages": [
-                1,
-                1,
-                2,
-                2,
-                2
-            ]
-        },
-        {
-            "buy": 50,
-            "harvest": {
-                "extra_chance": 0.1,
-                "level_increase": 5,
-                "max": 3,
-                "min": 1
-            },
-            "id": "cardamom",
-            "index": 1118,
-            "mod": "Bonster's Fruits + Veggies",
-            "name": "Cardamom",
-            "regrow": 3,
-            "seasons": [
-                "summer"
-            ],
-            "sell": 75,
-            "stages": [
-                1,
-                2,
-                2,
-                3,
-                3
-            ]
-        },
-        {
-            "buy": 150,
-            "harvest": {
-                "extra_chance": 0.1,
-                "level_increase": 5,
-                "max": 2,
-                "min": 1
-            },
-            "id": "chayote",
-            "index": 1119,
-            "mod": "Bonster's Fruits + Veggies",
-            "name": "Chayote",
-            "regrow": 3,
-            "seasons": [
-                "spring",
-                "summer"
-            ],
-            "sell": 75,
-            "stages": [
-                1,
-                2,
-                3,
-                4,
-                3
-            ],
-            "trellis": true
-        },
-        {
-            "buy": 80,
-            "harvest": {
-                "extra_chance": 0.2,
-                "level_increase": 5,
-                "max": 5,
-                "min": 3
-            },
-            "id": "cloudberry",
-            "index": 1120,
-            "mod": "Bonster's Fruits + Veggies",
-            "name": "Cloudberry",
-            "regrow": 3,
-            "seasons": [
-                "spring"
-            ],
-            "sell": 95,
-            "stages": [
-                1,
-                2,
-                3,
-                4,
-                3
-            ]
-        },
-        {
-            "buy": 80,
-            "harvest": {
-                "extra_chance": 0.2,
-                "level_increase": 5,
-                "max": 2,
-                "min": 1
-            },
-            "id": "cowpeas",
-            "index": 1121,
-            "mod": "Bonster's Fruits + Veggies",
-            "name": "Cowpeas",
-            "regrow": 3,
-            "seasons": [
-                "summer",
-                "fall"
-            ],
-            "sell": 95,
-            "stages": [
-                1,
-                1,
-                2,
-                2,
-                2
-            ],
-            "trellis": true
-        },
-        {
-            "buy": 80,
-            "harvest": {
-                "extra_chance": 0.1,
-                "level_increase": 5,
-                "max": 4,
-                "min": 2
-            },
-            "id": "cranberry_beans",
-            "index": 1122,
-            "mod": "Bonster's Fruits + Veggies",
-            "name": "Cranberry Beans (Y2)",
-            "regrow": 3,
-            "seasons": [
-                "spring"
-            ],
-            "sell": 75,
-            "stages": [
-                1,
-                1,
-                2,
-                2,
-                3
-            ],
-            "trellis": true
-        },
-        {
-            "buy": 80,
-            "harvest": {
-                "extra_chance": 0.1,
-                "level_increase": 5,
-                "max": 3,
-                "min": 1
-            },
-            "id": "green_chile",
-            "index": 1123,
-            "mod": "Bonster's Fruits + Veggies",
-            "name": "Green Chile",
-            "regrow": 3,
-            "seasons": [
-                "fall"
-            ],
-            "sell": 95,
-            "stages": [
-                1,
-                1,
-                2,
-                2,
-                2
-            ]
-        },
-        {
-            "buy": 50,
-            "harvest": {
-                "extra_chance": 0.1,
-                "level_increase": 5,
-                "max": 4,
-                "min": 1
-            },
-            "id": "lingonberry",
-            "index": 1124,
-            "mod": "Bonster's Fruits + Veggies",
-            "name": "Lingonberry",
-            "regrow": 2,
-            "seasons": [
-                "spring"
-            ],
-            "sell": 60,
-            "stages": [
-                1,
-                2,
-                3,
-                2,
-                1
-            ]
-        },
-        {
-            "buy": 80,
-            "harvest": {
-                "extra_chance": 0.1,
-                "level_increase": 5,
-                "max": 2,
-                "min": 1
-            },
-            "id": "maypop",
-            "index": 1125,
-            "mod": "Bonster's Fruits + Veggies",
-            "name": "Maypop Passion Fruit (Y2)",
-            "regrow": 3,
-            "seasons": [
-                "summer"
-            ],
-            "sell": 175,
-            "stages": [
-                1,
-                2,
-                3,
-                4,
-                3
-            ],
-            "trellis": true
-        },
-        {
-            "buy": 80,
-            "harvest": {
-                "extra_chance": 0.2,
-                "level_increase": 5,
-                "max": 2,
-                "min": 1
-            },
-            "id": "nasturtium",
-            "index": 1126,
-            "mod": "Bonster's Fruits + Veggies",
-            "name": "Nasturtium",
-            "seasons": [
-                "summer"
-            ],
-            "sell": 95,
-            "stages": [
-                1,
-                1,
-                2,
-                2,
-                2
-            ]
-        },
-        {
-            "buy": 50,
-            "harvest": {
-                "extra_chance": 0.2,
-                "level_increase": 5,
-                "max": 2,
-                "min": 1
-            },
-            "id": "oats",
-            "index": 1127,
-            "mod": "Bonster's Fruits + Veggies",
-            "name": "Oats (Blue)",
-            "scythe": true,
-            "seasons": [
-                "fall"
-            ],
-            "sell": 80,
-            "stages": [
-                1,
-                2,
-                3,
-                2,
-                1
-            ]
-        },
-        {
-            "buy": 150,
-            "harvest": {
-                "extra_chance": 0.1,
-                "level_increase": 5,
-                "max": 2,
-                "min": 1
-            },
-            "id": "peppercorn",
-            "index": 1128,
-            "mod": "Bonster's Fruits + Veggies",
-            "name": "Peppercorn",
-            "regrow": 3,
-            "seasons": [
-                "summer",
-                "fall"
-            ],
-            "sell": 75,
-            "stages": [
-                1,
-                2,
-                3,
-                4,
-                3
-            ],
-            "trellis": true
-        },
-        {
-            "buy": 80,
-            "harvest": {
-                "extra_chance": 0.2,
-                "level_increase": 5,
-                "max": 2,
-                "min": 1
-            },
-            "id": "prickly_pear",
-            "index": 1129,
-            "mod": "Bonster's Fruits + Veggies",
-            "name": "Prickly Pear",
-            "regrow": 3,
-            "seasons": [
-                "summer"
-            ],
-            "sell": 95,
-            "stages": [
-                1,
-                1,
-                2,
-                2,
-                2
-            ]
-        },
-        {
-            "buy": 80,
-            "harvest": {
-                "extra_chance": 0.2,
-                "level_increase": 5,
-                "max": 5,
-                "min": 3
-            },
-            "id": "red_currant",
-            "index": 1130,
-            "mod": "Bonster's Fruits + Veggies",
-            "name": "Red Currant (Y2)",
-            "regrow": 3,
-            "seasons": [
-                "spring"
-            ],
-            "sell": 75,
-            "stages": [
-                1,
-                2,
-                3,
-                4,
-                3
-            ]
-        },
-        {
-            "buy": 80,
-            "harvest": {
-                "extra_chance": 0.1,
-                "level_increase": 5,
-                "max": 3,
-                "min": 1
-            },
-            "id": "rose_hips",
-            "index": 1131,
-            "mod": "Bonster's Fruits + Veggies",
-            "name": "Rose Hips (Y2)",
-            "regrow": 3,
-            "seasons": [
-                "spring",
-                "summer"
-            ],
-            "sell": 75,
-            "stages": [
-                1,
-                2,
-                3,
-                4,
-                3
-            ],
-            "trellis": true
-        },
-        {
-            "buy": 100,
-            "harvest": {
-                "extra_chance": 0.1,
-                "level_increase": 5,
-                "max": 3,
-                "min": 1
-            },
-            "id": "roselle_hibiscus",
-            "index": 1132,
-            "mod": "Bonster's Fruits + Veggies",
-            "name": "Roselle Hibiscus (Y2)",
-            "regrow": 3,
-            "seasons": [
-                "summer"
-            ],
-            "sell": 95,
-            "stages": [
-                1,
-                1,
-                2,
-                2,
-                3
-            ],
-            "trellis": true
-        },
-        {
-            "buy": 80,
-            "harvest": {
-                "extra_chance": 0.1,
-                "level_increase": 5,
-                "max": 2,
-                "min": 1
-            },
-            "id": "salsify",
-            "index": 1133,
-            "mod": "Bonster's Fruits + Veggies",
-            "name": "Salsify",
-            "seasons": [
-                "fall"
-            ],
-            "sell": 95,
-            "stages": [
-                1,
-                1,
-                2,
-                2,
-                2
-            ]
-        },
-        {
-            "buy": 80,
-            "harvest": {
-                "extra_chance": 0.1,
-                "level_increase": 5,
-                "max": 3,
-                "min": 1
-            },
-            "id": "scotch_bonnet_pepper",
-            "index": 1134,
-            "mod": "Bonster's Fruits + Veggies",
-            "name": "Scotch Bonnet Pepper",
-            "regrow": 3,
-            "seasons": [
-                "summer"
-            ],
-            "sell": 95,
-            "stages": [
-                1,
-                1,
-                2,
-                2,
-                2
-            ]
-        },
-        {
-            "buy": 50,
-            "harvest": {
-                "extra_chance": 0.1,
-                "level_increase": 5,
-                "max": 3,
-                "min": 1
-            },
-            "id": "summer_squash",
-            "index": 1135,
-            "mod": "Bonster's Fruits + Veggies",
-            "name": "Summer Squash",
-            "regrow": 3,
-            "seasons": [
-                "summer"
-            ],
-            "sell": 150,
-            "stages": [
-                1,
-                2,
-                2,
-                3,
-                3
-            ]
-        },
-        {
-            "buy": 50,
-            "harvest": {
-                "extra_chance": 0.1,
-                "level_increase": 5,
-                "max": 3,
-                "min": 1
-            },
-            "id": "sunchoke",
-            "index": 1136,
-            "mod": "Bonster's Fruits + Veggies",
-            "name": "Sunchoke",
-            "seasons": [
-                "summer",
-                "fall"
-            ],
-            "sell": 75,
-            "stages": [
-                1,
-                2,
-                2,
-                3,
-                3
-            ]
-        },
-        {
-            "buy": 50,
-            "harvest": {
-                "extra_chance": 0.1,
-                "level_increase": 5,
-                "max": 2,
-                "min": 1
-            },
-            "id": "taro",
-            "index": 1137,
-            "mod": "Bonster's Fruits + Veggies",
-            "name": "Taro",
-            "seasons": [
-                "summer",
-                "fall"
-            ],
-            "sell": 175,
-            "stages": [
-                1,
-                2,
-                3,
-                2,
-                1
-            ]
-        },
-        {
-            "buy": 80,
-            "harvest": {
-                "extra_chance": 0.1,
-                "level_increase": 5,
-                "max": 4,
-                "min": 1
-            },
-            "id": "white_alpine_strawberry",
-            "index": 1138,
-            "mod": "Bonster's Fruits + Veggies",
-            "name": "White Alpine Strawberry",
-            "regrow": 2,
-            "seasons": [
-                "spring"
-            ],
-            "sell": 95,
-            "stages": [
-                1,
-                2,
-                2,
-                2,
-                3
-            ]
-        },
-        {
-            "buy": 80,
-            "harvest": {
-                "extra_chance": 0.2,
-                "level_increase": 5,
-                "max": 5,
-                "min": 3
-            },
-            "id": "white_currant",
-            "index": 1139,
-            "mod": "Bonster's Fruits + Veggies",
-            "name": "White Currant (Y2)",
-            "regrow": 3,
-            "seasons": [
-                "fall"
-            ],
-            "sell": 80,
-            "stages": [
-                1,
-                2,
-                3,
-                4,
-                3
             ]
         }
 	],
