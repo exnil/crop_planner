@@ -38,7 +38,8 @@ Note that this does include one spoiler for Stardew Valley Expanded.
 * Crops grouped by mod
 * Added Winter crops to crop filter
 
-** To do **
+**To do**
+
 [] Turn mods on and off in the settings
 [] Filter Crops by Mod in the existing search panel
 
