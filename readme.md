@@ -22,6 +22,7 @@ Note that this does include one spoiler for Stardew Valley Expanded.
 * Fizzy Drinks
 * Fresh Meat
 * Fruits & Veggies
+* Mizu's Flowers
 * Wild Seeds & Rice from Vanilla
 
 QOL changes
