@@ -18,6 +18,7 @@ Note that this does include one spoiler for Stardew Valley Expanded.
 * Bonster's Fruit + Veggies
 * Cannabis Kit
 * Champagne Wishes
+* Christmas Crops
 * Fantasy Crops
 * Farmer to Florist
 * Fizzy Drinks

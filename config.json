@@ -2088,6 +2088,34 @@
         {
             "buy": 80,
             "harvest": {
+                "extra_chance": 0.18,
+                "level_increase": 12,
+                "max": 3,
+                "min": 1
+            },
+            "id": "candy_cane",
+            "index": 1173,
+            "mod": "Christmas Crops",
+            "name": "Candy Cane",
+            "scythe": true,
+            "seasons": [
+                "spring",
+                "summer",
+                "fall",
+                "winter"
+            ],
+            "sell": 85,
+            "stages": [
+                1,
+                2,
+                2,
+                1,
+                2
+            ]
+        },
+        {
+            "buy": 80,
+            "harvest": {
                 "extra_chance": 0.2,
                 "level_increase": 5,
                 "max": 5,
