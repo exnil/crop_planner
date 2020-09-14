@@ -1687,6 +1687,31 @@
             ]
         },
         {
+            "buy": 80,
+            "harvest": {
+                "extra_chance": 0.2,
+                "level_increase": 5,
+                "max": 5,
+                "min": 3
+            },
+            "id": "white_currant",
+            "index": 1139,
+            "mod": "Bonster's Fruits + Veggies",
+            "name": "White Currant (Y2)",
+            "regrow": 3,
+            "seasons": [
+                "fall"
+            ],
+            "sell": 80,
+            "stages": [
+                1,
+                2,
+                3,
+                4,
+                3
+            ]
+        },
+        {
             "buy": 400,
             "harvest": {
                 "extra_chance": 0.1,
@@ -2114,18 +2139,113 @@
             ]
         },
         {
-            "buy": 80,
+            "buy": 25,
             "harvest": {
-                "extra_chance": 0.2,
+                "extra_chance": 0.0,
                 "level_increase": 5,
-                "max": 5,
-                "min": 3
+                "max": 1,
+                "min": 1
             },
-            "id": "white_currant",
-            "index": 1139,
-            "mod": "Bonster's Fruits + Veggies",
-            "name": "White Currant (Y2)",
-            "regrow": 3,
+            "id": "acorn_squash",
+            "index": 1174,
+            "mod": "Eemie's Crops",
+            "name": "Acorn Squash",
+            "seasons": [
+                "fall"
+            ],
+            "sell": 25,
+            "stages": [
+                1,
+                2,
+                3,
+                4,
+                3
+            ]
+        },
+        {
+            "buy": 30,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 1,
+                "min": 1
+            },
+            "id": "black_forest_squash",
+            "index": 1175,
+            "mod": "Eemie's Crops",
+            "name": "Black Forest Squash",
+            "seasons": [
+                "fall"
+            ],
+            "sell": 45,
+            "stages": [
+                1,
+                2,
+                3,
+                4,
+                3
+            ]
+        },
+        {
+            "buy": 30,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 1,
+                "min": 1
+            },
+            "id": "cantaloupe_melon",
+            "index": 1176,
+            "mod": "Eemie's Crops",
+            "name": "Cantaloupe Melon",
+            "seasons": [
+                "summer"
+            ],
+            "sell": 50,
+            "stages": [
+                1,
+                2,
+                3,
+                4,
+                3
+            ]
+        },
+        {
+            "buy": 25,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 1,
+                "min": 1
+            },
+            "id": "charentais_melon",
+            "index": 1177,
+            "mod": "Eemie's Crops",
+            "name": "Charentais Melon",
+            "seasons": [
+                "summer"
+            ],
+            "sell": 50,
+            "stages": [
+                1,
+                2,
+                3,
+                4,
+                3
+            ]
+        },
+        {
+            "buy": 55,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 1,
+                "min": 1
+            },
+            "id": "crookneck_squash",
+            "index": 1178,
+            "mod": "Eemie's Crops",
+            "name": "Crookneck Squash",
             "seasons": [
                 "fall"
             ],
@@ -2141,25 +2261,169 @@
         {
             "buy": 50,
             "harvest": {
-                "extra_chance": 2.0,
+                "extra_chance": 0.0,
                 "level_increase": 5,
-                "max": 5,
+                "max": 1,
                 "min": 1
             },
-            "id": "copper",
-            "index": 1014,
-            "mod": "Fantasy Crops",
-			"name": "Copper Ore",
+            "id": "golden_hubbard_squash",
+            "index": 1179,
+            "mod": "Eemie's Crops",
+            "name": "Golden Hubbard Squash",
             "seasons": [
-                "spring"
+                "fall"
             ],
-            "sell": 5,
+            "sell": 70,
             "stages": [
                 1,
                 2,
                 3,
+                4,
+                3
+            ]
+        },
+        {
+            "buy": 80,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 1,
+                "min": 1
+            },
+            "id": "jack_o_lantern_pumpkin",
+            "index": 1180,
+            "mod": "Eemie's Crops",
+            "name": "Jack O Lantern Pumpkin",
+            "seasons": [
+                "fall"
+            ],
+            "sell": 100,
+            "stages": [
+                1,
                 2,
-                2
+                3,
+                4,
+                3
+            ]
+        },
+        {
+            "buy": 50,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 1,
+                "min": 1
+            },
+            "id": "korean_melon",
+            "index": 1181,
+            "mod": "Eemie's Crops",
+            "name": "Korean Melon",
+            "seasons": [
+                "summer"
+            ],
+            "sell": 75,
+            "stages": [
+                1,
+                2,
+                3,
+                4,
+                3
+            ]
+        },
+        {
+            "buy": 100,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 1,
+                "min": 1
+            },
+            "id": "large_watermelon",
+            "index": 1182,
+            "mod": "Eemie's Crops",
+            "name": "Large Watermelon",
+            "seasons": [
+                "summer"
+            ],
+            "sell": 130,
+            "stages": [
+                1,
+                2,
+                3,
+                4,
+                3
+            ]
+        },
+        {
+            "buy": 20,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 1,
+                "min": 1
+            },
+            "id": "rich_canary_melon",
+            "index": 1183,
+            "mod": "Eemie's Crops",
+            "name": "Rich Canary Melon",
+            "seasons": [
+                "summer"
+            ],
+            "sell": 35,
+            "stages": [
+                1,
+                2,
+                3,
+                4,
+                3
+            ]
+        },
+        {
+            "buy": 60,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 1,
+                "min": 1
+            },
+            "id": "rich_sweetness_melon",
+            "index": 1184,
+            "mod": "Eemie's Crops",
+            "name": "Rich Sweetness Melon",
+            "seasons": [
+                "summer"
+            ],
+            "sell": 90,
+            "stages": [
+                1,
+                2,
+                3,
+                4,
+                3
+            ]
+        },
+        {
+            "buy": 60,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 5,
+                "max": 1,
+                "min": 1
+            },
+            "id": "sweet_lightning_pumpkin",
+            "index": 1185,
+            "mod": "Eemie's Crops",
+            "name": "Sweet Lightning Pumpkin",
+            "seasons": [
+                "fall"
+            ],
+            "sell": 85,
+            "stages": [
+                1,
+                2,
+                3,
+                4,
+                3
             ]
         },
         {
@@ -2183,6 +2447,30 @@
                 1,
                 2,
                 3,
+                2
+            ]
+        },
+        {
+            "buy": 50,
+            "harvest": {
+                "extra_chance": 2.0,
+                "level_increase": 5,
+                "max": 5,
+                "min": 1
+            },
+            "id": "copper",
+            "index": 1014,
+            "mod": "Fantasy Crops",
+			"name": "Copper Ore",
+            "seasons": [
+                "spring"
+            ],
+            "sell": 5,
+            "stages": [
+                1,
+                2,
+                3,
+                2,
                 2
             ]
         },

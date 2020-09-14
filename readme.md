@@ -1,7 +1,7 @@
 # Stardew Valley Crop Planner
 
 **Fork Note:**
-This will hopefully be a version that inludes JSON Assets crops. Forked on 2020-09-13, be patient please.
+This will hopefully be a version that includes JSON Assets crops. Forked on 2020-09-13, be patient please.
 
 A tool for planning crop schedules in the Stardew Valley game.
 
@@ -19,6 +19,7 @@ Note that this does include one spoiler for Stardew Valley Expanded.
 * Cannabis Kit
 * Champagne Wishes
 * Christmas Crops
+* Eemie's Crops
 * Fantasy Crops
 * Farmer to Florist
 * Fizzy Drinks
