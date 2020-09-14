@@ -5576,6 +5576,108 @@
                 2,
                 2
             ]
+        },
+        {
+            "buy": 380,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 2,
+                "max": 3,
+                "min": 1
+            },
+            "id": "enoki_mushroom",
+            "index": 1196,
+            "mod": "Revenant's Crops",
+            "name": "Enoki Mushroom (Y2)",
+            "regrow": 4,
+            "seasons": [
+                "spring",
+                "summer"
+            ],
+            "sell": 35,
+            "stages": [
+                2,
+                3,
+                3,
+                3,
+                3
+            ],
+            "trellis": true
+        },
+        {
+            "buy": 130,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 2,
+                "max": 1,
+                "min": 1
+            },
+            "id": "gai_lan",
+            "index": 1197,
+            "mod": "Revenant's Crops",
+            "name": "Gai Lan (Y2)",
+            "seasons": [
+                "winter"
+            ],
+            "sell": 180,
+            "stages": [
+                2,
+                2,
+                2,
+                1
+            ]
+        },
+        {
+            "buy": 300,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 2,
+                "max": 3,
+                "min": 2
+            },
+            "id": "maitake_mushroom",
+            "index": 1198,
+            "mod": "Revenant's Crops",
+            "name": "Maitake Mushroom (Y2)",
+            "regrow": 4,
+            "seasons": [
+                "fall"
+            ],
+            "sell": 45,
+            "stages": [
+                2,
+                2,
+                2,
+                2,
+                1
+            ],
+            "trellis": true
+        },
+        {
+            "buy": 375,
+            "harvest": {
+                "extra_chance": 0.0,
+                "level_increase": 2,
+                "max": 3,
+                "min": 2
+            },
+            "id": "oyster_mushroom",
+            "index": 1199,
+            "mod": "Revenant's Crops",
+            "name": "Oyster Mushroom (Y2)",
+            "regrow": 4,
+            "seasons": [
+                "fall"
+            ],
+            "sell": 60,
+            "stages": [
+                2,
+                2,
+                2,
+                3,
+                1
+            ],
+            "trellis": true
         }
 	],
 	"fertilizer": [

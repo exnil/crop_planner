@@ -28,6 +28,7 @@ Note that this does include one spoiler for Stardew Valley Expanded.
 * Gem + Mineral Crops
 * Green Pear
 * Mizu's Flowers
+* Revenant's Crops
 * Wild Seeds & Rice from Vanilla
 
 QOL changes
