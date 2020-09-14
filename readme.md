@@ -42,6 +42,7 @@ Note that this does include one spoiler for Stardew Valley Expanded.
 
 - [ ] Turn mods on and off in the settings
 - [ ] Filter Crops by Mod in the existing search panel
+- [ ] Tea, dammit
 
 *(General note: Angular ain't my thing so if someone wants to take a crack at these two s'cool by me.)*
 
