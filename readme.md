@@ -1,4 +1,4 @@
-# Stardew Valley Crop Planner
+# Stardew Valley Crop Planner: Json Assets/SVE Fork
 
 **Fork Note:**
 This will hopefully be a version that includes JSON Assets crops.
