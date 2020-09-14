@@ -5678,6 +5678,33 @@
                 1
             ],
             "trellis": true
+        },
+        {
+            "buy": 50,
+            "harvest": {
+                "extra_chance": 0.1,
+                "level_increase": 5,
+                "max": 5,
+                "min": 2
+            },
+            "id": "soda_vine",
+            "index": 1200,
+            "mod": "Soda Vine",
+            "name": "Soda Vine",
+            "regrow": 2,
+            "seasons": [
+                "spring",
+                "summer"
+            ],
+            "sell": 60,
+            "stages": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ],
+            "trellis": true
         }
 	],
 	"fertilizer": [

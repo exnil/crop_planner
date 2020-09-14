@@ -29,6 +29,7 @@ Note that this does include one spoiler for Stardew Valley Expanded.
 * Green Pear
 * Mizu's Flowers
 * Revenant's Crops
+* Soda Vine
 * Wild Seeds & Rice from Vanilla
 
 QOL changes
