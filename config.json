@@ -3923,6 +3923,7 @@
             "index": 1072,
             "mod": "Fruits + Veggies",
 			"name": "Juniper",
+            "regrow": 3,
             "seasons": [
                 "winter"
             ],
