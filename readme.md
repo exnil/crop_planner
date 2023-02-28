@@ -9,8 +9,6 @@ Note that this does include one spoiler for Stardew Valley Expanded.
 
 #### **<a href="http://scriptsforweirdos.github.io/crop_planner/">Live version on github.io</a>**
 
-[Reddit thread](https://www.reddit.com/r/SMAPI/comments/isjf30/crop_planner_for_json_assets_and_sve/)
-
 ### Mods implemented:
 
 * Stardew Valley Expanded Character birthdays + Festival.
