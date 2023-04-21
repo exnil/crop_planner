@@ -1,12 +1,51 @@
-# Stardew Valley Crop Planner
+# Stardew Valley Crop Planner: Json Assets/SVE Fork
+
+**Fork Note:**
+This will hopefully be a version that includes JSON Assets crops.
 
 A tool for planning crop schedules in the Stardew Valley game.
 
-#### **<a href="http://exnil.github.io/crop_planner/">Live version on github.io</a>**
+Note that this does include one spoiler for Stardew Valley Expanded.
 
-<a href="https://www.reddit.com/r/StardewValley/comments/55puw1/crop_planner_v2_released_multiple_years_importing/" target="_blank">Reddit thread</a>
+#### **<a href="http://scriptsforweirdos.github.io/crop_planner/">Live version on github.io</a>**
+
+### Mods implemented:
+
+* Stardew Valley Expanded Character birthdays + Festival.
+* Ancient Crops
+* Bonster's Fruit + Veggies
+* Cannabis Kit
+* Champagne Wishes
+* Christmas Crops
+* Eemie's Crops
+* Fantasy Crops
+* Farmer to Florist
+* Fizzy Drinks
+* Fresh Meat
+* Fruits & Veggies
+* Gem + Mineral Crops
+* Green Pear
+* Mizu's Flowers
+* Revenant's Crops
+* Soda Vine
+* Stephan's Lots of Wild Crops
+* Wild Seeds & Rice from Vanilla
+
+**QOL changes**
+
+* Crops grouped by mod
+* Added Winter crops to crop filter
+
+**To do**
+
+- [ ] Turn mods on and off in the settings
+- [ ] Filter Crops by Mod in the existing search panel
+- [ ] Tea, dammit
+
+*(General note: Angular ain't my thing so if someone wants to take a crack at these two s'cool by me.)*
 
 ---
+*Everything from this point on is the original Readme from Exnil's version.*
 
 ### New in v2
 
