@@ -885,15 +885,18 @@
 			},
 			{
 				"day": 15,
-				"name": "Desert Festival"
+				"name": "Desert Festival",
+				"festival": true
 			},
 			{
 				"day": 16,
-				"name": "Desert Festival"
+				"name": "Desert Festival",
+				"festival": true
 			},
 			{
 				"day": 17,
-				"name": "Desert Festival"
+				"name": "Desert Festival",
+				"festival": true
 			},
 			{
 				"day": 17,
@@ -905,11 +908,13 @@
 			},
 			{
 				"day": 20,
-				"name": "Trout Derby"
+				"name": "Trout Derby",
+				"festival": true
 			},
 			{
 				"day": 21,
-				"name": "Trout Derby"
+				"name": "Trout Derby",
+				"festival": true
 			},
 			{
 				"day": 22,
@@ -993,11 +998,13 @@
 			},
 			{
 				"day": 12,
-				"name": "SquidFest"
+				"name": "SquidFest",
+				"festival": true
 			},
 			{
 				"day": 13,
-				"name": "SquidFest"
+				"name": "SquidFest",
+				"festival": true
 			},
 			{
 				"day": 14,
