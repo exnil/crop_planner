@@ -133,6 +133,38 @@
 			]
 		},
 		{
+			"buy": 0,
+			"id": "broccoli",
+			"index": "Broccoli",
+			"name": "Broccoli",
+			"seasons": [
+				"fall"
+			],
+			"sell": 70,
+			"regrow": 4,
+			"stages": [
+				2,
+				2,
+				2,
+				2
+			]
+		},
+		{
+			"buy": 0,
+			"id": "carrot",
+			"index": "Carrot",
+			"name": "Carrot",
+			"seasons": [
+				"spring"
+			],
+			"sell": 35,
+			"stages": [
+				1,
+				1,
+				1
+			]
+		},
+		{
 			"buy": 80,
 			"harvest": {},
 			"id": "cauliflower",
@@ -476,6 +508,23 @@
 			]
 		},
 		{
+			"buy": 0,
+			"id": "Powdermelon",
+			"index": "powdermelon",
+			"name": "Powdermelon",
+			"seasons": [
+				"winter"
+			],
+			"sell": 60,
+			"stages": [
+				1,
+				1,
+				1,
+				2,
+				2
+			]
+		},
+		{
 			"buy": 100,
 			"harvest": {},
 			"id": "pumpkin",
@@ -602,6 +651,24 @@
 				1,
 				2,
 				3,
+				2
+			]
+		},
+		{
+			"buy": 0,
+			"id": "summer_squash",
+			"index": "SummerSquash",
+			"name": "Summer Squash",
+			"seasons": [
+				"summer"
+			],
+			"sell": 45,
+			"regrow": 3,
+			"stages": [
+				1,
+				1,
+				1,
+				1,
 				2
 			]
 		},
