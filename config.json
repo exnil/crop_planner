@@ -884,12 +884,32 @@
 				"name": "Alex"
 			},
 			{
+				"day": 15,
+				"name": "Desert Festival"
+			},
+			{
+				"day": 16,
+				"name": "Desert Festival"
+			},
+			{
+				"day": 17,
+				"name": "Desert Festival"
+			},
+			{
 				"day": 17,
 				"name": "Sam"
 			},
 			{
 				"day": 19,
 				"name": "Demetrius"
+			},
+			{
+				"day": 20,
+				"name": "Trout Derby"
+			},
+			{
+				"day": 21,
+				"name": "Trout Derby"
 			},
 			{
 				"day": 22,
@@ -970,6 +990,14 @@
 			{
 				"day": 10,
 				"name": "Sebastian"
+			},
+			{
+				"day": 12,
+				"name": "SquidFest"
+			},
+			{
+				"day": 13,
+				"name": "SquidFest"
 			},
 			{
 				"day": 14,
